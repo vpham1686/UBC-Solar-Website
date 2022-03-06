@@ -1,16 +1,21 @@
 import React from 'react';
+
+import Map from '../../assets/images/ASCMap.png';
+
 import {
-    CompetitionsContainer,
-    CompetitionsTitle,
+    CompetitionContainer,
+    CompetitionMap,
 } from './CompetitionsSectionStyle';
 
 const CompetitionsSection = () => {
     return (
-        <CompetitionsContainer className='competitions'>
-            <CompetitionsTitle>
-                [Some Competitions Header]
-            </CompetitionsTitle>
-        </CompetitionsContainer>
+        <CompetitionContainer>
+            <CompetitionMap>
+                <img height='100%' width='100%' style={{borderRadius: '10px'}}
+                    src={Map} >
+                </img>
+            </CompetitionMap>
+        </CompetitionContainer>
     );
 };
 

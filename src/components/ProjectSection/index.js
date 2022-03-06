@@ -51,7 +51,6 @@ import {
     RavenAeroshellIcon,
     RavenAeroshellText,
 } from './ProjectSectionStyle';
-import { FaYoutube } from 'react-icons/fa';
 
 const ProjectSection = () => {
     return (
