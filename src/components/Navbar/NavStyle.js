@@ -26,14 +26,6 @@ export const NavbarContainer = styled.div`
     padding: 0 24px;
 `;
 
-export const NavLogo = styled(LinkRouter)`
-    justify-self: flex-start;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    margin-left: 22px;
-`;
-
 export const MobileIcon = styled.div`
     display: none;
 
