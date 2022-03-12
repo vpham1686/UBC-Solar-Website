@@ -9,7 +9,7 @@ import {
 const ProjectRevealSection = () => {
     return (
 
-        <ProjectRevealContainer className='projects'>
+        <ProjectRevealContainer>
             <ProjectRevealBackground>
                 <img width="100%" height="100%"
                     src={Daybreak}>

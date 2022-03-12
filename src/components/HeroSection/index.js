@@ -9,7 +9,7 @@ import {
 const HeroSection = () => {
     return (
 
-        <HeroContainer>
+        <HeroContainer className='hero'>
             <HeroBackground>
                 <VideoBackground autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBackground>

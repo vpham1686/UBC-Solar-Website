@@ -9,46 +9,41 @@ export const AboutContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    color: white;
 `;
 
 export const AboutContentBox = styled.div`
     display: flex;
-    background: #E5B13A;
     width: 80vw;
     height: 80%;
     border-radius: 10px;
     padding: 1rem;
-
+    justify-content: center;
 `;
 
 export const AboutDescriptionContainer = styled.div`
-    width: 20vw;
+    width: 30vw;
     border-radius: 25px;
     display: grid;
     height: 100%;
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
 `;
 
 export const AboutTitle = styled.p`
-    color: #002145;
     font-weight: bold;
-    font-size: 1.7rem;
-    margin-right: auto;
-    margin-bottom: auto;
+    font-size: 1.7vw;
+    margin-top: -1rem;
 `;
 
 export const AboutDescription = styled.p`
-    font-size: 1rem;
-    color: #002145;
+    font-size: 1vw;
     display: flex;
-    margin-bottom: auto;
-    margin-top: -3rem;
-    height: 200%;
+    margin-top: -18vh;
+    height: 100%;
     border-radius: 25px;
 `;
 
 export const AboutPhotoContainer = styled.div`
-    background: #E5B13A;
     width: 75vmax;
     display: flex;
     border-radius: 25px;
@@ -58,4 +53,11 @@ export const AboutPhotoContainer = styled.div`
 
 export const AboutTeamPhoto = styled.div`
     border-radius: 10px;
+`;
+
+export const AboutCounter = styled.p`
+    font-weight: bold;
+    font-size: 1.2vw;
+    margin-left: auto;
+    margin-right: auto;
 `;
