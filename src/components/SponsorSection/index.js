@@ -1,4 +1,5 @@
 import React from 'react';
+import VisibilitySensor from 'react-visibility-sensor';
 
 //Diamond//
 import Daniel_Family_Foundation from '../../assets/sponsorImages/Daniel_Family_Foundation.png';
@@ -67,6 +68,8 @@ import {
     SilverContainer,
     BronzeContainer,
     FriendContainer,
+    FadeInLeftDiv,
+    FadeInRightDiv
 
 } from './SponsorSectionStyle';
 
@@ -77,7 +80,7 @@ const SponsorSection = () => {
                 Sponsors
             </SponsorTitle>
             <SponsorAppreciation>
-                UBC Solar would like to thank all of our sponsors for helping our team achieve blah blah.
+                UBC Solar would like to thank all of our sponsors for helping the team achieve our goals and enabling us to participate in competitions.
             </SponsorAppreciation>
 
             <TierContainer>
@@ -88,11 +91,12 @@ const SponsorSection = () => {
                         Diamond
                     </DiamondText>
                     <DiamondContainer>
+                        <FadeInLeftDiv>
                         <img height='50%'
-                            src={Daniel_Family_Foundation}>
+                             src={Daniel_Family_Foundation}>
                         </img>
+                        </FadeInLeftDiv>
                     </DiamondContainer>
-
                 </Diamond>
                 
                 <Gold>
@@ -101,27 +105,41 @@ const SponsorSection = () => {
                     </GoldText>
 
                     <GoldContainer>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={Siemens}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={PSIM}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={UBC_AMS}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={Composites_One}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={Tektronix}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={Reimer_Hardwoods}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={MathWorks}>
                         </img>
+                        </FadeInRightDiv>
                     </GoldContainer>
                 </Gold>
 
@@ -130,27 +148,41 @@ const SponsorSection = () => {
                         Silver
                     </SilverText>
                     <SilverContainer>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={Silver_3M}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={Airtech}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={Altium}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={Elithion}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={Pillion_Holdings}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={Shell}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={Swell_Composites}>
                         </img>
+                        </FadeInLeftDiv>
                     </SilverContainer>
                 </Silver>
 
@@ -159,33 +191,51 @@ const SponsorSection = () => {
                         Bronze
                     </BronzeText>
                     <BronzeContainer>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={AFFINITY}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={FLUOR}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={Gigavac}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={JLCPCB}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={METAL_PROS}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={OMRON}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={Shop3D}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={UBC_Physics_Astronomy}>
                         </img>
+                        </FadeInRightDiv>
+                        <FadeInRightDiv>
                         <img width='75%'
                             src={West_Mountain_Radio}>
                         </img>
+                        </FadeInRightDiv>
                     </BronzeContainer>
                 </Bronze>
 
@@ -194,51 +244,81 @@ const SponsorSection = () => {
                         Friend
                     </FriendText>
                     <FriendContainer>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={Bluewater}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={Canada_Bicycle_Parts}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={COE}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={Composites_Research_Network}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={DIGI}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={IEEE}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={Industrial_Plastics_Paints}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={NOVA}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={SW}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={TCI}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={NOVA}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={SW}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={UBC_ECE}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={Vicor}>
                         </img>
+                        </FadeInLeftDiv>
+                        <FadeInLeftDiv>
                         <img width='75%'
                             src={VR3}>
                         </img>
+                        </FadeInLeftDiv>
                     </FriendContainer>
                 </Friend>
 

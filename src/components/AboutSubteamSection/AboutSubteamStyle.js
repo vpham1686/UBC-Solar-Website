@@ -1,4 +1,16 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { fadeInLeft, fadeInRight } from 'react-animations';
+
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
+const fadeInRightAnimation = keyframes`${fadeInRight}`;
+
+export const FadeInLeftDiv = styled.div`
+  animation: 5s ${fadeInLeftAnimation};
+`;
+
+export const FadeInRightDiv = styled.div`
+    animation: 5s ${fadeInRightAnimation};
+`;
 
 export const AboutSubteamContainer = styled.div`
     display: grid;
@@ -28,7 +40,7 @@ export const MechanicalTitleText = styled.p`
 `;
 
 export const MechanicalText = styled.p`
-    font-size: 0.9vw;
+    font-size: 1rem;
     width: 33.75vw;
     justify-self: center;
 `;
@@ -57,7 +69,7 @@ export const ElectricalTitleText = styled.p`
 `;
 
 export const ElectricalText = styled.p`
-    font-size: 0.9vw;
+    font-size: 1rem;
     width: 33.75vw;
     justify-self: center;
 `;
@@ -85,7 +97,7 @@ export const SoftwareTitleText = styled.p`
 `;
 
 export const SoftwareText = styled.p`
-    font-size: 0.9vw;
+    font-size: 1rem;
     width: 33.75vw;
     justify-self: center;
 `;
@@ -114,7 +126,7 @@ export const BusinessTitleText = styled.p`
 `;
 
 export const BusinessText = styled.p`
-    font-size: 0.9vw;
+    font-size: 1rem;
     width: 33.75vw;
     justify-self: center;
 `;
@@ -125,20 +137,4 @@ export const BusinessImage = styled.div`
     display: flex;
     justify-content: center;
     padding: 5vh;
-`;
-
-export const MechanicalCounter = styled.div`
-    font-size: 1.2vw;
-`;
-
-export const ElectricalCounter = styled.div`
-    font-size: 1.2vw;
-`;
-
-export const SoftwareCounter = styled.div`
-    font-size: 1.2vw;
-`;
-
-export const BusinessCounter = styled.div`
-    font-size: 1.2vw;
 `;

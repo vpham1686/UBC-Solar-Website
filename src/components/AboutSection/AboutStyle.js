@@ -1,4 +1,16 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { fadeInLeft, fadeInRight } from 'react-animations';
+
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
+const fadeInRightAnimation = keyframes`${fadeInRight}`;
+
+export const FadeInLeftDiv = styled.div`
+  animation: 3s ${fadeInLeftAnimation};
+`;
+
+export const FadeInRightDiv = styled.div`
+    animation: 3s ${fadeInRightAnimation};
+`;
 
 export const AboutContainer = styled.div`
     display: grid;
@@ -31,12 +43,12 @@ export const AboutDescriptionContainer = styled.div`
 
 export const AboutTitle = styled.p`
     font-weight: bold;
-    font-size: 1.7vw;
+    font-size: 2rem;
     margin-top: -1rem;
 `;
 
 export const AboutDescription = styled.p`
-    font-size: 1vw;
+    font-size: 1rem;
     display: flex;
     margin-top: -18vh;
     height: 100%;
@@ -57,7 +69,7 @@ export const AboutTeamPhoto = styled.div`
 
 export const AboutCounter = styled.p`
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     margin-left: auto;
     margin-right: auto;
 `;

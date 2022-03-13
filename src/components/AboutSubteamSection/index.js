@@ -5,6 +5,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 import Electrical from '../../assets/images/Electrical.jpg';
 import Mechanical from '../../assets/images/Mechanical.jpg';
 import Software from '../../assets/images/Software.jpg';
+import Business from '../../assets/images/Business.jpg';
 
 import {
     AboutSubteamContainer,
@@ -24,29 +25,17 @@ import {
     BusinessTitleText,
     BusinessText,
     BusinessImage,
-    MechanicalCounter,
-    ElectricalCounter,
-    SoftwareCounter,
-    BusinessCounter
+    FadeInLeftDiv,
+    FadeInRightDiv,
 } from './AboutSubteamStyle';
 
 const AboutSubteamSection = () => {
     return (
         <AboutSubteamContainer>
+            <FadeInLeftDiv>
             <AboutMechanicalContainer>
                 <MechanicalTitleText>
                     MECHANICAL TEAM
-                    <MechanicalCounter>
-                        Member Count:&nbsp;
-                        
-                            <VisibilitySensor partialVisibility offset={{ bottom: 0 }}>
-                            {({ isVisible }) => (
-                                <div style={{ height: 50 }}>
-                                    {isVisible ? <CountUp end={70} duration={3} /> : null}
-                                </div>
-                                )}
-                            </VisibilitySensor>
-                        </MechanicalCounter>
                 </MechanicalTitleText>
                 <MechanicalText>
                 The mechanical division consists of four sub-teams:
@@ -62,22 +51,13 @@ const AboutSubteamSection = () => {
                 </img>
                 </MechanicalImage>
             </AboutMechanicalContainer>
+            </FadeInLeftDiv>
             
             
+            <FadeInRightDiv>
             <AboutElectricalContainer>
                 <ElectricalTitleText>
                     ELECTRICAL TEAM
-                    <ElectricalCounter>
-                        Member Count:&nbsp;
-                        
-                            <VisibilitySensor partialVisibility offset={{ bottom: 0 }}>
-                            {({ isVisible }) => (
-                                <div style={{ height: 50 }}>
-                                    {isVisible ? <CountUp end={70} duration={3} /> : null}
-                                </div>
-                                )}
-                            </VisibilitySensor>
-                        </ElectricalCounter>
                 </ElectricalTitleText>
                 <ElectricalText>
                 The electrical division consists of four sub-teams: 
@@ -94,30 +74,21 @@ const AboutSubteamSection = () => {
                 </img>
                 </ElectricalImage>
             </AboutElectricalContainer>
+            </FadeInRightDiv>
+
             
-            
+            <FadeInLeftDiv>
             <AboutSoftwareContainer>
                 <SoftwareTitleText>
                     SOFTWARE TEAM
-                    <SoftwareCounter>
-                        Member Count:&nbsp;
-                        
-                            <VisibilitySensor partialVisibility offset={{ bottom: 0 }}>
-                            {({ isVisible }) => (
-                                <div style={{ height: 50 }}>
-                                    {isVisible ? <CountUp end={70} duration={3} /> : null}
-                                </div>
-                                )}
-                            </VisibilitySensor>
-                        </SoftwareCounter>
                 </SoftwareTitleText>
                 <SoftwareText>
                     The software division consists of categories ranging from:
                     <br></br>
-                    Simulation, X, Y, and W.
+                    Embedded, simulation, and telemetry.
                     <br></br>
                     <br></br>
-                    They are in charge
+                    They are in charge of calculating the car's performance in certain conditions and integrating the systems with mechanical components.
                 </SoftwareText>
                 <SoftwareImage>
                 <img height='75%' width='75%' style={{borderRadius: '10px'}}
@@ -125,22 +96,13 @@ const AboutSubteamSection = () => {
                 </img>
                 </SoftwareImage>
             </AboutSoftwareContainer>
-            
+            </FadeInLeftDiv>
 
+
+            <FadeInRightDiv>
             <AboutBusinessContainer>
                 <BusinessTitleText>
                     BUSINESS TEAM
-                    <BusinessCounter>
-                        Member Count:&nbsp;
-                        
-                            <VisibilitySensor partialVisibility offset={{ bottom: 0 }}>
-                            {({ isVisible }) => (
-                                <div style={{ height: 50 }}>
-                                    {isVisible ? <CountUp end={8} duration={0.5} /> : null}
-                                </div>
-                                )}
-                            </VisibilitySensor>
-                        </BusinessCounter>
                 </BusinessTitleText>
                 <BusinessText>
                     The business division consists of categories such as:
@@ -152,11 +114,13 @@ const AboutSubteamSection = () => {
                 </BusinessText>
                 <BusinessImage>
                 <img height='75%' width='75%' style={{borderRadius: '10px'}}
-                        src={Electrical}>
+                        src={Business}>
                 </img>
                 </BusinessImage>
             </AboutBusinessContainer>
+            </FadeInRightDiv>
         </AboutSubteamContainer>
+
 
         
     );

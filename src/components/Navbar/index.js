@@ -17,7 +17,7 @@ const Navbar = ({ toggle }) => {
         <>
             <Nav className='/'>
                 <NavLinks to='hero' smooth={true} offset={-90}>
-                    <img width="100%" height="50%"
+                    <img width="250px"
                         src={Logo}>
                     </img>
                 </NavLinks>
@@ -41,9 +41,10 @@ const Navbar = ({ toggle }) => {
                             <NavLinks to='sponsors' smooth={true} offset={-75}>Sponsors</NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <NavBtn>
+
+                    {/* <NavBtn>
                         <NavBtnLink to='/sponsor-us' smooth={true} offset={-75}>Sponsor Us</NavBtnLink>
-                    </NavBtn>
+                    </NavBtn> */}
 
                 </NavbarContainer>
             </Nav>

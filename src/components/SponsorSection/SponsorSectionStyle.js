@@ -1,11 +1,24 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { fadeInLeft, fadeInRight } from 'react-animations';
+
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
+const fadeInRightAnimation = keyframes`${fadeInRight}`;
+
+export const FadeInLeftDiv = styled.div`
+  animation: 5s ${fadeInLeftAnimation};
+`;
+
+export const FadeInRightDiv = styled.div`
+    animation: 5s ${fadeInRightAnimation};
+`;
 
 export const SponsorContainer = styled.div`
     display: grid;
     background: white;
-    height: 500vh;
+    height: 520vh;
     position: relative;
     z-index: 3;
+    justify-content: center;
 `;
 
 export const SponsorTitle = styled.p`
@@ -24,6 +37,8 @@ export const SponsorAppreciation = styled.p`
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 5vh;
+    width: 60%;
+    text-align: center;
 `;
 
 export const TierContainer = styled.div`

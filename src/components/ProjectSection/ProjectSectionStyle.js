@@ -1,10 +1,23 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { fadeInLeft, fadeInRight } from 'react-animations';
 
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
+const fadeInRightAnimation = keyframes`${fadeInRight}`;
+
+export const FadeInLeftDiv = styled.div`
+  animation: 5s ${fadeInLeftAnimation};
+`;
+
+export const FadeInRightDiv = styled.div`
+    animation: 5s ${fadeInRightAnimation};
+`;
+
+//EXTEND THIS AREA "HEIGHT" WHEN ADDING IN THE STORY FOR DAYBREAK AND RAVEN.//
 export const ProjectContainer = styled.div`
     display: grid;
     grid-template-columns: 95vw;
     background: #002145;
-    height: 250vh;
+    height: 200vh;
     position: relative;
     z-index: 5;
     text-align: center;
@@ -13,10 +26,8 @@ export const ProjectContainer = styled.div`
 
 export const DaybreakContainer = styled.div`
     background: #002145;
-    height: 50vh;
-
+    height: 80vh;
     display: flex;
-
 `;
 
 export const DaybreakTextContainer = styled.div`
@@ -26,7 +37,7 @@ export const DaybreakTextContainer = styled.div`
 
 export const DaybreakTitleText = styled.p`
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 1rem;
 `;
 
@@ -51,54 +62,10 @@ export const DaybreakImage = styled.div`
     padding: 5vh;
 `;
 
-
-export const BrightsideContainer = styled.div`
-    background: #002145;
-    height: 50vh;
-
-    display: flex;
-
-`;
-
-export const BrightsideTextContainer = styled.div`
-    width: 30vw;
-    margin-left: 10vw;
-`;
-
-export const BrightsideTitleText = styled.p`
-    font-weight: bold;
-    font-size: 1.7rem;
-    padding: 1rem;
-`;
-
-export const BrightsideBatteryText = styled.p`
-    font-size: 1rem;
-`;
-
-
-export const BrightsidePowerText = styled.p`
-    font-size: 1rem;
-`;
-
-export const BrightsideAeroshellText = styled.p`
-    font-size: 1rem;
-`;
-
-export const BrightsideImage = styled.div`
-    display: grid;
-    width: 40vw;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5vh;
-`;
-
-
 export const RavenContainer = styled.div`
     background: #002145;
-    height: 50vh;
-
+    height: 80vh;
     display: flex;
-
 `;
 
 export const RavenTextContainer = styled.div`
@@ -108,7 +75,7 @@ export const RavenTextContainer = styled.div`
 
 export const RavenTitleText = styled.p`
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding: 1rem;
 `;
 
