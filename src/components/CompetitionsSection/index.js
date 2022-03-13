@@ -8,6 +8,8 @@ import {
     CompetitionTextContainer,
     CompetitionTextTitle,
     CompetitionText,
+    FadeInLeftDiv,
+    FadeInRightDiv,
 } from './CompetitionsSectionStyle';
 
 const CompetitionsSection = () => {
@@ -23,8 +25,9 @@ const CompetitionsSection = () => {
                 Pushing the vehicles and their designers to their limits, it is our drive and ambition that will get us through the pearly gates.
                 <br></br>
                 <br></br>
-                UBC Solar will be competing in the upcoming competition. 
-                IDK. WRITE SMTG COOL HERE. MAYBE A STORY ABOUT OUR PREVIOUS? idek :((
+                UBC Solar will be competing against many teams from around the world in the upcoming competition with our new racecar: Daybreak.
+                
+                
                 </CompetitionText>
             </CompetitionTextContainer>
             <CompetitionMap>
