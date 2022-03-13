@@ -1,10 +1,23 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { fadeInLeft, fadeInRight } from 'react-animations';
 
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
+const fadeInRightAnimation = keyframes`${fadeInRight}`;
+
+export const FadeInLeftDiv = styled.div`
+  animation: 5s ${fadeInLeftAnimation};
+`;
+
+export const FadeInRightDiv = styled.div`
+    animation: 5s ${fadeInRightAnimation};
+`;
+
+//EXTEND THIS AREA "HEIGHT" WHEN ADDING IN THE STORY FOR DAYBREAK AND RAVEN.//
 export const ProjectContainer = styled.div`
     display: grid;
-    grid-template-columns: 100vw;
-    background: #125798;
-    height: 225vh;
+    grid-template-columns: 95vw;
+    background: #002145;
+    height: 200vh;
     position: relative;
     z-index: 5;
     text-align: center;
@@ -12,55 +25,29 @@ export const ProjectContainer = styled.div`
 `;
 
 export const DaybreakContainer = styled.div`
-    background: #325798;
-    height: 75vh;
-
+    background: #002145;
+    height: 80vh;
     display: flex;
-
 `;
 
 export const DaybreakTextContainer = styled.div`
-    background: #532222;
-    width: 40vw;
+    width: 30vw;
+    margin-left: 10vw;
 `;
 
 export const DaybreakTitleText = styled.p`
     font-weight: bold;
-    font-size: 1.7rem;
-    margin-bottom: auto;
-`;
-
-export const DaybreakText = styled.p`
-
-`;
-
-export const DaybreakIconContainer = styled.div`
-    background: #123123;
-    width: 25vw;
-    height: 75vh;
-
-    display: grid;
-    align-items: center;
-`;
-
-export const DaybreakBatteryIcon = styled.div`
-
+    font-size: 1.5rem;
+    padding: 1rem;
 `;
 
 export const DaybreakBatteryText = styled.p`
     font-size: 1rem;
 `;
 
-export const DaybreakPowerIcon = styled.div`
-
-`;
 
 export const DaybreakPowerText = styled.p`
     font-size: 1rem;
-`;
-
-export const DaybreakAeroshellIcon = styled.div`
-    
 `;
 
 export const DaybreakAeroshellText = styled.p`
@@ -69,110 +56,46 @@ export const DaybreakAeroshellText = styled.p`
 
 export const DaybreakImage = styled.div`
     display: grid;
-    width: 35vw;
+    width: 40vw;
     margin-left: auto;
     margin-right: auto;
     padding: 5vh;
-
 `;
 
-export const BrightsideContainer = styled.div`
-    background: #fff;
-    height: 75vh;
-`;
-
-export const BrightsideTextContainer = styled.div`
-
-`;
-
-export const BrightsideTitleText = styled.p`
-    font-weight: bold;
-    font-size: 1.7rem;
-    margin-bottom: auto;
-`;
-
-export const BrightsideText = styled.p`
-
-`;
-
-export const BrightsideIconContainer = styled.div`
-
-`;
-
-export const BrightsideBatteryIcon = styled.div`
-
-`;
-
-export const BrightsideBatteryText = styled.p`
-
-`;
-
-export const BrightsidePowerIcon = styled.div`
-
-`;
-
-export const BrightsidePowerText = styled.p`
-
-`;
-
-export const BrightsideAeroshellIcon = styled.div`
-
-`;
-
-export const BrightsideAeroshellText = styled.p`
-
-`;
-
-export const BrightsideImage = styled.div`
-
-`;
 export const RavenContainer = styled.div`
-    background: #157985;
-    height: 75vh;
+    background: #002145;
+    height: 80vh;
+    display: flex;
 `;
 
 export const RavenTextContainer = styled.div`
-
+    width: 30vw;
+    margin-left: 10vw;
 `;
 
 export const RavenTitleText = styled.p`
     font-weight: bold;
-    font-size: 1.7rem;
-    margin-bottom: auto;
-`;
-
-export const RavenText = styled.p`
-
-`;
-
-export const RavenIconContainer = styled.div`
-
-`;
-
-export const RavenBatteryIcon = styled.div`
-
+    font-size: 1.5rem;
+    padding: 1rem;
 `;
 
 export const RavenBatteryText = styled.p`
-
+    font-size: 1rem;
 `;
 
-export const RavenPowerIcon = styled.div`
-
-`;
 
 export const RavenPowerText = styled.p`
-
-`;
-
-export const RavenAeroshellIcon = styled.div`
-
+    font-size: 1rem;
 `;
 
 export const RavenAeroshellText = styled.p`
-
+    font-size: 1rem;
 `;
 
 export const RavenImage = styled.div`
-
+    display: grid;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5vh;
 `;

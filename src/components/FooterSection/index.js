@@ -30,24 +30,32 @@ const FooterSection = () => {
                 </FooterSubtitle>
                 <FooterSocials>
                 <FooterInstagram>
+                    <a href='https://www.instagram.com/ubcsolar/' target="_blank" rel="noopener noreferrer">
                     <img height='40px' width='40px'
                         src={Instagram} >
                     </img>
+                    </a>
                 </FooterInstagram>
                 <FooterFacebook>
+                    <a href='https://www.facebook.com/UbcSolar/' target="_blank" rel="noopener noreferrer">
                     <img height='40px' width='40px'
                         src={Facebook} >
                     </img>
+                    </a>
                 </FooterFacebook>
                 <FooterLinkedIn>
+                    <a href='https://www.linkedin.com/company/ubc-solar/' target="_blank" rel="noopener noreferrer">
                     <img height='40px' width='40px'
                         src={LinkedIn} >
                     </img>
+                    </a>
                 </FooterLinkedIn>
                 <FooterYouTube>
+                    <a href='https://www.youtube.com/channel/UCgPR5tgh2dBeRPH7jfFDpyA' target="_blank" rel="noopener noreferrer">
                     <img height='40px' width='40px'
                         src={YouTube} >
                     </img>
+                    </a>
                 </FooterYouTube>
                 </FooterSocials>
             </FooterSocialsWrapper>

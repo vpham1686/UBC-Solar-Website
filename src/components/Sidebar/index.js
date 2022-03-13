@@ -19,19 +19,19 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SidebarWrapper>
                 <SidebarMenu>
 
-                    <SidebarLink to='about' onClick={toggle}>
+                    <SidebarLink to='about' smooth={true} offset={-75} onClick={toggle}>
                         About
                     </SidebarLink>
 
-                    <SidebarLink to='projects' onClick={toggle}>
+                    <SidebarLink to='projects' smooth={true} offset={-75} onClick={toggle}>
                         Projects
                     </SidebarLink>
 
-                    <SidebarLink to='competitions' onClick={toggle}>
+                    <SidebarLink to='competitions' smooth={true} offset={-75} onClick={toggle}>
                         Competitions
                     </SidebarLink>
 
-                    <SidebarLink to='sponsors' onClick={toggle}>
+                    <SidebarLink to='sponsors' smooth={true} offset={-75} onClick={toggle}>
                         Sponsors
                     </SidebarLink>
 

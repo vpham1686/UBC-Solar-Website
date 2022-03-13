@@ -1,23 +1,18 @@
 import React from 'react';
-import HorizontalLogo from '../../assets/images/HorizontalLogo.png';
-import Daybreak from '../../assets/images/Daybreak.png';
+import Video from '../../videos/DaybreakVideo.mp4';
 import {
     ProjectRevealContainer,
     ProjectRevealBackground,
+    VideoBackground
 } from './ProjectRevealSectionStyle';
 
 const ProjectRevealSection = () => {
     return (
 
-        <ProjectRevealContainer className='projects'>
+        <ProjectRevealContainer>
             <ProjectRevealBackground>
-                <img width="100%" height="100%"
-                    src={Daybreak}>
-                </img>
+                <VideoBackground autoPlay loop muted src={Video} type='video/mp4' />
             </ProjectRevealBackground>
-
-
-
         </ProjectRevealContainer>
     );
 };

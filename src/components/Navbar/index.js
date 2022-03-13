@@ -3,8 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import Logo from '../../assets/images/Logo.png';
 import {
     Nav, 
-    NavbarContainer, 
-    NavLogo, 
+    NavbarContainer,  
     MobileIcon, 
     NavMenu, 
     NavItem, 
@@ -17,11 +16,12 @@ const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav className='/'>
-                <NavLogo to='/'>
-                    <img width="100" height="75"
+                <NavLinks to='hero' smooth={true} offset={-90}>
+                    <img width="250px"
                         src={Logo}>
                     </img>
-                </NavLogo>
+                </NavLinks>
+
                 <NavbarContainer>
 
                     <MobileIcon onClick={toggle}>
@@ -29,21 +29,22 @@ const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='about'>About</NavLinks>
+                            <NavLinks to='about' smooth={true} offset={-75}>About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='projects'>Projects</NavLinks>
+                            <NavLinks to='projects' smooth={true} offset={-75}>Projects</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='competitions'>Competitions</NavLinks>
+                            <NavLinks to='competitions' smooth={true} offset={-75}>Competitions</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='sponsors'>Sponsors</NavLinks>
+                            <NavLinks to='sponsors' smooth={true} offset={-75}>Sponsors</NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <NavBtn>
-                        <NavBtnLink to='/sponsor-us'>Sponsor Us</NavBtnLink>
-                    </NavBtn>
+
+                    {/* <NavBtn>
+                        <NavBtnLink to='/sponsor-us' smooth={true} offset={-75}>Sponsor Us</NavBtnLink>
+                    </NavBtn> */}
 
                 </NavbarContainer>
             </Nav>

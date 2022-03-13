@@ -1,23 +1,35 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { fadeInLeft, fadeInRight } from 'react-animations';
+
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
+const fadeInRightAnimation = keyframes`${fadeInRight}`;
+
+export const FadeInLeftDiv = styled.div`
+  animation: 5s ${fadeInLeftAnimation};
+`;
+
+export const FadeInRightDiv = styled.div`
+    animation: 5s ${fadeInRightAnimation};
+`;
 
 export const AboutSubteamContainer = styled.div`
     display: grid;
     grid-template-columns: 50vw 50vw;
     background: #002145;
-    height: 200vh;
+    height: 180vh;
     position: relative;
     z-index: 5;
     text-align: center;
+    color: white;
 `;
 
 export const AboutMechanicalContainer = styled.div`
-    background: #E5B13A;
-    height: 90vh;
+    background: #002145;
+    height: 80vh;
     width: 45vw;
     border-radius: 10px;
     margin-left: 2.5vw;
     margin-top: 5vh;
-
     display: grid;
 `;
 
@@ -29,23 +41,23 @@ export const MechanicalTitleText = styled.p`
 
 export const MechanicalText = styled.p`
     font-size: 1rem;
+    width: 33.75vw;
+    justify-self: center;
 `;
 
 export const MechanicalImage = styled.div`
     margin-top: auto;
-
     display: flex;
     justify-content: center;
     padding: 5vh;
 `;
 
 export const AboutElectricalContainer = styled.div`
-    background: #E5B13A;
-    height: 90vh;
+    background: #002145;
+    height: 80vh;
     width: 45vw;
     border-radius: 10px;
     margin-top: 5vh;
-
     display: grid;
 
 `;
@@ -58,23 +70,23 @@ export const ElectricalTitleText = styled.p`
 
 export const ElectricalText = styled.p`
     font-size: 1rem;
+    width: 33.75vw;
+    justify-self: center;
 `;
 
 export const ElectricalImage = styled.div`
     margin-top: auto;
-
     display: flex;
     justify-content: center;
     padding: 5vh;
 `;
 
 export const AboutSoftwareContainer = styled.div`
-    background: #E5B13A;
-    height: 90vh;
+    background: #002145;
+    height: 80vh;
     width: 45vw;
     border-radius: 10px;
     margin-left: 2.5vw;
-    
     display: grid;
 `;
 
@@ -85,7 +97,9 @@ export const SoftwareTitleText = styled.p`
 `;
 
 export const SoftwareText = styled.p`
-
+    font-size: 1rem;
+    width: 33.75vw;
+    justify-self: center;
 `;
 
 export const SoftwareImage = styled.div`
@@ -97,8 +111,8 @@ export const SoftwareImage = styled.div`
 `;
 
 export const AboutBusinessContainer = styled.div`
-    background: #E5B13A;
-    height: 90vh;
+    background: #002145;
+    height: 80vh;
     width: 45vw;
     border-radius: 10px;
 
@@ -112,7 +126,9 @@ export const BusinessTitleText = styled.p`
 `;
 
 export const BusinessText = styled.p`
-
+    font-size: 1rem;
+    width: 33.75vw;
+    justify-self: center;
 `;
 
 export const BusinessImage = styled.div`
@@ -122,4 +138,3 @@ export const BusinessImage = styled.div`
     justify-content: center;
     padding: 5vh;
 `;
-
