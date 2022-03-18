@@ -19,11 +19,11 @@ const Home = () => {
     
     return (
         <>
+            <Navbar isOpen={isOpen }toggle={toggle} />
             <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Navbar toggle={toggle} />
             <HeroSection />
             <AboutSection />
-                <AboutSubteamSection />
+            <AboutSubteamSection />
             <ProjectRevealSection />
             <ProjectSection />
             <CompetitionsSection />
