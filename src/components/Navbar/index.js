@@ -1,4 +1,5 @@
 import React from 'react';
+import { Squash as Hamburger } from 'hamburger-react'
 import { FaBars } from 'react-icons/fa';
 import Logo from '../../assets/images/Logo.png';
 import {
@@ -12,7 +13,7 @@ import {
     NavBtnLink, 
 } from './NavStyle';
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ isOpen, toggle }) => {
     return (
         <>
             <Nav className='/'>
@@ -25,8 +26,9 @@ const Navbar = ({ toggle }) => {
                 <NavbarContainer>
 
                     <MobileIcon onClick={toggle}>
-                        <FaBars />
+                        <Hamburger color="#FFFFFF" rounded toggled={isOpen} toggle={toggle}/>
                     </MobileIcon>
+
                     <NavMenu>
                         <NavItem>
                             <NavLinks to='about' smooth={true} offset={-75}>About</NavLinks>

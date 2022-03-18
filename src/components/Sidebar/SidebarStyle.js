@@ -4,6 +4,7 @@ import { Link as LinkScroll } from 'react-scroll';
 import { Link as LinkRouter } from 'react-router-dom';
 
 export const SidebarContainer = styled.aside`
+
     position: fixed;
     z-index: 999;
     width: 100%;

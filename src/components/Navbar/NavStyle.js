@@ -4,17 +4,18 @@ import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
     background: #04112E;
-    height: 5rem;
+    height: 10%;
     display: flex;
     align-items: center;
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 1000;
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
+
 `;
 
 export const NavbarContainer = styled.div`
@@ -32,13 +33,12 @@ export const MobileIcon = styled.div`
     @media screen and (max-width: 768px) {
         display: block;
         position: absolute;
-        top: 0;
+        top: -10px;
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
         color: #fff;
-
     }
 `;
 
