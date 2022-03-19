@@ -16,23 +16,35 @@ const Sidebar = ({ isOpen, toggle }) => {
 
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='about' smooth={true} offset={-75} onClick={toggle}>
-                        About
-                    </SidebarLink>
+                    <li className={(isOpen? "slidein": "slideout")}>
+                        <SidebarLink to='about' smooth={true} offset={-75} onClick={toggle}>
+                            About
+                        </SidebarLink>
+                    </li>
 
-                    <SidebarLink to='projects' smooth={true} offset={-75} onClick={toggle}>
-                        Projects
-                    </SidebarLink>
+                    <li className={(isOpen? "slidein": "slideout")}>
+                        <SidebarLink to='projects' smooth={true} offset={-75} onClick={toggle}>
+                            Projects
+                        </SidebarLink>
+                    </li>
 
-                    <SidebarLink to='competitions' smooth={true} offset={-75} onClick={toggle}>
-                        Competitions
-                    </SidebarLink>
+                    <li className={(isOpen? "slidein": "slideout")}>
+                        <SidebarLink to='competitions' smooth={true} offset={-75} onClick={toggle}>
+                            Competitions
+                        </SidebarLink>
+                    </li>
 
-                    <SidebarLink to='sponsors' smooth={true} offset={-75} onClick={toggle}>
-                        Sponsors
-                    </SidebarLink>
-                    <SidebarRoute to='/sponsor-us'>Sponsor Us</SidebarRoute>
+                    <li className={(isOpen? "slidein": "slideout")}>
+                        <SidebarLink to='sponsors' smooth={true} offset={-75} onClick={toggle}>
+                            Sponsors
+                        </SidebarLink>
+                    </li>
 
+                    <li className={(isOpen? "slidein": "slideout")}>
+                        <SidebarRoute to='/sponsor-us'>
+                            Sponsor Us
+                        </SidebarRoute>
+                    </li>
                 </SidebarMenu>
                 {/* <SideBtnWrap>
                     <SidebarRoute to='/sponsor-us'>Sponsor Us</SidebarRoute>

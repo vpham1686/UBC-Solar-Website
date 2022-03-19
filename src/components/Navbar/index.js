@@ -17,7 +17,7 @@ const Navbar = ({ isOpen, toggle }) => {
     return (
         <>
             <Nav className='/'>
-                <NavLinks to='hero' smooth={true} offset={-90}>
+                <NavLinks to='hero' smooth={true} offset={-90} onClick={isOpen? toggle : null }>
                     <img width="250px"
                         src={Logo}>
                     </img>
