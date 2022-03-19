@@ -12,11 +12,10 @@ import {
 
 const Sidebar = ({ isOpen, toggle }) => {
     return (
-        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <SidebarContainer className={(isOpen? "opened ": "closed ") + "overlay"} isOpen={isOpen} onClick={toggle}>
 
             <SidebarWrapper>
                 <SidebarMenu>
-
                     <SidebarLink to='about' smooth={true} offset={-75} onClick={toggle}>
                         About
                     </SidebarLink>
@@ -32,11 +31,12 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to='sponsors' smooth={true} offset={-75} onClick={toggle}>
                         Sponsors
                     </SidebarLink>
+                    <SidebarRoute to='/sponsor-us'>Sponsor Us</SidebarRoute>
 
                 </SidebarMenu>
-                <SideBtnWrap>
+                {/* <SideBtnWrap>
                     <SidebarRoute to='/sponsor-us'>Sponsor Us</SidebarRoute>
-                </SideBtnWrap>
+                </SideBtnWrap> */}
             </SidebarWrapper>
         </SidebarContainer>
     );
