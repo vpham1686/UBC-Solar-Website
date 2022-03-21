@@ -92,7 +92,7 @@ const SponsorSection = () => {
                     </DiamondText>
                     <DiamondContainer>
                         <FadeInLeftDiv>
-                        <img height='50%'
+                        <img width='150'
                              src={Daniel_Family_Foundation}>
                         </img>
                         </FadeInLeftDiv>
@@ -116,7 +116,7 @@ const SponsorSection = () => {
                         </img>
                         </FadeInRightDiv>
                         <FadeInRightDiv>
-                        <img width='75%'
+                        <img width='50%'
                             src={UBC_AMS}>
                         </img>
                         </FadeInRightDiv>
@@ -227,7 +227,7 @@ const SponsorSection = () => {
                         </img>
                         </FadeInRightDiv>
                         <FadeInRightDiv>
-                        <img width='75%'
+                        <img width='60%'
                             src={UBC_Physics_Astronomy}>
                         </img>
                         </FadeInRightDiv>
@@ -292,16 +292,6 @@ const SponsorSection = () => {
                         <FadeInLeftDiv>
                         <img width='75%'
                             src={TCI}>
-                        </img>
-                        </FadeInLeftDiv>
-                        <FadeInLeftDiv>
-                        <img width='75%'
-                            src={NOVA}>
-                        </img>
-                        </FadeInLeftDiv>
-                        <FadeInLeftDiv>
-                        <img width='75%'
-                            src={SW}>
                         </img>
                         </FadeInLeftDiv>
                         <FadeInLeftDiv>

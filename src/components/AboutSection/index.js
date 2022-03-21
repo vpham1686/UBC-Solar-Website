@@ -29,7 +29,7 @@ const AboutSection = () => {
                         
                             <VisibilitySensor partialVisibility offset={{ bottom: 100 }}>
                             {({ isVisible }) => (
-                                <div style={{ height: 130, fontSize: 50}} >
+                                <div style={{ height: 130, fontSize: 50 }} >
                                     {isVisible ? <CountUp end={71} duration={1.5} /> : null}
                                 </div>
                                 )}

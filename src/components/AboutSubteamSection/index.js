@@ -60,7 +60,7 @@ const AboutSubteamSection = () => {
                     ELECTRICAL TEAM
                 </ElectricalTitleText>
                 <ElectricalText>
-                The electrical division consists of four sub-teams: 
+                The electrical division consists of three sub-teams: 
                 <br></br>
                 Battery management systems, low voltage systems, and power electronics. 
                 <br></br>

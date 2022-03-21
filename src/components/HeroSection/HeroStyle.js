@@ -8,13 +8,13 @@ export const HeroContainer = styled.div`
     height: 84.4vh;
     position: relative;
     z-index: 3;
-    
-    @media screen and (max-width: 768px) {
-        zoom: 0.5;
-    }
 
-    @media screen and (max-width: 480px) {
-        zoom: 0.5;
+    @media screen and (max-width: 1200px) {
+        height: 65vh;
+    }
+        
+    @media screen and (max-width: 420px) {
+        height: 40vh;
     }
 `;
 
