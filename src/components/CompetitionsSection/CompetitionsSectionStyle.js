@@ -14,7 +14,7 @@ export const FadeInRightDiv = styled.div`
 
 export const CompetitionContainer = styled.div`
     background: #002145;
-    height: 90vh;
+    //height: 90vh;
     z-index: 5;
     position: relative;
     color: white;

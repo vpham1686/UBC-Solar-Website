@@ -73,7 +73,7 @@ export const NavNav = styled.nav`
         content: '.';
         color: transparent;
         background: #E5B13A;
-        height: 1px; 
+        height: 3px; 
     }
 
     &.stroke ul li a:hover:after {
