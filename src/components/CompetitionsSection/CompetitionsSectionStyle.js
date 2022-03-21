@@ -18,10 +18,18 @@ export const CompetitionContainer = styled.div`
     z-index: 5;
     position: relative;
     color: white;
-    
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 1200px) {
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 420px) {
+        height: 100vh;
+    }
     
 `;
 
@@ -29,6 +37,16 @@ export const CompetitionTextContainer = styled.div`
     height: 90vh;
     width: 50vw;
     padding: 5vw;
+
+    @media screen and (max-width: 1200px) {
+        width: 90vw;
+        height: 20vh;
+    }
+
+    @media screen and (max-width: 420px) {
+        width: 90vw;
+        height: 60vh;
+    }
 `;
 
 export const CompetitionTextTitle = styled.p`
@@ -45,4 +63,12 @@ export const CompetitionText = styled.p`
 export const CompetitionMap = styled.div`
     width: 100vw;
     padding: 5vw;
+
+    @media screen and (max-width: 1200px) {
+        width: 90vw;
+    }
+
+    @media screen and (max-width: 420px) {
+        
+    }
 `;

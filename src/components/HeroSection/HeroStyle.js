@@ -2,19 +2,16 @@ import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30px;
     height: 90vh;
     position: relative;
     z-index: 3;
-    
-    @media screen and (max-width: 768px) {
-        zoom: 0.5;
-    }
 
-    @media screen and (max-width: 480px) {
-        zoom: 0.5;
+    @media screen and (max-width: 1200px) {
+        height: 65vh;
+    }
+        
+    @media screen and (max-width: 420px) {
+        height: 40vh;
     }
 `;
 
@@ -27,6 +24,15 @@ export const HeroBackground = styled.div`
     width: 100%;
     overflow: hidden;
     padding-bottom: 56.25%;
+
+    @media screen and (max-width: 1200px) {
+        
+    
+    }
+        
+    @media screen and (max-width: 420px) {
+        
+    }
     
 `;
 

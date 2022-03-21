@@ -9,12 +9,14 @@ export const FooterContainer = styled.div`
     z-index: 3;
     justify-content: right;
 
-    @media screen and (max-width: 768px) {
-        zoom: 0.9;
+    @media screen and (max-width: 1200px) {
+        height: 15vh;
     }
-
-    @media screen and (max-width: 480px) {
-        zoom: 0.65;
+        
+    @media screen and (max-width: 420px) {
+        height: 30vh;
+        flex-direction: column;
+        align-items: center;
     }
 `;
 
@@ -26,6 +28,14 @@ export const FooterSocialsWrapper = styled.div`
 export const FooterSocials = styled.div`
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+        
+    }
+        
+    @media screen and (max-width: 420px) {
+        justify-content: flex-start;
+    }
 `;
 
 export const FooterTitle = styled.p`
@@ -36,6 +46,14 @@ export const FooterTitle = styled.p`
     margin-top: auto;
     margin-bottom: 0rem;
     font-weight: bold;
+
+    @media screen and (max-width: 1200px) {
+        
+    }
+        
+    @media screen and (max-width: 420px) {
+        font-size: 1.5rem;
+    }
 `;
 
 export const FooterSubtitle = styled.p`
@@ -44,12 +62,30 @@ export const FooterSubtitle = styled.p`
     color: #fff;
     font-size: 0.77rem;
     margin-top: -0.5rem;
+
+    @media screen and (max-width: 1200px) {
+        
+    }
+        
+    @media screen and (max-width: 420px) {
+        font-size: 0.8rem;
+        padding-top: 8px;
+    }
 `;
 
 export const FooterContactWrapper = styled.div`
     background: #000;
     width: 25%;
     display: grid;
+
+    @media screen and (max-width: 1200px) {
+        
+    }
+        
+    @media screen and (max-width: 420px) {
+        width: 50%;
+        justify-content: center;
+    }
 `;
 
 export const FooterContactUs = styled.p`
@@ -60,6 +96,16 @@ export const FooterContactUs = styled.p`
     font-weight: bold;
     margin-top: 2.5rem;
     margin-bottom: -1rem;
+
+    @media screen and (max-width: 1200px) {
+        
+    }
+        
+    @media screen and (max-width: 420px) {
+        justify-content: center;
+        margin-top: 4vh;
+        margin-bottom: auto;
+    }
 `;
 
 export const FooterContactEmail = styled.p`
@@ -68,6 +114,16 @@ export const FooterContactEmail = styled.p`
     color: #fff;
     font-size: 0.77rem;
     margin-top: -1.4rem;
+
+    @media screen and (max-width: 1200px) {
+        
+    }
+        
+    @media screen and (max-width: 420px) {
+        justify-content: flex-start;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 `;
 
 export const FooterInstagram = styled.div`
@@ -75,12 +131,12 @@ export const FooterInstagram = styled.div`
     max-width: 5%;
     padding: 0.4rem 0.2rem;
 
-    @media screen and (max-width: 768px) {
-        padding: 0.4rem 1rem;
+    @media screen and (max-width: 1200px) {
+        padding: 0 1rem;
     }
-
-    @media screen and (max-width: 480px) {
-        padding: 0.2rem 1rem;
+        
+    @media screen and (max-width: 420px) {
+        
     }
 `;
 
@@ -89,12 +145,12 @@ export const FooterFacebook = styled.div`
     max-width: 5%;
     padding: 0.4rem 0.2rem;
 
-    @media screen and (max-width: 768px) {
-        padding: 0.4rem 1rem;
+    @media screen and (max-width: 1200px) {
+        padding: 0 1rem;
     }
-
-    @media screen and (max-width: 480px) {
-        padding: 0.2rem 1rem;
+        
+    @media screen and (max-width: 420px) {
+        
     }
 `;
 
@@ -103,12 +159,12 @@ export const FooterLinkedIn = styled.div`
     max-width: 5%;
     padding: 0.4rem 0.2rem;
 
-    @media screen and (max-width: 768px) {
-        padding: 0.4rem 1rem;
+    @media screen and (max-width: 1200px) {
+        padding: 0 1rem;
     }
-
-    @media screen and (max-width: 480px) {
-        padding: 0.2rem 1rem;
+        
+    @media screen and (max-width: 420px) {
+        
     }
 `;
 
@@ -117,11 +173,11 @@ export const FooterYouTube = styled.div`
     max-width: 5%;
     padding: 0.4rem 0.2rem;
     
-    @media screen and (max-width: 768px) {
-        padding: 0.4rem 1rem;
+    @media screen and (max-width: 1200px) {
+        padding: 0 1rem;
     }
-
-    @media screen and (max-width: 480px) {
-        padding: 0.2rem 1rem;
+        
+    @media screen and (max-width: 420px) {
+        
     }
 `;

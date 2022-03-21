@@ -13,7 +13,7 @@ export const FadeInRightDiv = styled.div`
 `;
 
 export const AboutContainer = styled.div`
-    display: grid;
+    display: flex;
     background: #002145;
     height: 90vh;
     position: relative;
@@ -22,15 +22,29 @@ export const AboutContainer = styled.div`
     align-items: center;
     padding: 1rem;
     color: white;
+
+    @media screen and (max-width: 1200px) {
+        height: 120vh;
+    }
+
+    @media screen and (max-width: 420px) {
+        height: 140vh;
+    }
 `;
 
 export const AboutContentBox = styled.div`
     display: flex;
-    width: 80vw;
     height: 80%;
     border-radius: 10px;
     padding: 1rem;
-    justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 420px) {
+        
+    }
 `;
 
 export const AboutDescriptionContainer = styled.div`
@@ -39,6 +53,33 @@ export const AboutDescriptionContainer = styled.div`
     display: grid;
     height: 100%;
     padding: 0rem 1rem;
+    flex: 1;
+
+    @media screen and (max-width: 1200px) {
+        order: 2;
+        width: 90vw;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 420px) {
+        
+    }
+`;
+
+export const AboutPhotoContainer = styled.div`
+    display: flex;
+    border-radius: 25px;
+    flex: 2;
+
+    @media screen and (max-width: 1200px) {
+
+    }
+
+    @media screen and (max-width: 420px) {
+        
+    }
 `;
 
 export const AboutTitle = styled.p`
@@ -53,15 +94,17 @@ export const AboutDescription = styled.p`
     margin-top: -18vh;
     height: 100%;
     border-radius: 25px;
+
+    @media screen and (max-width: 1200px) {
+        padding: 125px 5px;
+    }
+
+    @media screen and (max-width: 420px) {
+        margin-top: -250px;
+    }
 `;
 
-export const AboutPhotoContainer = styled.div`
-    width: 75vmax;
-    display: flex;
-    border-radius: 25px;
-    justify-content: center;
-    margin-left: auto;
-`;
+
 
 export const AboutTeamPhoto = styled.div`
     border-radius: 10px;

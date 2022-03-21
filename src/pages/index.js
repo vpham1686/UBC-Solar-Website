@@ -23,8 +23,8 @@ const Home = () => {
             <Navbar toggle={toggle} />
             <HeroSection />
             <AboutSection />
-                <AboutSubteamSection />
-            <ProjectRevealSection />
+            <AboutSubteamSection />
+            {/* <ProjectRevealSection /> */}
             <ProjectSection />
             <CompetitionsSection />
             <SponsorSection />
