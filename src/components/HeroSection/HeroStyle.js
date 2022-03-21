@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
     display: flex;
-    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 84.4vh;
     position: relative;
     z-index: 3;
 
@@ -24,16 +27,8 @@ export const HeroBackground = styled.div`
     width: 100%;
     overflow: hidden;
     padding-bottom: 56.25%;
-
-    @media screen and (max-width: 1200px) {
-        
-    
-    }
-        
-    @media screen and (max-width: 420px) {
-        
-    }
-    
+    pointer-events: none;
+    cursor: default;
 `;
 
 export const VideoBackground = styled.video`

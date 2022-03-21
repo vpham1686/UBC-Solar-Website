@@ -4,17 +4,18 @@ import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
     background: #04112E;
-    height: 5rem;
+    height: 10%;
     display: flex;
     align-items: center;
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 1000;
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
+
 `;
 
 export const NavbarContainer = styled.div`
@@ -32,14 +33,52 @@ export const MobileIcon = styled.div`
     @media screen and (max-width: 768px) {
         display: block;
         position: absolute;
-        top: 0;
+        top: -13px;
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
         color: #fff;
-
     }
+`;
+
+export const NavNav = styled.nav`
+
+    ul li a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    ul li a,
+    ul li a:after,
+    ul li a:before {
+        transition: all .5s;
+    }
+
+    ul li a:hover {
+        color: #E5B13A;
+    }
+
+    &.stroke ul li a {
+        position: relative;
+    }
+
+    &.stroke ul li a:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: #E5B13A;
+        height: 1px; 
+    }
+
+    &.stroke ul li a:hover:after {
+        width: 100%;
+      }
 `;
 
 export const NavMenu = styled.ul`
@@ -47,6 +86,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
+    margin: 0;
 
     @media screen and (max-width: 768px) {
         display: none;

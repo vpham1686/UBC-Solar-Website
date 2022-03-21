@@ -3,17 +3,17 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 //Carousel Imports//
-import Daybreak1 from '../../assets/carousel/Daybreak1.JPG';
-import Daybreak2 from '../../assets/carousel/Daybreak2.JPG';
+import Daybreak1 from '../../assets/carousel/Daybreak1.jpg';
+import Daybreak2 from '../../assets/carousel/Daybreak2.jpg';
 import Daybreak3 from '../../assets/carousel/Daybreak3.jpg';
-import Daybreak4 from '../../assets/carousel/Daybreak4.JPG';
-import Daybreak5 from '../../assets/carousel/Daybreak5.JPG';
+import Daybreak4 from '../../assets/carousel/Daybreak4.jpg';
+import Daybreak5 from '../../assets/carousel/Daybreak5.jpg';
 
-import Raven1 from '../../assets/carousel/Raven1.JPG';
+import Raven1 from '../../assets/carousel/Raven1.jpg';
 import Raven2 from '../../assets/carousel/Raven2.jpg';
 import Raven3 from '../../assets/carousel/Raven3.jpg';
 import Raven4 from '../../assets/carousel/Raven4.jpg';
-import Raven5 from '../../assets/carousel/Raven5.JPG';
+import Raven5 from '../../assets/carousel/Raven5.jpg';
 import RavenColor from '../../assets/carousel/RavenColor.png';
 
 //Component Icons Import//
