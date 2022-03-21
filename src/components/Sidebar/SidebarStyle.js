@@ -15,6 +15,10 @@ export const SidebarContainer = styled.div`
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
 
+        @media screen and (min-width: 769px) {
+            display: none;
+        }
+
         nav {
             width: 100%;
         }
@@ -72,19 +76,19 @@ export const SidebarContainer = styled.div`
         }
 
         .slidein:nth-of-type(2) {
-            animation: slide-in 0.4s linear 0.4s both;
+            animation: slide-in 0.4s linear 0.3s both;
         }
 
         .slidein:nth-of-type(3) {
-            animation: slide-in 0.4s linear 0.6s both;
+            animation: slide-in 0.4s linear 0.4s both;
         }
 
         .slidein:nth-of-type(4) {
-            animation: slide-in 0.4s linear 0.8s both;
+            animation: slide-in 0.4s linear 0.5s both;
         }
 
         .slidein:nth-of-type(5) {
-            animation: slide-in 0.4s linear 1.0s both;
+            animation: slide-in 0.4s linear 0.6s both;
         }
 
         @keyframes slide-in {
@@ -101,7 +105,7 @@ export const SidebarContainer = styled.div`
     }
 
     &.closed {
-        transition: all 0.4s ease-in-out;
+        transition: all 0.1s ease-in-out;
         transform: translateX(-100vw);
 
         nav {
