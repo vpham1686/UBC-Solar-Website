@@ -6,11 +6,10 @@ import {
     Nav, 
     NavbarContainer,  
     MobileIcon, 
+    NavNav,
     NavMenu, 
     NavItem, 
     NavLinks,
-    NavBtn,
-    NavBtnLink, 
 } from './NavStyle';
 
 const Navbar = ({ isOpen, toggle }) => {
@@ -28,21 +27,22 @@ const Navbar = ({ isOpen, toggle }) => {
                     <MobileIcon onClick={toggle}>
                         <Hamburger color="#FFFFFF" rounded toggled={isOpen} toggle={toggle}/>
                     </MobileIcon>
-
-                    <NavMenu>
-                        <NavItem>
-                            <NavLinks to='about' smooth={true} offset={-75}>About</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='projects' smooth={true} offset={-75}>Projects</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='competitions' smooth={true} offset={-75}>Competitions</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to='sponsors' smooth={true} offset={-75}>Sponsors</NavLinks>
-                        </NavItem>
-                    </NavMenu>
+                    <NavNav className="stroke">
+                        <NavMenu>
+                            <NavItem>
+                                <NavLinks to='about' smooth={true} offset={-75}>About</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to='projects' smooth={true} offset={-75}>Projects</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to='competitions' smooth={true} offset={-75}>Competitions</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to='sponsors' smooth={true} offset={-75}>Sponsors</NavLinks>
+                            </NavItem>
+                        </NavMenu>
+                    </NavNav>
 
                     {/* <NavBtn>
                         <NavBtnLink to='/sponsor-us' smooth={true} offset={-75}>Sponsor Us</NavBtnLink>
