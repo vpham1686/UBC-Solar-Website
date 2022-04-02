@@ -15,31 +15,32 @@ export const FadeInRightDiv = styled.div`
 //EXTEND THIS AREA "HEIGHT" WHEN ADDING IN THE STORY FOR DAYBREAK AND RAVEN.//
 export const ProjectContainer = styled.div`
     display: grid;
-    grid-template-columns: 95vw;
+    grid-template-columns: 100vw;
     background: #002145;
-    height: 200vh;
+    height: 1800px;
     position: relative;
     z-index: 5;
     text-align: center;
     color: white;
 
     @media screen and (max-width: 1200px) {
-        height: 185vh;
+        height: 3000px;
     }
 
     @media screen and (max-width: 420px) {
-        height: 240vh;
+        height: 3500px;
     }
 `;
 
 export const DaybreakContainer = styled.div`
     background: #002145;
-    height: 80vh;
+    height: 500px;
     display: flex;
 
     @media screen and (max-width: 1200px) {
         flex-direction: column;
         align-items: center;
+        margin-bottom: auto;
     }
 
     @media screen and (max-width: 420px) {
@@ -99,7 +100,7 @@ export const DaybreakAeroshellText = styled.p`
 
 export const RavenContainer = styled.div`
     background: #002145;
-    height: 80vh;
+    height: 500px;
     display: flex;
 
     @media screen and (max-width: 1200px) {
@@ -162,3 +163,40 @@ export const RavenAeroshellText = styled.p`
     font-size: 1rem;
 `;
 
+export const DaybreakStoryContainer = styled.div`
+    width: 90vw;
+    justify-self: center;
+
+    @media screen and (max-width: 1200px) {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    @media screen and (max-width: 420px) {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+`;
+
+export const DaybreakStoryText = styled.p`
+
+`;
+
+export const RavenStoryContainer = styled.div`
+    width: 90vw;
+    justify-self: center;
+
+    @media screen and (max-width: 1200px) {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    @media screen and (max-width: 420px) {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+`;
+
+export const RavenStoryText = styled.p`
+
+`;

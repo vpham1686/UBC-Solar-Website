@@ -1,5 +1,4 @@
 import React from 'react';
-import Video from '../../videos/DaybreakVideo.mp4';
 import {
     ProjectRevealContainer,
     ProjectRevealBackground,
@@ -11,7 +10,7 @@ const ProjectRevealSection = () => {
 
         <ProjectRevealContainer>
             <ProjectRevealBackground>
-                <VideoBackground autoPlay loop muted src={Video} type='video/mp4' />
+                {/* <VideoBackground autoPlay loop muted src={Video} type='video/mp4' /> */}
             </ProjectRevealBackground>
         </ProjectRevealContainer>
     );

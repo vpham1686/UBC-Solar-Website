@@ -1,9 +1,7 @@
 import React from 'react';
-import Video from '../../videos/SolarClip.mp4';
 import {
     HeroContainer,
     HeroBackground,
-    VideoBackground,
 } from './HeroStyle';
 
 const HeroSection = () => {

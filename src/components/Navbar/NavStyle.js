@@ -4,7 +4,7 @@ import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
     background: #04112E;
-    height: 10%;
+    height: 80px;
     display: flex;
     align-items: center;
     font-size: 1rem;
@@ -120,7 +120,7 @@ export const NavBtn = styled.nav`
     }
 `;
 
-export const NavBtnLink = styled(LinkRouter)`
+export const NavBtnLink = styled.div`
     border-radius: 50px;
     background: #01bf71;
     white-space: nowrap;

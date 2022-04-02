@@ -31,6 +31,8 @@ import {
     DaybreakBatteryText,
     DaybreakPowerText,
     DaybreakAeroshellText,
+    DaybreakStoryContainer,
+    DaybreakStoryText,
 
     RavenContainer,
     RavenTextContainer,
@@ -39,6 +41,8 @@ import {
     RavenBatteryText,
     RavenPowerText,
     RavenAeroshellText,
+    RavenStoryContainer,
+    RavenStoryText,
 
     FadeInLeftDiv,
     FadeInRightDiv,
@@ -67,7 +71,7 @@ const ProjectSection = () => {
                         </img>
                         <DaybreakPowerText>
                         NGM SC-M150 in-hub BLDC (3.75kW)
-                        4m^2 of Sunpower E60 solar cells
+                        4m<sup>2</sup> of Sunpower E60 solar cells
                         </DaybreakPowerText>
                         <img height='75px' width='75px'
                             src={BatteryIcon}>
@@ -93,6 +97,19 @@ const ProjectSection = () => {
                 </DaybreakImage>
             </DaybreakContainer>
 
+            <DaybreakStoryContainer>
+                <DaybreakStoryText>
+                    Daybreak set out to build on the knowledge gained from Raven and learn from previous mistakes. 
+                    Daybreak's design started in 2018, spearheaded by a starkly bright and dedicated group of students. 
+                    Daybreak's design focused on being more efficient, more competitive, and is going to be the team's first car to officially race in competition. 
+                    All aspects of Daybreak are an improvement over Raven, including a more efficient battery, aeroshell, and an improved manufacturing process.
+                    The team started to manufacture Daybreak in 2019, with eyes set firmly on the 2020 American Solar Challenge. 
+                    Due to the global pandemic however, the team was not able to attend competition in 2020 or 2021. 
+                    With the return to in-person work in 2022, the team is back in full swing and is in the final stages of getting Daybreak race ready for the American Solar Challenge 2022!
+                </DaybreakStoryText>
+            </DaybreakStoryContainer>
+
+
             <RavenContainer>
                 <FadeInLeftDiv>
                 <RavenTextContainer>
@@ -110,7 +127,7 @@ const ProjectSection = () => {
                             src={BatteryIcon}>
                         </img>
                         <RavenPowerText>
-                            6m^2 of Sunpower C60 solar cells
+                            6m<sup>2</sup> of Sunpower C60 solar cells
                         </RavenPowerText>
                         <img height='75px' width='75px'
                             src={BatteryIcon}>
@@ -134,6 +151,18 @@ const ProjectSection = () => {
                     </Carousel>
                 </RavenImage>
             </RavenContainer>
+
+            <RavenStoryContainer>
+                <RavenStoryText>
+                Starting in 2007, a group of asportational students from the University of British Columbia set out to design a solar powered vehicle to compete in the American Solar Challenge. 
+                However, given their lack of experience and structure, they unfortunately never got to finish the car, but as pioneers of UBC Solar, they laid out much of the groundwork for what this design team has become. 
+                Fast forward to 2013, a new group of students – led by Dave Schwartz – restored the passion the initial group of students once had, with much determination and hardwork they were successful in finishing the design and manufacturing of our solar car, Raven. 
+                With much eagerness and excitement, the team took Raven to the Formula Sun Grand Prix in 2017, a competition where all the best solar teams in North America competed for the most laps around the track. Despite their best efforts, an electrical issue prevented the team from showcasing Raven in all its glory in the competition. 
+                However, this did not detour or take away the valuable learning experiences the team gained from the moment project Raven was started to the last day of the competition. 
+                Geared up with these experiences, a new generation of the team arose, with new goals to build upon the foundation previous design teams laid out, marking the beginning of Daybreak.
+                </RavenStoryText>
+            </RavenStoryContainer>
+
         </ProjectContainer>
     );
 };

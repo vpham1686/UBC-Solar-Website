@@ -16,7 +16,7 @@ export const AboutSubteamContainer = styled.div`
     display: grid;
     grid-template-columns: 50vw 50vw;
     background: #002145;
-    height: 180vh;
+    height: 1500px;
     position: relative;
     z-index: 5;
     text-align: center;
@@ -25,35 +25,35 @@ export const AboutSubteamContainer = styled.div`
     @media screen and (max-width: 1200px) {
         display: flex;
         flex-direction: column;
-        height: 250vh;
+        height: 2800px;
     }
 
     @media screen and (max-width: 420px) {
-        height: 330vh;
+        height: 2400px;
     }
 `;
 
 export const AboutMechanicalContainer = styled.div`
     background: #002145;
-    height: 80vh;
+    height: 700px;
     width: 45vw;
     border-radius: 10px;
     margin-left: 2.5vw;
-    margin-top: 5vh;
+    margin-top: 50px;
     display: grid;
 
     @media screen and (max-width: 1200px) {
-        height: 60vh;
+        height: 25%;
         width: 90vw;
         margin-left: auto;
         margin-right: auto;
     }
 
     @media screen and (max-width: 420px) {
-        height: 80vh;
+        height: 25%;
         width: 90vw;
-        grid-template-rows: 10vh 10vh;
-0   }
+        padding-bottom: 50px;
+    }
 `;
 
 export const MechanicalTitleText = styled.p`
@@ -88,7 +88,7 @@ export const MechanicalImage = styled.div`
     margin-top: auto;
     display: flex;
     justify-content: center;
-    padding: 5vh;
+    padding: 50px;
 
     @media screen and (max-width: 1200px) {
         
@@ -102,23 +102,23 @@ export const MechanicalImage = styled.div`
 
 export const AboutElectricalContainer = styled.div`
     background: #002145;
-    height: 80vh;
+    height: 700px;
     width: 45vw;
     border-radius: 10px;
-    margin-top: 5vh;
+    margin-top: 50px;
     display: grid;
 
     @media screen and (max-width: 1200px) {
-        height: 60vh;
+        height: 25%;
         width: 90vw;
         margin-left: auto;
         margin-right: auto;
     }
 
     @media screen and (max-width: 420px) {
-        height: 80vh;
+        height: 25%;
         width: 90vw;
-        grid-template-rows: 10vh 10vh;
+        padding-bottom: 50px;
     }
 `;
 
@@ -146,7 +146,7 @@ export const ElectricalImage = styled.div`
     margin-top: auto;
     display: flex;
     justify-content: center;
-    padding: 5vh;
+    padding: 50px;
 
     @media screen and (max-width: 1200px) {
         
@@ -160,23 +160,24 @@ export const ElectricalImage = styled.div`
 
 export const AboutSoftwareContainer = styled.div`
     background: #002145;
-    height: 80vh;
+    height: 700px;
     width: 45vw;
     border-radius: 10px;
     margin-left: 2.5vw;
     display: grid;
 
     @media screen and (max-width: 1200px) {
-        height: 60vh;
+        height: 25%;
         width: 90vw;
         margin-left: auto;
         margin-right: auto;
     }
 
     @media screen and (max-width: 420px) {
-        height: 80vh;
+        height: 25%;
         width: 90vw;
-        grid-template-rows: 10vh 10vh;
+        padding-bottom: 50px;
+        padding-top: 50px;
     }
 `;
 
@@ -204,7 +205,7 @@ export const SoftwareImage = styled.div`
     margin-top: auto;
     display: flex;
     justify-content: center;
-    padding: 5vh;
+    padding: 50px;
 
     @media screen and (max-width: 1200px) {
         
@@ -218,22 +219,22 @@ export const SoftwareImage = styled.div`
 
 export const AboutBusinessContainer = styled.div`
     background: #002145;
-    height: 80vh;
+    height: 700px;
     width: 45vw;
     border-radius: 10px;
     display: grid;
 
     @media screen and (max-width: 1200px) {
-        height: 60vh;
+        height: 25%;
         width: 90vw;
         margin-left: auto;
         margin-right: auto;
     }
 
     @media screen and (max-width: 420px) {
-        height: 80vh;
+        height: 25%;
         width: 90vw;
-        grid-template-rows: 10vh 10vh;
+        padding-top: 50px;
     }
 `;
 
@@ -261,7 +262,7 @@ export const BusinessImage = styled.div`
     margin-top: auto;
     display: flex;
     justify-content: center;
-    padding: 5vh;
+    padding: 50px;
 
     @media screen and (max-width: 1200px) {
         

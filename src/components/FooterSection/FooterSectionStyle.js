@@ -3,18 +3,20 @@ import styled from 'styled-components';
 export const FooterContainer = styled.div`
     display: flex;
     background: #000;
-    height: 25vh;
+    height: 150px;
     width: 100%;
     position: relative;
     z-index: 3;
     justify-content: right;
 
     @media screen and (max-width: 1200px) {
-        height: 15vh;
+        height: 250px;
+        flex-direction: column;
+        align-items: center;
     }
         
     @media screen and (max-width: 420px) {
-        height: 30vh;
+        height: 250px;
         flex-direction: column;
         align-items: center;
     }
@@ -30,7 +32,7 @@ export const FooterSocials = styled.div`
     justify-content: center;
 
     @media screen and (max-width: 1200px) {
-        
+        justify-content: center;
     }
         
     @media screen and (max-width: 420px) {
@@ -64,7 +66,8 @@ export const FooterSubtitle = styled.p`
     margin-top: -0.5rem;
 
     @media screen and (max-width: 1200px) {
-        
+        font-size: 0.8rem;
+        padding-top: 8px;
     }
         
     @media screen and (max-width: 420px) {
@@ -79,7 +82,8 @@ export const FooterContactWrapper = styled.div`
     display: grid;
 
     @media screen and (max-width: 1200px) {
-        
+        width: 50%;
+        justify-content: center;
     }
         
     @media screen and (max-width: 420px) {
@@ -98,12 +102,14 @@ export const FooterContactUs = styled.p`
     margin-bottom: -1rem;
 
     @media screen and (max-width: 1200px) {
-        
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: auto;
     }
         
     @media screen and (max-width: 420px) {
         justify-content: center;
-        margin-top: 4vh;
+        margin-top: 25px;
         margin-bottom: auto;
     }
 `;
@@ -116,7 +122,9 @@ export const FooterContactEmail = styled.p`
     margin-top: -1.4rem;
 
     @media screen and (max-width: 1200px) {
-        
+        justify-content: flex-start;
+        margin-top: auto;
+        margin-bottom: auto;
     }
         
     @media screen and (max-width: 420px) {
@@ -132,7 +140,7 @@ export const FooterInstagram = styled.div`
     padding: 0.4rem 0.2rem;
 
     @media screen and (max-width: 1200px) {
-        padding: 0 1rem;
+        padding: 0 15px;
     }
         
     @media screen and (max-width: 420px) {
@@ -146,7 +154,7 @@ export const FooterFacebook = styled.div`
     padding: 0.4rem 0.2rem;
 
     @media screen and (max-width: 1200px) {
-        padding: 0 1rem;
+        padding: 0 15px;
     }
         
     @media screen and (max-width: 420px) {
@@ -160,7 +168,7 @@ export const FooterLinkedIn = styled.div`
     padding: 0.4rem 0.2rem;
 
     @media screen and (max-width: 1200px) {
-        padding: 0 1rem;
+        padding: 0 15px;
     }
         
     @media screen and (max-width: 420px) {
@@ -174,7 +182,7 @@ export const FooterYouTube = styled.div`
     padding: 0.4rem 0.2rem;
     
     @media screen and (max-width: 1200px) {
-        padding: 0 1rem;
+        padding: 0 15px;
     }
         
     @media screen and (max-width: 420px) {

@@ -15,7 +15,7 @@ export const FadeInRightDiv = styled.div`
 export const AboutContainer = styled.div`
     display: flex;
     background: #002145;
-    height: 90vh;
+    height: 800px;
     position: relative;
     z-index: 5;
     justify-content: center;
@@ -24,11 +24,11 @@ export const AboutContainer = styled.div`
     color: white;
 
     @media screen and (max-width: 1200px) {
-        height: 120vh;
+        height: 1100px;
     }
 
     @media screen and (max-width: 420px) {
-        height: 140vh;
+        height: 1000px;
     }
 `;
 
@@ -91,7 +91,7 @@ export const AboutTitle = styled.p`
 export const AboutDescription = styled.p`
     font-size: 1rem;
     display: flex;
-    margin-top: -18vh;
+    margin-top: -180px;
     height: 100%;
     border-radius: 25px;
 

@@ -4,16 +4,16 @@ export const HeroContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 83.7vh;
+    height: 600px;
     position: relative;
     z-index: 3;
 
     @media screen and (max-width: 1200px) {
-        height: 65vh;
+        height: 500px;
     }
         
     @media screen and (max-width: 420px) {
-        height: 40vh;
+        height: 250px;
     }
 `;
 
@@ -29,9 +29,9 @@ export const HeroBackground = styled.div`
     cursor: default;
 `;
 
-export const VideoBackground = styled.video`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-`;
+// export const VideoBackground = styled.video`
+//     width: 100%;
+//     height: 100%;
+//     -o-object-fit: cover;
+//     object-fit: cover;
+// `;

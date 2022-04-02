@@ -15,17 +15,17 @@ export const FadeInRightDiv = styled.div`
 export const SponsorContainer = styled.div`
     display: grid;
     background: white;
-    height: 375vh;
+    height: 3200px;
     position: relative;
     z-index: 3;
     justify-content: center;
 
     @media screen and (max-width: 1200px) {
-        height: 250vh;
+        height: 2900px;
     }
         
     @media screen and (max-width: 420px) {
-        height: 460vh;
+        height: 3200px;
     }
     
 `;
@@ -34,7 +34,7 @@ export const SponsorTitle = styled.p`
     font-size: 3rem;
     font-weight: bold;
     z-index: 2;
-    margin-top: 7vh;
+    margin-top: 70px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: auto;
@@ -42,10 +42,10 @@ export const SponsorTitle = styled.p`
 
 export const SponsorAppreciation = styled.p`
     font-size: 1rem;
-    margin-top: auto;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 5vh;
+    padding-bottom: 50px;
     width: 60%;
     text-align: center;
 
@@ -62,14 +62,15 @@ export const TierContainer = styled.div`
     width: 100%;
     display: grid;
     justify-content: center;
-    grid-template-rows: 40vh 60vh 65vh 60vh 120vh;
+    margin-bottom: auto;
+    grid-template-rows: 300px 550px 600px 550px 900px;
 
     @media screen and (max-width: 1200px) {
-        grid-template-rows: 25vh 35vh 37.5vh 55vh 65vh;
+        grid-template-rows: 250px 350px 400px 550px 700px;
     }
     
     @media screen and (max-width: 420px) {
-        grid-template-rows: 30vh 75vh 80vh 90vh 120vh;
+        grid-template-rows: 250px 450px 550px 600px 700px;
     }
 `;
 
@@ -81,72 +82,72 @@ export const DiamondContainer = styled.div`
 export const GoldContainer = styled.div`
     display: grid;
     grid-template-columns: 15vw 15vw 15vw 15vw;
-    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-rows: 250px 250px 250px 250px;
     align-items: center;
     justify-content: center;
     
     @media screen and (max-width: 1200px) {
     grid-template-columns: 20vw 20vw 20vw 20vw;
-    grid-template-rows: 15vh 15vh 15vh 15vh;
+    grid-template-rows: 150px 150px 150px 150px;
     }
 
     @media screen and (max-width: 420px) {
     grid-template-columns: 33vw 33vw 33vw;
-    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-rows: 150px 150px 150px 150px;
     }
 `;
 
 export const SilverContainer = styled.div`
     display: grid;
     grid-template-columns: 15vw 15vw 15vw 15vw;
-    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-rows: 200px 200px 200px 200px;
     align-items: center;
     justify-content: center;
 
     @media screen and (max-width: 1200px) {
     grid-template-columns: 20vw 20vw 20vw 20vw;
-    grid-template-rows: 15vh 15vh 15vh 15vh;
+    grid-template-rows: 150px 150px 150px 150px;
     }
     
     @media screen and (max-width: 420px) {
     grid-template-columns: 33vw 33vw 33vw;
-    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-rows: 150px 150px 150px 150px;
     }
 `;
 
 export const BronzeContainer = styled.div`
     display: grid;
     grid-template-columns: 15vw 15vw 15vw 15vw;
-    grid-template-rows: 15vh 15vh 15vh 15vh;
+    grid-template-rows: 150px 150px 150px 150px;
     align-items: center;
     justify-content: center;
 
     @media screen and (max-width: 1200px) {
     grid-template-columns: 20vw 20vw 20vw 20vw;
-    grid-template-rows: 15vh 15vh 15vh 15vh;
+    grid-template-rows: 150px 150px 150px 150px;
     }
     
     @media screen and (max-width: 420px) {
     grid-template-columns: 33vw 33vw 33vw;
-    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-rows: 150px 150px 150px 150px;
     }
 `;
 
 export const FriendContainer = styled.div`
     display: grid;
     grid-template-columns: 15vw 15vw 15vw 15vw;
-    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-rows: 225px 225px 225px 225px;
     align-items: center;
     justify-content: center;
 
     @media screen and (max-width: 1200px) {
     grid-template-columns: 20vw 20vw 20vw 20vw;
-    grid-template-rows: 15vh 15vh 15vh 15vh 15vh;
+    grid-template-rows: 150px 150px 150px 150px;
     }
     
     @media screen and (max-width: 420px) {
     grid-template-columns: 33vw 33vw 33vw;
-    grid-template-rows: 25vh 25vh 25vh 25vh 25vh;
+    grid-template-rows: 150px 150px 150px 150px;
     }
 `;
 

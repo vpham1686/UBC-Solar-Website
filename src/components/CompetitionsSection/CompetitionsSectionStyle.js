@@ -14,7 +14,7 @@ export const FadeInRightDiv = styled.div`
 
 export const CompetitionContainer = styled.div`
     background: #002145;
-    //height: 90vh;
+    height: 900px;
     z-index: 5;
     position: relative;
     color: white;
@@ -25,27 +25,28 @@ export const CompetitionContainer = styled.div`
     @media screen and (max-width: 1200px) {
         justify-content: start;
         flex-direction: column;
+        height: 1000px;
     }
 
     @media screen and (max-width: 420px) {
-        height: 100vh;
+        height: 800px;
     }
     
 `;
 
 export const CompetitionTextContainer = styled.div`
-    height: 90vh;
+    height: 900px;
     width: 50vw;
     padding: 5vw;
 
     @media screen and (max-width: 1200px) {
         width: 90vw;
-        height: 20vh;
+        height: 300px;
     }
 
     @media screen and (max-width: 420px) {
         width: 90vw;
-        height: 60vh;
+        height: 600px;
     }
 `;
 
