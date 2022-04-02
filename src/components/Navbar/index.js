@@ -1,6 +1,5 @@
 import React from 'react';
 import { Squash as Hamburger } from 'hamburger-react'
-import { FaBars } from 'react-icons/fa';
 import Logo from '../../assets/images/Logo.png';
 import {
     Nav, 
@@ -10,6 +9,8 @@ import {
     NavMenu, 
     NavItem, 
     NavLinks,
+    NavBtn,
+    NavBtnLink,
 } from './NavStyle';
 
 const Navbar = ({ isOpen, toggle }) => {
@@ -44,9 +45,13 @@ const Navbar = ({ isOpen, toggle }) => {
                         </NavMenu>
                     </NavNav>
 
-                    {/* <NavBtn>
+                    {/*
+       z             <NavBtn>
+                    <a href='https://www.instagram.com/ubcsolar/' target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
                         <NavBtnLink to='/sponsor-us' smooth={true} offset={-75}>Sponsor Us</NavBtnLink>
-                    </NavBtn> */}
+                    </a>
+                    </NavBtn> 
+                    */}
 
                 </NavbarContainer>
             </Nav>

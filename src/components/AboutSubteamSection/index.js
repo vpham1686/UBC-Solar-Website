@@ -38,12 +38,8 @@ const AboutSubteamSection = () => {
                     MECHANICAL TEAM
                 </MechanicalTitleText>
                 <MechanicalText>
-                The mechanical division consists of four sub-teams:
-                <br></br>
-                Aeroshell, chassis, battery mechanics, and SSWAB (Suspension, Steering, Wheels & Braking)
-                <br></br>
-                <br></br>
-                They are responsible for designing the structural and aerodynamic components of the car, from first sketches to fabrication.
+                Our mechanical division works hard to design all of the structural and aerodynamic components of our vehicles. 
+                Through use of softwares such as SolidWorks and Ansys, they design critical components of our vehicle such as the chassis, aeroshell, and suspension components. 
                 </MechanicalText>
                 <MechanicalImage>
                 <img height='75%' width='75%' style={{borderRadius: '10px'}}
@@ -60,13 +56,9 @@ const AboutSubteamSection = () => {
                     ELECTRICAL TEAM
                 </ElectricalTitleText>
                 <ElectricalText>
-                The electrical division consists of three sub-teams: 
-                <br></br>
-                Battery management systems, low voltage systems, and power electronics. 
-                <br></br>
-                <br></br>
-                They focus on the design of the car's battery systems and solar panel installation.
-
+                Our electrical division works on anything that has power on the car which consists of the battery management systems, low voltage systems, and power electronics teams. 
+                They work on projects from displaying important information to the driver using screens to building custom battery packs for the car. 
+                They also build radio and cellular communication so that the ground team can review all the data from the car while it drives. 
                 </ElectricalText>
                 <ElectricalImage>
                 <img height='75%' width='75%' style={{borderRadius: '10px'}}
@@ -83,12 +75,8 @@ const AboutSubteamSection = () => {
                     SOFTWARE TEAM
                 </SoftwareTitleText>
                 <SoftwareText>
-                    The software division consists of categories ranging from:
-                    <br></br>
-                    Embedded, simulation, and telemetry.
-                    <br></br>
-                    <br></br>
-                    They are in charge of calculating the car's performance in certain conditions and integrating the systems with mechanical components.
+                Our software division is broken down into simulating the characteristics of our solar car, telemetry, and writing embedded firmware for the various microcontrollers in the vehicle. 
+                They play a crucial role in ensuring responsive driver control of the car, as well as determining the best race plan heading into competition.
                 </SoftwareText>
                 <SoftwareImage>
                 <img height='75%' width='75%' style={{borderRadius: '10px'}}
@@ -105,12 +93,8 @@ const AboutSubteamSection = () => {
                     BUSINESS TEAM
                 </BusinessTitleText>
                 <BusinessText>
-                    The business division consists of categories such as:
-                    <br></br>
-                    Outreach, events, and marketing.
-                    <br></br>
-                    <br></br>
-                    They are in charge of working closely with team leads and company representatives to strengthen UBC Solar's financial stability and team branding.
+                Our business team consists of outreach, events, and marketing components. 
+                They are in charge of working closely with team leads, company representatives, and industry leaders to strengthen UBC Solar’s financial support, reputation, team branding, and maintaining the UBC Solar website.
                 </BusinessText>
                 <BusinessImage>
                 <img height='75%' width='75%' style={{borderRadius: '10px'}}
