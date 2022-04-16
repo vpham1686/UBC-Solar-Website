@@ -45,13 +45,13 @@ const Navbar = ({ isOpen, toggle }) => {
                         </NavMenu>
                     </NavNav>
 
-                    {/*
-       z             <NavBtn>
-                    <a href='https://www.instagram.com/ubcsolar/' target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+                    
+                    <NavBtn>
+                    <a href='https://drive.google.com/file/d/1E40IN7ro8bu5YJBgEa-oPB5TQk6k-lW0/view?usp=sharing' target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
                         <NavBtnLink to='/sponsor-us' smooth={true} offset={-75}>Sponsor Us</NavBtnLink>
                     </a>
                     </NavBtn> 
-                    */}
+                    
 
                 </NavbarContainer>
             </Nav>
