@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react'
 import Logo from '../../assets/NavigationBarImages/Logo.png';
 import {
@@ -17,7 +18,7 @@ const Navbar = ({ isOpen, toggle }) => {
     return (
         <>
             <Nav className='/'>
-                <NavLinks to='hero' smooth={true} offset={-90} onClick={isOpen? toggle : null }>
+                <NavLinks to='home'>
                     <img width="250px"
                         src={Logo}>
                     </img>
@@ -31,16 +32,16 @@ const Navbar = ({ isOpen, toggle }) => {
                     <NavNav className="stroke">
                         <NavMenu>
                             <NavItem>
-                                <NavLinks to='about' smooth={true} offset={-75}>About</NavLinks>
+                                <NavLinks to='projects'>Projects</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='projects' smooth={true} offset={-75}>Projects</NavLinks>
+                                <NavLinks to='competitions'>Competitions</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='competitions' smooth={true} offset={-75}>Competitions</NavLinks>
+                                <NavLinks to='team-roles'>Team Roles</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='sponsors' smooth={true} offset={-75}>Sponsors</NavLinks>
+                                <NavLinks to='recruitment'>Join Us</NavLinks>
                             </NavItem>
                         </NavMenu>
                     </NavNav>

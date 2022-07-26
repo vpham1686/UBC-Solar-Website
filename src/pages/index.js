@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import HomePage from '../components/HomePage';
 import NavigationBar from '../components/NavigationBar';
 import Sidebar from '../components/Sidebar';
+import HomePage from '../components/HomePage';
+import ProjectPage from '../components/ProjectPage';
+import CompetitionPage from '../components/CompetitionPage';
+import TeamRolePage from '../components/TeamRolePage';
+import RecruitmentPage from '../components/JoinUsPage';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +18,12 @@ const Home = () => {
         <>
             <NavigationBar isOpen={isOpen }toggle={toggle} />
             <Sidebar isOpen={isOpen} toggle={toggle} />
-            <HomePage />
+            <HomePage />   
+            <ProjectPage />
+            <CompetitionPage />
+            <TeamRolePage />
+            <RecruitmentPage />
+            
         </>
     );
 };

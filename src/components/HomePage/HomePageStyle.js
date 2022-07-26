@@ -13,8 +13,18 @@ import styled, { keyframes } from 'styled-components';
 // `;
 
 export const HomeContainer = styled.div`
+    background: #111111;
+    height: 80px;
+`;
+
+export const HomeHeroContainer = styled.div`
 
 `;
+
+export const HomeMottoContainer = styled.div`
+
+`;
+
 // export const AboutContainer = styled.div`
 //     display: flex;
 //     background: #002145;
