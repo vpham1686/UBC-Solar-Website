@@ -18,7 +18,7 @@ const Navbar = ({ isOpen, toggle }) => {
     return (
         <>
             <Nav className='/'>
-                <NavLinks to='home'>
+                <NavLinks to='/'>
                     <img width="250px"
                         src={Logo}>
                     </img>
