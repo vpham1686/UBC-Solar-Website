@@ -16,13 +16,13 @@ const Home = () => {
     
     return (
         <>
-            <NavigationBar isOpen={isOpen }toggle={toggle} />
-            <Sidebar isOpen={isOpen} toggle={toggle} />
+            {/* <NavigationBar isOpen={isOpen }toggle={toggle} /> Removed to disable double layering navigation bars. */}
+            {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
             <HomePage />   
-            <ProjectPage />
+            {/* <ProjectPage />
             <CompetitionPage />
             <TeamRolePage />
-            <RecruitmentPage />
+            <RecruitmentPage /> */}
             
         </>
     );

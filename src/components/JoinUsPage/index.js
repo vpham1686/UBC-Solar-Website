@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import NavigationBar from '../../components/NavigationBar';
+import Sidebar from '../../components/Sidebar';
 
 import {
     RecruitmentContainer,
@@ -6,10 +8,23 @@ import {
 } from './RecruitmentStyle';
 
 const RecruitmentPage = () => {
-    return (
-        <RecruitmentContainer>
+    const [isOpen, setIsOpen] = useState(false);
 
-        </RecruitmentContainer>
+    const toggle = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <>
+        <NavigationBar isOpen={isOpen }toggle={toggle} />
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <div>
+            <RecruitmentContainer>
+                Recruitment.
+            </RecruitmentContainer>
+        </div>
+
+        </>
     );
 };
 

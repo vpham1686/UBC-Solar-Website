@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import NavigationBar from '../../components/NavigationBar';
+import Sidebar from '../../components/Sidebar';
 
 import {
     TeamRoleContainer,
@@ -6,10 +8,23 @@ import {
 } from './TeamRoleStyle';
 
 const TeamRolePage = () => {
-    return (
-        <TeamRoleContainer>
+    const [isOpen, setIsOpen] = useState(false);
 
-        </TeamRoleContainer>
+    const toggle = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <>
+        <NavigationBar isOpen={isOpen }toggle={toggle} />
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <div>
+            <TeamRoleContainer>
+                Team Roles.
+            </TeamRoleContainer>
+        </div>
+
+        </>
     );
 };
 

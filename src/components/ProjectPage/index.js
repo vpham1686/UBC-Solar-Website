@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import NavigationBar from '../../components/NavigationBar';
+import Sidebar from '../../components/Sidebar';
 
 import {
     ProjectPageContainer,
@@ -6,10 +8,23 @@ import {
 } from './ProjectPageStyle';
 
 const ProjectPage = () => {
-    return (
-        <ProjectPageContainer>
+    const [isOpen, setIsOpen] = useState(false);
 
-        </ProjectPageContainer>
+    const toggle = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <>
+        <NavigationBar isOpen={isOpen }toggle={toggle} />
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <div>
+            <ProjectPageContainer>
+                Projects.
+            </ProjectPageContainer>
+        </div>
+
+        </>
     );
 };
 

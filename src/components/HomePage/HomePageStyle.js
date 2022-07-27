@@ -13,8 +13,7 @@ import styled, { keyframes } from 'styled-components';
 // `;
 
 export const HomeContainer = styled.div`
-    background: #111111;
-    height: 80px;
+    
 `;
 
 export const HomeHeroContainer = styled.div`
