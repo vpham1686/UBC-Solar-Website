@@ -3,7 +3,7 @@ import { Link as LinkRouter } from 'react-router-dom';
 
 export const Nav = styled.nav`
     background: #04112E;
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
     font-size: 1rem;

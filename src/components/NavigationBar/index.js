@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react'
-import Logo from '../../assets/NavigationBarImages/Logo.png';
+import Logo from '../../assets/NavigationBarImages/Logo.svg';
 import {
     Nav, 
     NavbarContainer,  
@@ -19,7 +19,7 @@ const Navbar = ({ isOpen, toggle }) => {
         <>
             <Nav className='/'>
                 <NavLinks to='/'>
-                    <img width="250px"
+                    <img width="250vw"
                         src={Logo}>
                     </img>
                 </NavLinks>
