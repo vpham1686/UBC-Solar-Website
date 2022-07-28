@@ -1,23 +1,13 @@
 import styled, { keyframes } from 'styled-components';
-// import { fadeInLeft, fadeInRight } from 'react-animations';
-
-// const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
-// const fadeInRightAnimation = keyframes`${fadeInRight}`;
-
-// export const FadeInLeftDiv = styled.div`
-//   animation: 3s ${fadeInLeftAnimation};
-// `;
-
-// export const FadeInRightDiv = styled.div`
-//     animation: 3s ${fadeInRightAnimation};
-// `;
 
 export const HomeContainer = styled.div`
     
 `;
 
 export const HomeHeroContainer = styled.div`
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const HeroPhoto = styled.img`
@@ -25,6 +15,25 @@ export const HeroPhoto = styled.img`
     width: 100%;
     object-fit: cover;
     display: block;
+`;
+
+export const ArrowLevitate = styled.div`
+    position: absolute;
+    display: flex;    
+
+    z-index: 5;
+    color: #E5B13A;
+
+    animation-name: ArrowLevitate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    @keyframes ArrowLevitate {
+        from { transform: translate(0, 0px);  }
+        65%  { transform: translate(0, 15px); }
+        to   { transform: translate(0,-0px);  }
+    }
 `;
 
 export const HomeMottoContainer = styled.div`
@@ -65,6 +74,27 @@ export const MottoBlue = styled.p`
     opacity: 100%;
     text-align: right;
     padding-right: 5%;
+`;
+
+export const HomeMeetContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+`;
+
+export const MeetImageContainer = styled.img`
+    height: 45%;
+    width: 75%;
+    object-fit: cover;
+    display: block;
+    padding: 50px;
+    padding-left: 25px;
+`;
+
+export const MeetDescriptionContainer = styled.div`
+    background: rgba(0, 33, 69, 0.75);
+    padding: 50px;
+    width: 25%;
 `;
 
 // export const AboutContainer = styled.div`

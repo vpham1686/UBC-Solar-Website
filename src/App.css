@@ -1,8 +1,5 @@
-/*
 html {
     scroll-behavior: smooth;
 }
 
-^
-REPLACED BY THE OFFSET STUFF IN NAVBAR INDEX.JS AND NAVLINK SMOOTH PROPERTIES
-*/
+/* This smooth scroll is nice for the home page arrow. */
