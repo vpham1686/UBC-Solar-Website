@@ -24,8 +24,9 @@ export const ArrowLevitate = styled.div`
     z-index: 5;
     color: #E5B13A;
 
+    // Animation
     animation-name: ArrowLevitate;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 
@@ -95,6 +96,36 @@ export const MeetDescriptionContainer = styled.div`
     background: rgba(0, 33, 69, 0.75);
     padding: 50px;
     width: 25%;
+`;
+
+export const HomeNewsfeedContainer = styled.div`
+
+`;
+
+export const HomeSponsorsContainer = styled.div`
+    height: 5000px;
+`;
+
+export const DiamondContainer = styled.div`
+    border-top: 5px solid;
+    border-color: #70D1F4;
+    display: grid;
+`;
+
+export const GoldContainer = styled.div`
+
+`;
+
+export const SilverContainer = styled.div`
+
+`;
+
+export const BronzeContainer = styled.div`
+
+`;
+
+export const FriendContainer = styled.div`
+
 `;
 
 // export const AboutContainer = styled.div`
