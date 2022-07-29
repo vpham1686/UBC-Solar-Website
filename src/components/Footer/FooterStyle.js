@@ -95,9 +95,10 @@ export const BottomFooterEmail = styled.p`
     margin: 1em 0px 0.5em 0px;
 `;
 
-// export const IconContainer = styled.div`
-//     text-align: center;
-// `;
+export const Icon = styled.img`
+    height: 35px;
+    margin: 0px 5px 0px 5px;
+`;
 
 export const BottomFooterCopyright = styled.p`
     margin: 0;

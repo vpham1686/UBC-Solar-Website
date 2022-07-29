@@ -11,8 +11,14 @@ import {
     FooterLine,
     BottomFooterContainer,
     BottomFooterEmail,
-    BottomFooterCopyright
+    BottomFooterCopyright,
+    Icon
 } from './FooterStyle';
+
+import FacebookLogo from '../../assets/FooterIcons/Facebook.svg';
+import InstagramLogo from '../../assets/FooterIcons/Instagram.svg';
+import LinkedInLogo from '../../assets/FooterIcons/LinkedIn.svg';
+import YouTubeLogo from '../../assets/FooterIcons/YouTube.svg';
 
 const Footer = () => {
 
@@ -30,15 +36,13 @@ const Footer = () => {
                         </Button>
                     </ButtonContainer>
                 </TopFooterContainer>
-                <FooterLine/>
+                <FooterLine />
                 <BottomFooterContainer>
                     <BottomFooterEmail>manager@ubcsolar.com</BottomFooterEmail>
-                    <div>
-                        <p style={{ display: 'inline' }}>icon1</p>
-                        <p style={{ display: 'inline' }}>icon2</p>
-                        <p style={{ display: 'inline' }}>icon3</p>
-                        <p style={{ display: 'inline' }}>icon4</p>
-                    </div>
+                    <Icon src={FacebookLogo} />
+                    <Icon src={InstagramLogo} />
+                    <Icon src={LinkedInLogo} />
+                    <Icon src={YouTubeLogo} />
                     <BottomFooterCopyright>@Copyright. All rights reserved.</BottomFooterCopyright>
                 </BottomFooterContainer>
             </FooterContainer>
