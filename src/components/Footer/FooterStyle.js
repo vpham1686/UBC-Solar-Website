@@ -58,7 +58,7 @@ export const ButtonContainer = styled.div`
     }
 `;
 
-export const Button = styled.div`
+export const ButtonChild = styled.div`
     border: 1px solid white;
     width: 160px;
     text-align: center;
@@ -74,6 +74,18 @@ export const Button = styled.div`
         margin: auto;
     }
 `;
+
+export const Button = (props) => {
+    return (
+        <ButtonContainer>
+            <Link href={props.link} target="blank">
+                <ButtonChild>
+                    <ButtonText>{props.buttonText}</ButtonText>
+                </ButtonChild>
+            </Link>
+        </ButtonContainer>
+    );
+}
 
 export const ButtonText = styled.h1`
     margin: 0;
@@ -95,7 +107,7 @@ export const BottomFooterEmail = styled.p`
     margin: 1em 0px 0.5em 0px;
 `;
 
-export const Icon = styled.img`
+export const IconImage = styled.img`
     height: 35px;
     margin: 0px 5px 0px 5px;
 `;
@@ -105,7 +117,17 @@ export const BottomFooterCopyright = styled.p`
     font-size: 10px;
 `;
 
+export const Link = styled.a`
+    text-decoration: none;
+`;
 
+export const Icon = (props) => {
+    return (
+        <Link href={props.link} target="blank">
+            <IconImage src={props.icon} />
+        </Link>
+    );
+}
 
 
 
