@@ -6,6 +6,11 @@ export const RecruitmentContainer = styled.div`
     grid-template-columns: 30% 70%;
     height: 90vh;
     width: 100%;
+
+    @media screen and (max-width: 750px) {
+        grid-template-areas: "content";
+        grid-template-columns: 100%;
+    }
 `;
 
 export const RecruitmentContentContainer = styled.div`
@@ -43,6 +48,10 @@ export const RecruitmentImageContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 750px) {
+        display: none;
+    }
 `;
 
 export const RecruitmentImage = styled.img`

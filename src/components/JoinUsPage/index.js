@@ -8,7 +8,6 @@ import {
     RecruitmentImage,
     RecruitmentContentHeaderText,
     Button,
-    ButtonText,
     RecruitmentContentChild,
     RecruitmentContentParagraph,
 } from './RecruitmentStyle';
