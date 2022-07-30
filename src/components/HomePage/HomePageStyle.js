@@ -110,21 +110,75 @@ export const DiamondContainer = styled.div`
     border-top: 5px solid;
     border-color: #70D1F4;
     display: grid;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5vh;
+`;
+
+export const DiamondSponsors = styled.img`
+    display: flex;
+    justify-self: center;
 `;
 
 export const GoldContainer = styled.div`
+    border-top: 5px solid;
+    border-color: #FFD700;
+    display: grid;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5vh;
+`;
+
+export const GoldSponsors = styled.img`
 
 `;
 
 export const SilverContainer = styled.div`
+    border-top: 5px solid;
+    border-color: #A9A9A9;
+    display: grid;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5vh;
+`;
+
+export const SilverSponsors = styled.img`
 
 `;
 
 export const BronzeContainer = styled.div`
+    border-top: 5px solid;
+    border-color: #CD7F32;
+    display: grid;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5vh;
+`;
+
+export const BronzeSponsors = styled.img`
 
 `;
 
-export const FriendContainer = styled.div`
+export const SupporterContainer = styled.div`
+    border-top: 5px solid;
+    border-color: #black;
+    display: grid;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5vh;
+
+    grid-template-columns: 15vw 15vw 15vw 15vw;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const SupporterSponsors = styled.img`
 
 `;
 
