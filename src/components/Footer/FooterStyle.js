@@ -95,7 +95,7 @@ export const ButtonText = styled.h1`
 `;
 
 export const FooterLine = styled.hr`
-    border: 1px solid white;
+    border: 0.5px solid white;
     width: 95%;
 `;
 
