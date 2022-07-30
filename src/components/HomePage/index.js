@@ -144,7 +144,7 @@ const HomePage = () => {
 
                     <SupporterContainer>
                         <p style={{ color: '#000000', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Diamond</p>
-                            <SponsorContainer
+                        
                             <SupporterSponsors
                                 src={ DanielFamilyFoundation } />
                             <SupporterSponsors
