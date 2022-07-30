@@ -10,7 +10,6 @@ import Footer from '../Footer';
 
 const CompetitionPage = () => {
     const [isOpen, setIsOpen] = useState(false);
-
     const toggle = () => {
         setIsOpen(!isOpen);
     };

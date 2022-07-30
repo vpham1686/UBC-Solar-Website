@@ -32,16 +32,16 @@ const Navbar = ({ isOpen, toggle }) => {
                     <NavNav className="stroke">
                         <NavMenu>
                             <NavItem>
-                                <NavLinks to='projects'>Projects</NavLinks>
+                                <NavLinks to='/projects'>Projects</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='competitions'>Competitions</NavLinks>
+                                <NavLinks to='/competitions'>Competitions</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='team-roles'>Team Roles</NavLinks>
+                                <NavLinks to='/team-roles'>Team Roles</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='recruitment'>Join Us</NavLinks>
+                                <NavLinks to='/recruitment'>Join Us</NavLinks>
                             </NavItem>
                         </NavMenu>
                     </NavNav>
