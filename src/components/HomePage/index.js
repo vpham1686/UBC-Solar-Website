@@ -3,8 +3,8 @@ import NavigationBar from '../../components/NavigationBar';
 import Sidebar from '../../components/Sidebar';
 import { FaAngleDown } from 'react-icons/fa';
 
-import HeroImage from '../../assets/HomePageImages/HeroImage.svg';
-import TeamPhoto from '../../assets/HomePageImages/HomeTeamPhoto.svg';
+import HeroImage from '../../assets/HomePageImages/HeroImage.png';
+import TeamPhoto from '../../assets/HomePageImages/HomeTeamPhoto.png';
 
 import Footer from '../Footer';
 //Sponsors//
@@ -24,6 +24,7 @@ import {
     MottoBlueContainer,
     MottoBlue,
 
+    Anchor,
     HomeMeetContainer,
     MeetImageContainer,
     MeetDescriptionContainer,
@@ -74,9 +75,8 @@ const HomePage = () => {
                         src={ HeroImage }>
                     </HeroPhoto>
 
-                    <ArrowLevitate>
-                    <FaAngleDown size="80px" cursor="pointer"
-                        onClick={({ target })=>window.scrollTo( 0, 1750 )}/>
+                    <ArrowLevitate to='meet'>
+                    <FaAngleDown size="80px" cursor="pointer" ></FaAngleDown>
                     </ArrowLevitate>
 
                 </HomeHeroContainer>
@@ -96,8 +96,9 @@ const HomePage = () => {
                     </MottoBlueContainer>
                 </HomeMottoContainer>
 
-
+                    <Anchor className='meet'></Anchor>
                     <h1 style={{ fontSize: '40px', fontWeight: 'bold', textAlign: 'center', margin: '0', paddingTop: '10px', marginBottom: 'auto' }}>Meet the Team</h1>
+                    
                     <HomeMeetContainer>
                     <MeetImageContainer src={ TeamPhoto } />
                         
