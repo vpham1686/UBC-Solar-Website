@@ -103,7 +103,7 @@ export const HomeNewsfeedContainer = styled.div`
 `;
 
 export const HomeSponsorsContainer = styled.div`
-    height: 5000px;
+
 `;
 
 export const DiamondContainer = styled.div`
@@ -131,8 +131,15 @@ export const GoldContainer = styled.div`
     padding-bottom: 5vh;
 `;
 
-export const GoldSponsors = styled.img`
+export const GoldSponsorContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(1, 25vh);
+`;
 
+export const GoldSponsors = styled.img`
+    margin: 0 auto; //Centering Image
+    height: 10vw;
 `;
 
 export const SilverContainer = styled.div`
@@ -145,8 +152,15 @@ export const SilverContainer = styled.div`
     padding-bottom: 5vh;
 `;
 
-export const SilverSponsors = styled.img`
+export const SilverSponsorContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(1, 25vh);
+`;
 
+export const SilverSponsors = styled.img`
+    margin: 0 auto; //Centering Image
+    height: 10vw;
 `;
 
 export const BronzeContainer = styled.div`
@@ -159,28 +173,39 @@ export const BronzeContainer = styled.div`
     padding-bottom: 5vh;
 `;
 
-export const BronzeSponsors = styled.img`
+export const BronzeSponsorContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(1, 25vh);
+`;
 
+export const BronzeSponsors = styled.img`
+    margin: 0 auto; //Centering Image
+    height: 10vw;
 `;
 
 export const SupporterContainer = styled.div`
     border-top: 5px solid;
-    border-color: #black;
+    border-color: #000000;
     display: grid;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 5vh;
+`;
 
-    grid-template-columns: 15vw 15vw 15vw 15vw;
-    grid-template-rows: 25vh 25vh 25vh 25vh;
-    align-items: center;
-    justify-content: center;
+export const SupporterSponsorContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(1, 25vh);
 `;
 
 export const SupporterSponsors = styled.img`
-
+    margin: 0 auto; //Centering Image
+    height: 10vw;
 `;
+
+
 
 // export const AboutContainer = styled.div`
 //     display: flex;

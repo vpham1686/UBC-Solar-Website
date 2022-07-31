@@ -6,6 +6,7 @@ import { FaAngleDown } from 'react-icons/fa';
 import HeroImage from '../../assets/HomePageImages/HeroImage.svg';
 import TeamPhoto from '../../assets/HomePageImages/HomeTeamPhoto.svg';
 
+import Footer from '../Footer';
 //Sponsors//
 
 import DanielFamilyFoundation from '../../assets/Sponsors/DanielFamilyFoundation.svg';
@@ -32,14 +33,24 @@ import {
     HomeSponsorsContainer,
     DiamondContainer,
     DiamondSponsors,
+    
     GoldContainer,
+    GoldSponsorContainer,
     GoldSponsors,
+    
     SilverContainer,
+    SilverSponsorContainer,
     SilverSponsors,
+    
     BronzeContainer,
+    BronzeSponsorContainer,
     BronzeSponsors,
+
     SupporterContainer,
+    SupporterSponsorContainer,
     SupporterSponsors,
+
+
 
 } from './HomePageStyle';
 
@@ -55,7 +66,6 @@ const HomePage = () => {
         <NavigationBar isOpen={ isOpen }toggle={ toggle } />
         <Sidebar isOpen={ isOpen } toggle={ toggle } />
 
-        <div>
 
             <HomeContainer>
 
@@ -66,7 +76,7 @@ const HomePage = () => {
 
                     <ArrowLevitate>
                     <FaAngleDown size="80px" cursor="pointer"
-                        onClick={({ target })=>window.scrollTo( 0, 1900 )}/>
+                        onClick={({ target })=>window.scrollTo( 0, 1750 )}/>
                     </ArrowLevitate>
 
                 </HomeHeroContainer>
@@ -87,7 +97,7 @@ const HomePage = () => {
                 </HomeMottoContainer>
 
 
-                    <h1 style={{ fontSize: '40px', fontWeight: 'bold', textAlign: 'center', margin: '0'}}>Meet the Team</h1>
+                    <h1 style={{ fontSize: '40px', fontWeight: 'bold', textAlign: 'center', margin: '0', paddingTop: '10px', marginBottom: 'auto' }}>Meet the Team</h1>
                     <HomeMeetContainer>
                     <MeetImageContainer src={ TeamPhoto } />
                         
@@ -125,26 +135,69 @@ const HomePage = () => {
                     </DiamondContainer>
                     
                     <GoldContainer>
-                        <p style={{ color: '#FFD700', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Diamond</p>
+                        <p style={{ color: '#FFD700', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Gold</p>
+                        <GoldSponsorContainer>
                             <GoldSponsors
                                 src={ DanielFamilyFoundation } />
+                            <GoldSponsors
+                                src={ DanielFamilyFoundation } />
+                            <GoldSponsors
+                                src={ DanielFamilyFoundation } />
+                            <GoldSponsors
+                                src={ DanielFamilyFoundation } />
+                            <GoldSponsors
+                                src={ DanielFamilyFoundation } />
+                            <GoldSponsors
+                                src={ DanielFamilyFoundation } />
+                            <GoldSponsors
+                                src={ DanielFamilyFoundation } />    
+                        </GoldSponsorContainer>
                     </GoldContainer>
 
                     <SilverContainer>
-                        <p style={{ color: '#A9A9A9', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Diamond</p>
+                        <p style={{ color: '#A9A9A9', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Silver</p>
+                        <SilverSponsorContainer>
                             <SilverSponsors
                                 src={ DanielFamilyFoundation } />
+                            <SilverSponsors
+                                src={ DanielFamilyFoundation } />
+                            <SilverSponsors
+                                src={ DanielFamilyFoundation } />
+                            <SilverSponsors
+                                src={ DanielFamilyFoundation } />
+                            <SilverSponsors
+                                src={ DanielFamilyFoundation } />
+                            <SilverSponsors
+                                src={ DanielFamilyFoundation } />
+                            <SilverSponsors
+                                src={ DanielFamilyFoundation } />    
+                        </SilverSponsorContainer>
                     </SilverContainer>
                     
                     <BronzeContainer>
-                        <p style={{ color: '#CD7F32', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Diamond</p>
+                        <p style={{ color: '#CD7F32', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Bronze</p>
+                        <BronzeSponsorContainer>
                             <BronzeSponsors
                                 src={ DanielFamilyFoundation } />
+                            <BronzeSponsors
+                                src={ DanielFamilyFoundation } />
+                            <BronzeSponsors
+                                src={ DanielFamilyFoundation } />
+                            <BronzeSponsors
+                                src={ DanielFamilyFoundation } />
+                            <BronzeSponsors
+                                src={ DanielFamilyFoundation } />
+                            <BronzeSponsors
+                                src={ DanielFamilyFoundation } />
+                            <BronzeSponsors
+                                src={ DanielFamilyFoundation } />    
+                        </BronzeSponsorContainer>
                     </BronzeContainer>
 
                     <SupporterContainer>
-                        <p style={{ color: '#000000', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Diamond</p>
-                        
+
+                        <p style={{ color: '#000000', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Supporter</p>
+                        <SupporterSponsorContainer>
                             <SupporterSponsors
                                 src={ DanielFamilyFoundation } />
                             <SupporterSponsors
@@ -153,13 +206,21 @@ const HomePage = () => {
                                 src={ DanielFamilyFoundation } />
                             <SupporterSponsors
                                 src={ DanielFamilyFoundation } />
+                            <SupporterSponsors
+                                src={ DanielFamilyFoundation } />
+                            <SupporterSponsors
+                                src={ DanielFamilyFoundation } />
+                            <SupporterSponsors
+                                src={ DanielFamilyFoundation } />    
+                        </SupporterSponsorContainer>
                     </SupporterContainer>
+
+
                 </HomeSponsorsContainer>
 
             </HomeContainer>
             
-        </div>
-
+            <Footer/>
         </>
     );
 };
