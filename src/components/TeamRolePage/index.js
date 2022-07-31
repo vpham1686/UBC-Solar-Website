@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import NavigationBar from '../../components/NavigationBar';
 import Sidebar from '../../components/Sidebar';
 
+import Footer from '../Footer';
+
 import {
     TeamRoleContainer,
 
@@ -18,12 +20,11 @@ const TeamRolePage = () => {
         <>
         <NavigationBar isOpen={isOpen }toggle={toggle} />
         <Sidebar isOpen={isOpen} toggle={toggle} />
-        <div>
             <TeamRoleContainer>
                 Team Roles.
             </TeamRoleContainer>
-        </div>
 
+            <Footer/>
         </>
     );
 };
