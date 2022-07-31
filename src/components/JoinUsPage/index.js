@@ -12,7 +12,7 @@ import {
     RecruitmentContentParagraph,
 } from './RecruitmentStyle';
 import Footer from '../Footer';
-import TeamPicture from '../../assets/RecruitmentImages/Team.svg';
+import TeamPicture from '../../assets/RecruitmentImages/RecruitmentPageImage.png';
 
 const RecruitmentPage = () => {
     const [isOpen, setIsOpen] = useState(false);

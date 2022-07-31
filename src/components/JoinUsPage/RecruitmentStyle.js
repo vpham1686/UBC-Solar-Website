@@ -43,7 +43,6 @@ export const RecruitmentContentParagraph = styled.div`
 
 export const RecruitmentImageContainer = styled.div`
     max-height: 700px;
-    wdith: 100%;
     grid-area: image;
     display: flex;
     justify-content: center;
