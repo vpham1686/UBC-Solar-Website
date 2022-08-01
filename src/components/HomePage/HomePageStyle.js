@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { Link as LinkScroll } from 'react-scroll';
 
 export const HomeContainer = styled.div`
     
@@ -17,7 +18,7 @@ export const HeroPhoto = styled.img`
     display: block;
 `;
 
-export const ArrowLevitate = styled.div`
+export const ArrowLevitate = styled(LinkScroll)`
     position: absolute;
     display: flex;    
 
@@ -75,6 +76,13 @@ export const MottoBlue = styled.p`
     opacity: 100%;
     text-align: right;
     padding-right: 5%;
+`;
+
+export const Anchor = styled.div`
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -60px;
 `;
 
 export const HomeMeetContainer = styled.div`

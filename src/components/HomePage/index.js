@@ -7,51 +7,40 @@ import HeroImage from '../../assets/HomePageImages/HeroImage.png';
 import TeamPhoto from '../../assets/HomePageImages/HomeTeamPhoto.png';
 
 import Footer from '../Footer';
-//Sponsors//
 
+//Sponsors//
 import DanielFamilyFoundation from '../../assets/Sponsors/DanielFamilyFoundation.svg';
 
 import {
     HomeContainer,
-    
     HomeHeroContainer,
     HeroPhoto,
     ArrowLevitate,
-
     HomeMottoContainer,
     MottoYellowContainer,
     MottoYellow,
     MottoBlueContainer,
     MottoBlue,
-
+    Anchor,
     HomeMeetContainer,
     MeetImageContainer,
     MeetDescriptionContainer,
-
     HomeNewsfeedContainer,
-
     HomeSponsorsContainer,
     DiamondContainer,
     DiamondSponsors,
-    
     GoldContainer,
     GoldSponsorContainer,
     GoldSponsors,
-    
     SilverContainer,
     SilverSponsorContainer,
     SilverSponsors,
-    
     BronzeContainer,
     BronzeSponsorContainer,
     BronzeSponsors,
-
     SupporterContainer,
     SupporterSponsorContainer,
     SupporterSponsors,
-
-
-
 } from './HomePageStyle';
 
 const HomePage = () => {
@@ -66,41 +55,33 @@ const HomePage = () => {
         <NavigationBar isOpen={ isOpen }toggle={ toggle } />
         <Sidebar isOpen={ isOpen } toggle={ toggle } />
 
-
             <HomeContainer>
-
                 <HomeHeroContainer>
                     <HeroPhoto
                         src={ HeroImage }>
                     </HeroPhoto>
-
-                    <ArrowLevitate>
-                    <FaAngleDown size="80px" cursor="pointer"
-                        onClick={({ target })=>window.scrollTo( 0, 1750 )}/>
+                    <ArrowLevitate to='meet'>
+                    <FaAngleDown size="80px" cursor="pointer" ></FaAngleDown>
                     </ArrowLevitate>
-
                 </HomeHeroContainer>
-
-
+                
                 <HomeMottoContainer>
                     <MottoYellowContainer>
                         <MottoYellow>
                             Solar Powered,
                         </MottoYellow>
                     </MottoYellowContainer>
-
                     <MottoBlueContainer>
                         <MottoBlue>
                             Student Driven.
                         </MottoBlue>
                     </MottoBlueContainer>
                 </HomeMottoContainer>
-
-
+                    
+                    <Anchor className='meet'></Anchor>
                     <h1 style={{ fontSize: '40px', fontWeight: 'bold', textAlign: 'center', margin: '0', paddingTop: '10px', marginBottom: 'auto' }}>Meet the Team</h1>
-                    <HomeMeetContainer>
+                <HomeMeetContainer>
                     <MeetImageContainer src={ TeamPhoto } />
-                        
                     <MeetDescriptionContainer>
                         <p style={{ color: 'white' }}>UBC Solar is an engineering design team that consists 
                         dedicated students ranging from programs such as engineering, business, and sciences. 
@@ -115,25 +96,20 @@ const HomePage = () => {
                     </MeetDescriptionContainer>
                 </HomeMeetContainer>
 
-                
                 <HomeNewsfeedContainer>
                     
 
 
                 </HomeNewsfeedContainer>
-
-
+                
                 <HomeSponsorsContainer>
-
                     <h1 style={{ fontSize: '40px', fontWeight: 'bold', textAlign: 'center', marginBottom: '0px' }}>Sponsors</h1>
                     <p style={{ fontSize: '20px', textAlign: 'center', marginTop: '0', marginBottom: '50px' }}>UBC Solar would like to thank all of our sponsors for helping the team achieve our goals and enabling us to participate in competitions.</p>
-
                     <DiamondContainer>
                         <p style={{ color: '#70D1F4', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Diamond</p>
                         <DiamondSponsors
                             src={ DanielFamilyFoundation } />
                     </DiamondContainer>
-                    
                     <GoldContainer>
                         <p style={{ color: '#FFD700', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Gold</p>
                         <GoldSponsorContainer>
@@ -153,7 +129,6 @@ const HomePage = () => {
                                 src={ DanielFamilyFoundation } />    
                         </GoldSponsorContainer>
                     </GoldContainer>
-
                     <SilverContainer>
                         <p style={{ color: '#A9A9A9', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Silver</p>
                         <SilverSponsorContainer>
@@ -173,7 +148,6 @@ const HomePage = () => {
                                 src={ DanielFamilyFoundation } />    
                         </SilverSponsorContainer>
                     </SilverContainer>
-                    
                     <BronzeContainer>
                         <p style={{ color: '#CD7F32', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Bronze</p>
                         <BronzeSponsorContainer>
@@ -193,9 +167,7 @@ const HomePage = () => {
                                 src={ DanielFamilyFoundation } />    
                         </BronzeSponsorContainer>
                     </BronzeContainer>
-
                     <SupporterContainer>
-
                         <p style={{ color: '#000000', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Supporter</p>
                         <SupporterSponsorContainer>
                             <SupporterSponsors
@@ -214,10 +186,7 @@ const HomePage = () => {
                                 src={ DanielFamilyFoundation } />    
                         </SupporterSponsorContainer>
                     </SupporterContainer>
-
-
                 </HomeSponsorsContainer>
-
             </HomeContainer>
             
             <Footer/>
