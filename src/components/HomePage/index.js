@@ -3,8 +3,8 @@ import NavigationBar from '../../components/NavigationBar';
 import Sidebar from '../../components/Sidebar';
 import { FaAngleDown } from 'react-icons/fa';
 
-import HeroImage from '../../assets/HomePageImages/HeroImage.svg';
-import TeamPhoto from '../../assets/HomePageImages/HomeTeamPhoto.svg';
+import HeroImage from '../../assets/HomePageImages/HeroImage.png';
+import TeamPhoto from '../../assets/HomePageImages/HomeTeamPhoto.png';
 
 import Footer from '../Footer';
 //Sponsors//

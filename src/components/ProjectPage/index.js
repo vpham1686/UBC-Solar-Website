@@ -8,6 +8,9 @@ import {
     ProjectImage,
     ProjectMainImageContentContainer,
     ProjectMainImageContentText,
+    ProjectTextName,
+    ProjectTextYear,
+    LastProjectTextContainer
 
 } from './ProjectPageStyle';
 import ProjectPageRaven from '../../assets/ProjectPageImages/ProjectPageRaven.png';
@@ -31,14 +34,16 @@ const ProjectPage = () => {
                 </ProjectMainImageContainer>
                 <ProjectImage image={ProjectPageRaven} />
                 <ProjectTextContainer>
-                    <h1 style={{ marginBottom: '30px' }}>Brightside (2022- 20??)</h1>
+                    <ProjectTextName>Brightside</ProjectTextName>
+                    <ProjectTextYear>(2022 - 20??)</ProjectTextYear>
                     <p>Designed throughout the Daybreak eras, the solar car has been long anticipated. After the 2022 FSGP competition, the team realized that many of the Brightside
                         designs could be improved. Brightside design iterations are ongoing throughout the next 2022-2023 cycle and should be manufactured throughout 2023-2024 and
                         ready to race in FSGP and the American Solar Challenge by the summer of 2024.</p>
                 </ProjectTextContainer>
                 <ProjectImage image={ProjectPageRaven} />
                 <ProjectTextContainer>
-                    <h1 style={{ marginBottom: '30px' }}>Daybreak (2017 - 2022)</h1>
+                    <ProjectTextName>Daybreak</ProjectTextName>
+                    <ProjectTextYear>(2017 - 2022)</ProjectTextYear>
                     <p>Daybreak set out to build on the knowledge gained from Raven and learn from previous mistakes. Daybreak's design started in 2018, spearheaded by a starkly
                         bright and dedicated group of students. Daybreak's design focused on being more efficient, more competitive, and is going to be the team's first car to
                         officially race in competition. All aspects of Daybreak are an improvement over Raven, including a more efficient battery,
@@ -48,8 +53,9 @@ const ProjectPage = () => {
                         race ready for the American Solar Challenge 2022!</p>
                 </ProjectTextContainer>
                 <ProjectImage image={ProjectPageRaven} />
-                <ProjectTextContainer>
-                    <h1 style={{ marginBottom: '30px' }}>Raven (2007 - 2017)</h1>
+                <LastProjectTextContainer>
+                    <ProjectTextName>Raven</ProjectTextName>
+                    <ProjectTextYear>(2007 - 2017)</ProjectTextYear>
                     <p>Starting in 2007, a group of asportational students from the University of British Columbia set out to design a solar powered vehicle to compete in the
                         American Solar Challenge. However, given their lack of experience and structure, they unfortunately never got to finish the
                         car, but as pioneers of UBC Solar, they laid out much of the groundwork for what this design team has become. Fast forward to
@@ -62,7 +68,7 @@ const ProjectPage = () => {
                         with these experiences, a new generation of the team arose, with new goals to build upon the foundation previous design teams
                         laid out, marking the beginning of Daybreak.
                     </p>
-                </ProjectTextContainer>
+                </LastProjectTextContainer>
             </div>
             <Footer />
         </>
