@@ -9,6 +9,8 @@ import Footer from '../Footer';
 
 //Team Leads
 import Captain from '../../assets/TeamRoleImages/Captain.png';
+
+import Mechanical from '../../assets/TeamRoleImages/MechanicalExecutive.png';
 import Business from '../../assets/TeamRoleImages/BusinessTeamLead.png';
 import VehicleDynamics from '../../assets/TeamRoleImages/VehicleDynamicsTeamLead.png';
 
@@ -73,7 +75,7 @@ const TeamRolePage = () => {
                     </LeadProfileContainer>
 
                     <LeadProfileContainer>
-                            <LeadImage src={ Business }></LeadImage>
+                            <LeadImage src={ Business } style={{ opacity: '0' }} ></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
                                 I am in my third year of engineering at UBC, specializing in environmental engineering.
@@ -91,15 +93,15 @@ const TeamRolePage = () => {
                     </LeadProfileContainer>
 
                     <LeadProfileContainer>
-                            <LeadImage src={ Business }></LeadImage>
+                            <LeadImage src={ Mechanical }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
-                                I am in my third year of engineering at UBC, specializing in environmental engineering.
+                                I'm a fifth year Mechanical Engineering student specializing in Mechatronics. 
+                                Solar has been a formative part of my university experience since I joined in 2019 and has taught me much about leadership, project management, and mechanical and automotive design.
                                 <br></br><br></br>
-                                I have always had a passion for integrating business and engineering together.
-                                Behind every great engineering team are the finances to back up the cutting edge innovation. The business team works on website management, sponsor outreach,  community engagement, social media management, and financial allocation. 
-                                <br></br><br></br>
-                                The business team is vital to the team's success, as we need to finance solar electric cars costing ~$150,000.
+                                The mechanical team consists of the aeroshell, chassis, battery, and vehicle dynamics teams. 
+                                We work together to design and build all the physical components of the car so that it's safe, reliable, and performs well.
+                                The mechanical lead is mainly responsible for coordinating the efforts of the mechanical teams so that their systems integrate seamlessly and don't interfere with each other or any of the electrical teams.
                                 </LeadDescription>
                             </LeadDescriptionContainer>
                             <LeadInfoContainer>
