@@ -106,10 +106,6 @@ export const MeetDescriptionContainer = styled.div`
     width: 25%;
 `;
 
-export const HomeNewsfeedContainer = styled.div`
-
-`;
-
 export const HomeSponsorsContainer = styled.div`
 
 `;

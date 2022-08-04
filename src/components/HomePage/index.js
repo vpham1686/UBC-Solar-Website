@@ -95,12 +95,6 @@ const HomePage = () => {
                         fast-paced environment to produce the next generation of industry leaders.</p>
                     </MeetDescriptionContainer>
                 </HomeMeetContainer>
-
-                <HomeNewsfeedContainer>
-                    
-
-
-                </HomeNewsfeedContainer>
                 
                 <HomeSponsorsContainer>
                     <h1 style={{ fontSize: '40px', fontWeight: 'bold', textAlign: 'center', marginBottom: '0px' }}>Sponsors</h1>
