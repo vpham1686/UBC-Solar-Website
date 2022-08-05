@@ -12,10 +12,11 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroPhoto = styled.img`
-    height: 90%;
+    //Height is exact for fitting one section
+    height: 46vw;
     width: 100%;
     object-fit: cover;
-    display: block;
+    overflow: auto;
 `;
 
 export const ArrowLevitate = styled(LinkScroll)`

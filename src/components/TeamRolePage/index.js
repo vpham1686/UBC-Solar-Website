@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavigationBar from '../../components/NavigationBar';
 import Sidebar from '../../components/Sidebar';
 import { FaAngleDown } from 'react-icons/fa';
+import { Parallax } from 'react-scroll-parallax';
+import { ParallaxProvider } from "react-scroll-parallax";
 
 import TeamRoleHero from '../../assets/TeamRoleImages/TeamRoles.png';
 
@@ -31,6 +33,8 @@ import {
 
 } from './TeamRoleStyle';
 
+
+
 const TeamRolePage = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -38,10 +42,21 @@ const TeamRolePage = () => {
         setIsOpen(!isOpen);
     };
 
+    //Parallax
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+  
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
         <>
         <NavigationBar isOpen={isOpen }toggle={toggle} />
         <Sidebar isOpen={isOpen} toggle={toggle} />
+
 
             <TeamRoleContainer>
                 <HeroContainer>
@@ -51,7 +66,7 @@ const TeamRolePage = () => {
                         <ArrowLevitate to='team'>
                         <FaAngleDown size="80px" cursor="pointer" ></FaAngleDown>
                         </ArrowLevitate>
-                    </HeroContainer>
+                </HeroContainer>
 
                 <Anchor className='team'></Anchor>
                 <TeamLeadContainer>
@@ -133,12 +148,12 @@ const TeamRolePage = () => {
                             <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
-                                I am in my third year of engineering at UBC, specializing in Environmental Engineering.
+                                Ever since my first Javascript program back in 2015, I've loved the idea of using software to solve difficult problems. 
                                 <br></br><br></br>
-                                I have always had a passion for integrating business and engineering together.
-                                Behind every great engineering team are the finances to back up the cutting edge innovation. The business team works on website management, sponsor outreach,  community engagement, social media management, and financial allocation. 
+                                Having been a member since 2019, I can tell you that being part of the software team here at Solar means working on projects that involve a vast breadth of engineering and computing concepts far outside what is taught in the classroom in an environment that strongly encourages creativity and innovation. 
+                                Our work not only involves developing software that goes straight into the safety-critical control systems in our car but also software that extracts runtime information from our car and builds data-driven strategies from it. 
                                 <br></br><br></br>
-                                The business team is vital to the team's success, as we need to finance solar electric cars costing ~$150,000.
+                                Outside of Solar, you'll usually find me perfecting my jump-shot or losing skin at my local bouldering gym.
                                 </LeadDescription>
                             </LeadDescriptionContainer>
                             <LeadInfoContainer>
@@ -170,12 +185,12 @@ const TeamRolePage = () => {
                             <LeadImage src={ Business }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
-                                I am in my third year of engineering at UBC, specializing in environmental engineering.
+                                I am a third year Engineering Physics student at UBC. 
+                                I joined UBC Solar's Battery sub-team in my first year at university and have learned many technical and leadership skills in my journey from member to co-lead!
                                 <br></br><br></br>
-                                I have always had a passion for integrating business and engineering together.
-                                Behind every great engineering team are the finances to back up the cutting edge innovation. The business team works on website management, sponsor outreach,  community engagement, social media management, and financial allocation. 
-                                <br></br><br></br>
-                                The business team is vital to the team's success, as we need to finance solar electric cars costing ~$150,000.
+                                The Battery sub-team is responsible for the safe operation of the car's lithium-ion battery pack. 
+                                Our members ensure our battery can charge safely, and is at an optimal temperature, state of charge, and voltage to keep the rest of the car's electrical systems - from turn signals to main motor - running smoothly.
+                                Our team members come from diverse technical backgrounds, and tackle projects such as fault-detection firmware, current-sensing PCB design, and mechanical integration of the battery pack with the rest of the car.
                                 </LeadDescription>
                             </LeadDescriptionContainer>
                             <LeadInfoContainer>

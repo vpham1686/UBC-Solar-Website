@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavigationBar from '../../components/NavigationBar';
 import Sidebar from '../../components/Sidebar';
 import { FaAngleDown } from 'react-icons/fa';
@@ -50,13 +50,23 @@ const HomePage = () => {
         setIsOpen( !isOpen );
     };
 
+    //Parallax
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+  
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+  
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
         <>
         <NavigationBar isOpen={ isOpen }toggle={ toggle } />
         <Sidebar isOpen={ isOpen } toggle={ toggle } />
 
             <HomeContainer>
-                <HomeHeroContainer>
+                <HomeHeroContainer style={{ transform: `translateY(${offsetY * 0.39}px)`}}>
                     <HeroPhoto
                         src={ HeroImage }>
                     </HeroPhoto>
