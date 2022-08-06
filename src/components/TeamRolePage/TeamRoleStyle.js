@@ -82,7 +82,7 @@ export const LeadDescriptionContainer = styled.div`
 export const LeadDescription = styled.p`
     width: 22vw;
     text-align: center;
-    font-size: 17px;
+    font-size: 1vw;
     color: #ffffff;
 `;
 

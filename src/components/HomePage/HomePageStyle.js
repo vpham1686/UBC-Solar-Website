@@ -118,7 +118,7 @@ export const DiamondContainer = styled.div`
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 5vh;
+    padding-bottom: 8vh;
 `;
 
 export const DiamondSponsors = styled.img`

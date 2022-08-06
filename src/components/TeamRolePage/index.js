@@ -13,8 +13,10 @@ import Footer from '../Footer';
 import Captain from '../../assets/TeamRoleImages/Captain.png';
 
 import Mechanical from '../../assets/TeamRoleImages/MechanicalExecutive.png';
+import Electrical from '../../assets/TeamRoleImages/ElectricalExecutive.png';
 import Business from '../../assets/TeamRoleImages/BusinessTeamLead.png';
 import VehicleDynamics from '../../assets/TeamRoleImages/VehicleDynamicsTeamLead.png';
+
 
 import {
     TeamRoleContainer,
@@ -90,15 +92,19 @@ const TeamRolePage = () => {
                     </LeadProfileContainer>
 
                     <LeadProfileContainer>
-                            <LeadImage src={ Business } style={{ opacity: '0' }} ></LeadImage>
+                            <LeadImage src={ Electrical }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
-                                I am in my third year of engineering at UBC, specializing in environmental engineering.
+                                I am a fourth-year ECE student who has a focus on firmware. 
+                                I joined UBC Solar in my first year at UBC and have found it tremendously important for my career growth. 
                                 <br></br><br></br>
-                                I have always had a passion for integrating business and engineering together.
-                                Behind every great engineering team are the finances to back up the cutting edge innovation. The business team works on website management, sponsor outreach,  community engagement, social media management, and financial allocation. 
-                                <br></br><br></br>
-                                The business team is vital to the team's success, as we need to finance solar electric cars costing ~$150,000.
+                                In my first year, I joined as a member of the software team. 
+                                When I first joined, I worked on firmware projects including cruise control and regen braking for the car. 
+                                I eventually started getting more involved with the electrical side of the team and worked on more general electrical projects. 
+                                At the start of my second year, I became the electrical lead for the team.
+                                As the electrical lead, my role mainly focuses on supporting the electrical teams. 
+                                I spend a lot of my time training new members and assisting in technical projects. 
+                                Another aspect is working with sponsors to get the tools to build the car effectively. 
                                 </LeadDescription>
                             </LeadDescriptionContainer>
                             <LeadInfoContainer>
@@ -182,7 +188,7 @@ const TeamRolePage = () => {
                     </LeadProfileContainer>
 
                     <LeadProfileContainer>
-                            <LeadImage src={ Business }></LeadImage>
+                            <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
                                 I am a third year Engineering Physics student at UBC. 
@@ -200,7 +206,7 @@ const TeamRolePage = () => {
                     </LeadProfileContainer>
 
                     <LeadProfileContainer>
-                            <LeadImage src={ Business }></LeadImage>
+                            <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
                                 I am in my third year of engineering at UBC, specializing in environmental engineering.
@@ -218,7 +224,7 @@ const TeamRolePage = () => {
                     </LeadProfileContainer>
 
                     <LeadProfileContainer>
-                            <LeadImage src={ Business }></LeadImage>
+                            <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
                                 I am in my third year of engineering at UBC, specializing in environmental engineering.
@@ -236,7 +242,7 @@ const TeamRolePage = () => {
                     </LeadProfileContainer>
 
                     <LeadProfileContainer>
-                            <LeadImage src={ Business }></LeadImage>
+                            <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
                                 I am in my third year of engineering at UBC, specializing in environmental engineering.
@@ -254,7 +260,7 @@ const TeamRolePage = () => {
                     </LeadProfileContainer>
 
                     <LeadProfileContainer>
-                            <LeadImage src={ Business }></LeadImage>
+                            <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
                                 I am in my third year of engineering at UBC, specializing in environmental engineering.
@@ -272,7 +278,7 @@ const TeamRolePage = () => {
                     </LeadProfileContainer>
 
                     <LeadProfileContainer>
-                            <LeadImage src={ Business }></LeadImage>
+                            <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
                                 I am in my third year of engineering at UBC, specializing in environmental engineering.
