@@ -93,17 +93,16 @@ export const HomeMeetContainer = styled.div`
 `;
 
 export const MeetImageContainer = styled.img`
-    height: 45%;
-    width: 75%;
+    width: 60vw;
     object-fit: cover;
     display: block;
-    padding: 50px;
+    padding: 1vw;
     padding-left: 25px;
 `;
 
 export const MeetDescriptionContainer = styled.div`
     background: rgba(0, 33, 69, 0.75);
-    padding: 50px;
+    padding: 2vw;
     width: 25%;
 `;
 
