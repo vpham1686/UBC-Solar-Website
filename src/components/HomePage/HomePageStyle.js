@@ -117,24 +117,34 @@ export const HomeValuesContainer = styled.div`
 
 export const ValuesContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 20vw);
-    grid-template-rows: repeat(1, 80vh);
+    padding-top: 10vh;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(1, calc(80vh - 60px));
+    justify-content: center;
 `;
 
 export const LeadershipContainer = styled.div`
     background: #E5B13A;
+    width: 20vw;
+    margin: 0 auto;
 `;
 
 export const SustainabilityContainer = styled.div`
-
+    background: #E5B13A;
+    width: 20vw;
+    margin: 0 auto;
 `;
 
 export const EducationContainer = styled.div`
-
+    background: #E5B13A;
+    width: 20vw;
+    margin: 0 auto;
 `;
 
 export const InnovationContainer = styled.div`
-
+    background: #E5B13A;
+    width: 20vw;
+    margin: 0 auto;
 `;
 
 export const HomeSponsorsContainer = styled.div`
