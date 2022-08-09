@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavigationBar from '../../components/NavigationBar';
 import Sidebar from '../../components/Sidebar';
 import { FaAngleDown } from 'react-icons/fa';
@@ -50,13 +50,23 @@ const HomePage = () => {
         setIsOpen( !isOpen );
     };
 
+    //Parallax
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.pageYOffset);
+  
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+  
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
         <>
         <NavigationBar isOpen={ isOpen }toggle={ toggle } />
         <Sidebar isOpen={ isOpen } toggle={ toggle } />
 
             <HomeContainer>
-                <HomeHeroContainer>
+                <HomeHeroContainer style={{ transform: `translateY(${offsetY * 0.39}px)`}}>
                     <HeroPhoto
                         src={ HeroImage }>
                     </HeroPhoto>
@@ -83,7 +93,7 @@ const HomePage = () => {
                 <HomeMeetContainer>
                     <MeetImageContainer src={ TeamPhoto } />
                     <MeetDescriptionContainer>
-                        <p style={{ color: 'white' }}>UBC Solar is an engineering design team that consists 
+                        <p style={{ color: 'white', fontSize: '1vw'}}>UBC Solar is an engineering design team that consists 
                         dedicated students ranging from programs such as engineering, business, and sciences. 
                         We are passionate about pushing the limits of sustainable innovation through the 
                         development of electric solar-powered racecars.
@@ -95,12 +105,6 @@ const HomePage = () => {
                         fast-paced environment to produce the next generation of industry leaders.</p>
                     </MeetDescriptionContainer>
                 </HomeMeetContainer>
-
-                <HomeNewsfeedContainer>
-                    
-
-
-                </HomeNewsfeedContainer>
                 
                 <HomeSponsorsContainer>
                     <h1 style={{ fontSize: '40px', fontWeight: 'bold', textAlign: 'center', marginBottom: '0px' }}>Sponsors</h1>
