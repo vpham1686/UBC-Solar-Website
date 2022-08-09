@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import ProjectMainImage from '../../assets/ProjectPageImages/ProjectPageMainImage.png';
+import React from 'react';
 
 // IMPORTANT!
 // Create Reliable First Image container that stays consistent throughout the site.
@@ -14,10 +15,12 @@ export const ProjectMainImageContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10vh;
 
     @media screen and (max-width: 600px) {
         background: #E5B13A;
         height: 100px;
+        margin-bottom: 0;
     }
 `;
 
@@ -40,9 +43,9 @@ export const ProjectMainImageContentText = styled.h1`
 
 export const ProjectImageContainer = styled.div`
     margin: 0px;
-    height: 50vw;
+    height: calc(100vh - 60px);
     width: 100%;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -54,13 +57,47 @@ export const ProjectImageContainer = styled.div`
     }
 `;
 
+export const ProjectImageSpecs = styled.img`
+    margin: 0px;
+    height: calc(100vh - 60px);
+    width: 100%;
+    background-size: contain;
+    text-align: center;
+    object-fit: contain;
+    transition: 1.5s;
+    transition-timing-function: cubic-bezier(1,-0.12,.83,.67);
+    @media screen and (max-width: 600px) {
+        height: 70vw;
+        background-size: contain;
+        width: 90%;
+        margin: 0px 5vw;
+    }
+`;
+
 export const ProjectImage = (props) => {
     return (
         <>
-            <ProjectImageContainer style={{ backgroundImage: `url(${props.image})` }} />
+            <ProjectImageContainer style={{ backgroundImage: `url(${props.backgroundImage})` }}>
+                <FadeInSection image={props.image}></FadeInSection>
+            </ProjectImageContainer>
         </>
     );
 }
+
+function FadeInSection(props) {
+    const [isVisible, setVisible] = React.useState(true);
+    const domRef = React.useRef();
+    React.useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => setVisible(entry.isIntersecting));
+      });
+      observer.observe(domRef.current);
+      return () => observer.unobserve(domRef.current);
+    }, []);
+    return (
+        <ProjectImageSpecs className={`fade-in-section`} style={{ opacity: `${isVisible ? '1' : '0'}` }} ref={domRef} src={props.image} />
+    );
+  }
 
 export const ProjectTextContainer = styled.div`
     text-align: center;

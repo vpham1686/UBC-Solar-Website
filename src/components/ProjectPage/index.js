@@ -14,6 +14,9 @@ import {
 
 } from './ProjectPageStyle';
 import ProjectPageRaven from '../../assets/ProjectPageImages/ProjectPageRaven.png';
+import DaybreakSpecs from '../../assets/ProjectPageImages/DaybreakSpecs.png';
+import ProjectPageDaybreak from '../../assets/ProjectPageImages/ProjectPageDaybreak.png';
+import RavenSpecs from '../../assets/ProjectPageImages/RavenSpecs.png';
 const ProjectPage = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -25,22 +28,14 @@ const ProjectPage = () => {
         <>
             <NavigationBar isOpen={isOpen} toggle={toggle} />
             <Sidebar isOpen={isOpen} toggle={toggle} />
-            <div>
+            <div style={{ marginBottom: '5vh' }}>
                 <ProjectMainImageContainer>
                     {/* <ProjectImage src={ProjectPageMainImage} alt="Main Image" /> */}
                     <ProjectMainImageContentContainer>
                         <ProjectMainImageContentText>Projects</ProjectMainImageContentText>
                     </ProjectMainImageContentContainer>
                 </ProjectMainImageContainer>
-                <ProjectImage image={ProjectPageRaven} />
-                <ProjectTextContainer>
-                    <ProjectTextName>Brightside</ProjectTextName>
-                    <ProjectTextYear>(2022 - 20??)</ProjectTextYear>
-                    <p>Designed throughout the Daybreak eras, the solar car has been long anticipated. After the 2022 FSGP competition, the team realized that many of the Brightside
-                        designs could be improved. Brightside design iterations are ongoing throughout the next 2022-2023 cycle and should be manufactured throughout 2023-2024 and
-                        ready to race in FSGP and the American Solar Challenge by the summer of 2024.</p>
-                </ProjectTextContainer>
-                <ProjectImage image={ProjectPageRaven} />
+                <ProjectImage image={DaybreakSpecs} backgroundImage={ProjectPageDaybreak} />
                 <ProjectTextContainer>
                     <ProjectTextName>Daybreak</ProjectTextName>
                     <ProjectTextYear>(2017 - 2022)</ProjectTextYear>
@@ -52,7 +47,7 @@ const ProjectPage = () => {
                         2021. With the return to in-person work in 2022, the team is back in full swing and is in the final stages of getting Daybreak
                         race ready for the American Solar Challenge 2022!</p>
                 </ProjectTextContainer>
-                <ProjectImage image={ProjectPageRaven} />
+                <ProjectImage image={RavenSpecs} backgroundImage={ProjectPageRaven} />
                 <LastProjectTextContainer>
                     <ProjectTextName>Raven</ProjectTextName>
                     <ProjectTextYear>(2007 - 2017)</ProjectTextYear>
