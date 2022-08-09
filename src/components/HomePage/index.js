@@ -2,9 +2,15 @@ import React, { useState, useEffect } from 'react';
 import NavigationBar from '../../components/NavigationBar';
 import Sidebar from '../../components/Sidebar';
 import { FaAngleDown } from 'react-icons/fa';
+import VisibilitySensor from 'react-visibility-sensor';
 
 import HeroImage from '../../assets/HomePageImages/HeroImage.png';
 import TeamPhoto from '../../assets/HomePageImages/HomeTeamPhoto.png';
+
+import LeadershipIcon from '../../assets/HomePageImages/LeadershipIcon.png';
+import SustainabilityIcon from '../../assets/HomePageImages/SustainabilityIcon.png';
+import EducationIcon from '../../assets/HomePageImages/EducationIcon.png';
+import InnovationIcon from '../../assets/HomePageImages/InnovationIcon.png';
 
 import Footer from '../Footer';
 
@@ -40,21 +46,26 @@ import {
     HomeHeroContainer,
     HeroPhoto,
     ArrowLevitate,
+
     HomeMottoContainer,
     MottoYellowContainer,
     MottoYellow,
     MottoBlueContainer,
     MottoBlue,
+
     Anchor,
     HomeMeetContainer,
     MeetImageContainer,
     MeetDescriptionContainer,
+
     HomeValuesContainer,
     ValuesContainer,
     LeadershipContainer,
     SustainabilityContainer,
     EducationContainer,
     InnovationContainer,
+    Icon,
+
     HomeSponsorsContainer,
     DiamondContainer,
     DiamondSponsors,
@@ -88,6 +99,10 @@ const HomePage = () => {
   
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+    
+    function onChange (isVisible) {
+        console.log('Element is now %s', isVisible ? 'visible' : 'hidden');
+    }
 
     return (
         <>
@@ -138,16 +153,41 @@ const HomePage = () => {
                 <HomeValuesContainer>
                     <ValuesContainer>
                         <LeadershipContainer>
+                            <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Leadership</h1>
+                            
+  
+
+                            <p style={{ textAlign: 'center', color: 'white' }}>
+                                Our team focuses on raising leadership through...
+                            </p>
 
                         </LeadershipContainer>
                         <SustainabilityContainer>
-
+                            <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Sustainability</h1>
+                            <Icon
+                                src={ SustainabilityIcon }>
+                            </Icon>
+                            <p style={{ textAlign: 'center', color: 'white' }}>
+                                Our team focuses on raising leadership through...
+                            </p>
                         </SustainabilityContainer>
                         <EducationContainer>
-
+                            <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Education</h1>
+                            <Icon
+                                src={ EducationIcon }>
+                            </Icon>
+                            <p style={{ textAlign: 'center', color: 'white' }}>
+                                Our team focuses on raising leadership through...
+                            </p>
                         </EducationContainer>
                         <InnovationContainer>
-
+                            <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Innovation</h1>
+                            <Icon
+                                src={ InnovationIcon }>
+                            </Icon>
+                            <p style={{ textAlign: 'center', color: 'white' }}>
+                                Our team focuses on raising leadership through...
+                            </p>
                         </InnovationContainer>
                     </ValuesContainer>
                 </HomeValuesContainer>

@@ -1,3 +1,4 @@
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Link as LinkScroll } from 'react-scroll';
 
@@ -101,6 +102,7 @@ export const MeetImageContainer = styled.img`
     display: block;
     padding-left: 25px;
     height: 75vh;
+    border-radius: 50px;
 `;
 
 export const MeetDescriptionContainer = styled.div`
@@ -108,11 +110,11 @@ export const MeetDescriptionContainer = styled.div`
     padding: 2vw;
     width: 25%;
     height: 60vh;
+    border-radius: 50px;
 `;
 
 export const HomeValuesContainer = styled.div`
     height: calc(100vh - 60px);
-    background: #000000;
 `;
 
 export const ValuesContainer = styled.div`
@@ -124,25 +126,40 @@ export const ValuesContainer = styled.div`
 `;
 
 export const LeadershipContainer = styled.div`
-    background: #E5B13A;
+    background: rgba(0, 33, 69, 0.75);
+    border-radius: 50px;
     width: 20vw;
     margin: 0 auto;
 `;
 
+export const Icon = styled.img`
+    display: block;
+    margin: 0 auto;
+    marginTop: auto;
+    marginBottom: auto;
+    width: 35%; 
+
+    transition: 1.5s;
+    transition-timing-function: cubic-bezier(1,-0.12,.83,.67);
+`;
+
 export const SustainabilityContainer = styled.div`
-    background: #E5B13A;
+    background: rgba(0, 33, 69, 0.75);
+    border-radius: 50px;
     width: 20vw;
     margin: 0 auto;
 `;
 
 export const EducationContainer = styled.div`
-    background: #E5B13A;
+    background: rgba(0, 33, 69, 0.75);
+    border-radius: 50px;
     width: 20vw;
     margin: 0 auto;
 `;
 
 export const InnovationContainer = styled.div`
-    background: #E5B13A;
+    background: rgba(0, 33, 69, 0.75);
+    border-radius: 50px;
     width: 20vw;
     margin: 0 auto;
 `;
