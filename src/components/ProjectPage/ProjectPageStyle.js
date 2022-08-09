@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import ProjectMainImage from '../../assets/ProjectPageImages/ProjectPageMainImage.png';
+
+// IMPORTANT!
+// Create Reliable First Image container that stays consistent throughout the site.
+
 export const ProjectMainImageContainer = styled.div`
-    height: 750px;
+    height: calc(100vh - 60px);
     width: 100%;
     background-image: url(${ProjectMainImage});
     background-size: cover;
@@ -23,16 +27,14 @@ export const ProjectMainImageContentContainer = styled.div`
 `;
 
 export const ProjectMainImageContentText = styled.h1`
-    margin: 0px 0px 100px 0px;
+    margin: 0px 0px 175px 0px;
     color: white;
-    text-shadow: 3px 3px #002145;
     font-size: 80px;
 
     @media screen and (max-width: 600px) {
         color: #002145;
         font-size: 50px;
         margin: 0;
-        text-shadow: none;
     }
 `;
 
