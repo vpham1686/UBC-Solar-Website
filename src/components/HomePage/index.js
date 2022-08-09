@@ -94,7 +94,7 @@ const HomePage = () => {
                     <MeetImageContainer src={ TeamPhoto } />
                     <MeetDescriptionContainer>
                         <p style={{ color: 'white', fontSize: '1vw'}}>UBC Solar is an engineering design team that consists 
-                        dedicated students ranging from programs such as engineering, business, and sciences. 
+                        of dedicated students ranging from programs such as engineering, business, and sciences. 
                         We are passionate about pushing the limits of sustainable innovation through the 
                         development of electric solar-powered racecars.
                         <br></br>
