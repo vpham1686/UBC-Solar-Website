@@ -9,7 +9,31 @@ import TeamPhoto from '../../assets/HomePageImages/HomeTeamPhoto.png';
 import Footer from '../Footer';
 
 //Sponsors//
-import DanielFamilyFoundation from '../../assets/Sponsors/DanielFamilyFoundation.svg';
+import DanielFamilyFoundation from '../../assets/Sponsors/DanielFamilyFoundation.png';
+
+import PSIM from '../../assets/Sponsors/PSIM.png';
+import Siemens from '../../assets/Sponsors/Siemens.png';
+
+import Altium from '../../assets/Sponsors/Altium.png';
+import Airtech from '../../assets/Sponsors/Airtech.png';
+
+import UBCPhysicsandAstronomy from '../../assets/Sponsors/UBCPhysicsandAstronomy.png';
+import JLCPCB from '../../assets/Sponsors/JLCPCB.png';
+import UBCMechanicalEngineering from '../../assets/Sponsors/UBCMechanicalEngineering.png';
+import Fluor from '../../assets/Sponsors/Fluor.png';
+import Omron from '../../assets/Sponsors/Omron.png';
+import MetalPros from '../../assets/Sponsors/MetalPros.png';
+import AffinityManufacturing from '../../assets/Sponsors/AffinityManufacturing.png';
+import WestMountainRadio from '../../assets/Sponsors/WestMountainRadio.png';
+
+import CompositesResearchNetwork from '../../assets/Sponsors/CompositesResearchNetwork.png';
+import UBCElectricalandComputerEngineering from '../../assets/Sponsors/UBCElectricalandComputerEngineering.png';
+import Vicor from '../../assets/Sponsors/Vicor.png';
+import VR3 from '../../assets/Sponsors/VR3.png';
+import TCI from '../../assets/Sponsors/TCI.png';
+
+import Filler from '../../assets/Sponsors/Filler.png';
+
 
 import {
     HomeContainer,
@@ -25,7 +49,12 @@ import {
     HomeMeetContainer,
     MeetImageContainer,
     MeetDescriptionContainer,
-    HomeNewsfeedContainer,
+    HomeValuesContainer,
+    ValuesContainer,
+    LeadershipContainer,
+    SustainabilityContainer,
+    EducationContainer,
+    InnovationContainer,
     HomeSponsorsContainer,
     DiamondContainer,
     DiamondSponsors,
@@ -89,8 +118,8 @@ const HomePage = () => {
                 </HomeMottoContainer>
                     
                     <Anchor className='meet'></Anchor>
-                    <h1 style={{ fontSize: '40px', fontWeight: 'bold', textAlign: 'center', margin: '0', paddingTop: '10px', marginBottom: 'auto' }}>Meet the Team</h1>
-                <HomeMeetContainer>
+                    <h1 style={{ fontSize: '40px', fontWeight: 'bold', textAlign: 'center', margin: '0', marginBottom: 'auto' }}>Meet the Team</h1>
+                    <HomeMeetContainer>
                     <MeetImageContainer src={ TeamPhoto } />
                     <MeetDescriptionContainer>
                         <p style={{ color: 'white', fontSize: '1vw'}}>UBC Solar is an engineering design team that consists 
@@ -105,6 +134,23 @@ const HomePage = () => {
                         fast-paced environment to produce the next generation of industry leaders.</p>
                     </MeetDescriptionContainer>
                 </HomeMeetContainer>
+
+                <HomeValuesContainer>
+                    <ValuesContainer>
+                        <LeadershipContainer>
+
+                        </LeadershipContainer>
+                        <SustainabilityContainer>
+
+                        </SustainabilityContainer>
+                        <EducationContainer>
+
+                        </EducationContainer>
+                        <InnovationContainer>
+
+                        </InnovationContainer>
+                    </ValuesContainer>
+                </HomeValuesContainer>
                 
                 <HomeSponsorsContainer>
                     <h1 style={{ fontSize: '40px', fontWeight: 'bold', textAlign: 'center', marginBottom: '0px' }}>Sponsors</h1>
@@ -118,76 +164,58 @@ const HomePage = () => {
                         <p style={{ color: '#FFD700', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Gold</p>
                         <GoldSponsorContainer>
                             <GoldSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ Filler } />
                             <GoldSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ PSIM } />
                             <GoldSponsors
-                                src={ DanielFamilyFoundation } />
-                            <GoldSponsors
-                                src={ DanielFamilyFoundation } />
-                            <GoldSponsors
-                                src={ DanielFamilyFoundation } />
-                            <GoldSponsors
-                                src={ DanielFamilyFoundation } />
-                            <GoldSponsors
-                                src={ DanielFamilyFoundation } />    
+                                src={ Siemens } />
                         </GoldSponsorContainer>
                     </GoldContainer>
                     <SilverContainer>
                         <p style={{ color: '#A9A9A9', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Silver</p>
                         <SilverSponsorContainer>
                             <SilverSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ Filler } />
                             <SilverSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ Altium } />
                             <SilverSponsors
-                                src={ DanielFamilyFoundation } />
-                            <SilverSponsors
-                                src={ DanielFamilyFoundation } />
-                            <SilverSponsors
-                                src={ DanielFamilyFoundation } />
-                            <SilverSponsors
-                                src={ DanielFamilyFoundation } />
-                            <SilverSponsors
-                                src={ DanielFamilyFoundation } />    
+                                src={ Airtech } />    
                         </SilverSponsorContainer>
                     </SilverContainer>
                     <BronzeContainer>
                         <p style={{ color: '#CD7F32', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Bronze</p>
                         <BronzeSponsorContainer>
                             <BronzeSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ UBCPhysicsandAstronomy } />
                             <BronzeSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ JLCPCB } />
                             <BronzeSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ UBCMechanicalEngineering } />
                             <BronzeSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ Fluor } />
                             <BronzeSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ Omron } />
                             <BronzeSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ MetalPros } />
                             <BronzeSponsors
-                                src={ DanielFamilyFoundation } />    
+                                src={ AffinityManufacturing } />    
+                            <BronzeSponsors
+                                src={ WestMountainRadio } />    
                         </BronzeSponsorContainer>
                     </BronzeContainer>
                     <SupporterContainer>
                         <p style={{ color: '#000000', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Supporter</p>
                         <SupporterSponsorContainer>
                             <SupporterSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ CompositesResearchNetwork } />
                             <SupporterSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ UBCElectricalandComputerEngineering } />
                             <SupporterSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ Vicor } />
                             <SupporterSponsors
-                                src={ DanielFamilyFoundation } />
+                                src={ VR3 } />
                             <SupporterSponsors
-                                src={ DanielFamilyFoundation } />
-                            <SupporterSponsors
-                                src={ DanielFamilyFoundation } />
-                            <SupporterSponsors
-                                src={ DanielFamilyFoundation } />    
+                                src={ TCI } />
                         </SupporterSponsorContainer>
                     </SupporterContainer>
                 </HomeSponsorsContainer>

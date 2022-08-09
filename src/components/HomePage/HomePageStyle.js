@@ -13,7 +13,7 @@ export const HomeHeroContainer = styled.div`
 
 export const HeroPhoto = styled.img`
     //Height is exact for fitting one section
-    height: 46vw;
+    height: calc(100vh - 60px);
     width: 100%;
     object-fit: cover;
     overflow: auto;
@@ -89,21 +89,52 @@ export const Anchor = styled.div`
 export const HomeMeetContainer = styled.div`
     display: flex;
     flex-direction: row;
-    padding: 50px;
+    height: calc(100vh - 120px);
+    padding-right: 5vw;
+    justify-content: space-between;
+    align-items: center;
 `;
 
 export const MeetImageContainer = styled.img`
     width: 60vw;
     object-fit: cover;
     display: block;
-    padding: 1vw;
     padding-left: 25px;
+    height: 75vh;
 `;
 
 export const MeetDescriptionContainer = styled.div`
     background: rgba(0, 33, 69, 0.75);
     padding: 2vw;
     width: 25%;
+    height: 60vh;
+`;
+
+export const HomeValuesContainer = styled.div`
+    height: calc(100vh - 60px);
+    background: #000000;
+`;
+
+export const ValuesContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(1, 80vh);
+`;
+
+export const LeadershipContainer = styled.div`
+    background: #E5B13A;
+`;
+
+export const SustainabilityContainer = styled.div`
+
+`;
+
+export const EducationContainer = styled.div`
+
+`;
+
+export const InnovationContainer = styled.div`
+
 `;
 
 export const HomeSponsorsContainer = styled.div`
@@ -139,11 +170,14 @@ export const GoldSponsorContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 20vw);
     grid-template-rows: repeat(1, 25vh);
+    align-items: center;
 `;
 
 export const GoldSponsors = styled.img`
     margin: 0 auto; //Centering Image
-    height: 10vw;
+    max-height: 10vw;
+    max-width: 14vw;
+    padding-bottom: 10vh;
 `;
 
 export const SilverContainer = styled.div`
@@ -160,11 +194,14 @@ export const SilverSponsorContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 20vw);
     grid-template-rows: repeat(1, 25vh);
+    align-items: center;
 `;
 
 export const SilverSponsors = styled.img`
     margin: 0 auto; //Centering Image
-    height: 10vw;
+    max-height: 10vw;
+    max-width: 14vw;
+    padding-bottom: 10vh;
 `;
 
 export const BronzeContainer = styled.div`
@@ -181,11 +218,14 @@ export const BronzeSponsorContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 20vw);
     grid-template-rows: repeat(1, 25vh);
+    align-items: center;
 `;
 
 export const BronzeSponsors = styled.img`
     margin: 0 auto; //Centering Image
-    height: 10vw;
+    max-height: 10vw;
+    max-width: 14vw;
+    padding-bottom: 10vh;
 `;
 
 export const SupporterContainer = styled.div`
@@ -202,11 +242,14 @@ export const SupporterSponsorContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 20vw);
     grid-template-rows: repeat(1, 25vh);
+    align-items: center;
 `;
 
 export const SupporterSponsors = styled.img`
     margin: 0 auto; //Centering Image
-    height: 10vw;
+    max-height: 10vw;
+    max-width: 14vw;
+    padding-bottom: 10vh;
 `;
 
 
