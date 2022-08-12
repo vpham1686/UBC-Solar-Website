@@ -154,9 +154,9 @@ const HomePage = () => {
                     <ValuesContainer>
                         <LeadershipContainer>
                             <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Leadership</h1>
-                            
-  
-
+                            <Icon
+                                src={ LeadershipIcon }>
+                            </Icon>
                             <p style={{ textAlign: 'center', color: 'white' }}>
                                 Our team focuses on raising leadership through...
                             </p>
