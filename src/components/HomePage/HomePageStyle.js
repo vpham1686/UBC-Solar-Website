@@ -115,6 +115,7 @@ export const MeetDescriptionContainer = styled.div`
 
 export const HomeValuesContainer = styled.div`
     height: calc(100vh - 60px);
+    transition: 1s ease-in;
 `;
 
 export const ValuesContainer = styled.div`

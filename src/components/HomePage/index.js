@@ -84,41 +84,43 @@ import {
 } from './HomePageStyle';
 
 const HomePage = () => {
-    const [ isOpen, setIsOpen ] = useState( false );
+    const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
-        setIsOpen( !isOpen );
+        setIsOpen(!isOpen);
     };
 
     //Parallax
     const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
-  
+
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
-  
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-    
-    function onChange (isVisible) {
-        console.log('Element is now %s', isVisible ? 'visible' : 'hidden');
-    }
+
+    const [ HomeValuesContainerActive, setHomeValuesContainerActive ] = useState(true);
+    function onHomeValuesContainerChange(isVisible) {
+        if (isVisible) {
+            setHomeValuesContainerActive(false);
+        }
+    };
 
     return (
         <>
-        <NavigationBar isOpen={ isOpen }toggle={ toggle } />
-        <Sidebar isOpen={ isOpen } toggle={ toggle } />
+            <NavigationBar isOpen={isOpen} toggle={toggle} />
+            <Sidebar isOpen={isOpen} toggle={toggle} />
 
             <HomeContainer>
-                <HomeHeroContainer style={{ transform: `translateY(${offsetY * 0.39}px)`}}>
+                <HomeHeroContainer style={{ transform: `translateY(${offsetY * 0.39}px)` }}>
                     <HeroPhoto
-                        src={ HeroImage }>
+                        src={HeroImage}>
                     </HeroPhoto>
                     <ArrowLevitate to='meet'>
-                    <FaAngleDown size="80px" cursor="pointer" ></FaAngleDown>
+                        <FaAngleDown size="80px" cursor="pointer" ></FaAngleDown>
                     </ArrowLevitate>
                 </HomeHeroContainer>
-                
+
                 <HomeMottoContainer>
                     <MottoYellowContainer>
                         <MottoYellow>
@@ -131,32 +133,34 @@ const HomePage = () => {
                         </MottoBlue>
                     </MottoBlueContainer>
                 </HomeMottoContainer>
-                    
-                    <Anchor className='meet'></Anchor>
-                    <h1 style={{ fontSize: '40px', fontWeight: 'bold', textAlign: 'center', margin: '0', marginBottom: 'auto' }}>Meet the Team</h1>
-                    <HomeMeetContainer>
-                    <MeetImageContainer src={ TeamPhoto } />
+
+                <Anchor className='meet'></Anchor>
+                <h1 style={{ fontSize: '80px', fontWeight: 'bold', textAlign: 'center', margin: '10vh 0px 0px 0px', marginBottom: 'auto', color: '#002145' }}>Meet the Team</h1>
+                <HomeMeetContainer>
+                    <MeetImageContainer src={TeamPhoto} />
                     <MeetDescriptionContainer>
-                        <p style={{ color: 'white', fontSize: '1vw'}}>UBC Solar is an engineering design team that consists 
-                        of dedicated students ranging from programs such as engineering, business, and sciences. 
-                        We are passionate about pushing the limits of sustainable innovation through the 
-                        development of electric solar-powered racecars.
-                        <br></br>
-                        <br></br>
-                        UBC Solar provides an opportunity for undergraduate students to transcend the classroom 
-                        and learn in an interdisciplinary team environment. As a team, we strive to promote clean 
-                        energy and sustainable automotive solutions while encouraging continuous learning in a 
-                        fast-paced environment to produce the next generation of industry leaders.</p>
+                        <p style={{ color: 'white', fontSize: '1vw' }}>UBC Solar is an engineering design team that consists
+                            of dedicated students ranging from programs such as engineering, business, and sciences.
+                            We are passionate about pushing the limits of sustainable innovation through the
+                            development of electric solar-powered racecars.
+                            <br></br>
+                            <br></br>
+                            UBC Solar provides an opportunity for undergraduate students to transcend the classroom
+                            and learn in an interdisciplinary team environment. As a team, we strive to promote clean
+                            energy and sustainable automotive solutions while encouraging continuous learning in a
+                            fast-paced environment to produce the next generation of industry leaders.</p>
                     </MeetDescriptionContainer>
                 </HomeMeetContainer>
 
-                <HomeValuesContainer>
+                <VisibilitySensor onChange={onHomeValuesContainerChange} partialVisibility={true} active={HomeValuesContainerActive}>
+                {({isVisible}) =>
+                <HomeValuesContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                     <ValuesContainer>
                         <LeadershipContainer>
                             <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Leadership</h1>
-                            <Icon
-                                src={ LeadershipIcon }>
-                            </Icon>
+                            
+  
+
                             <p style={{ textAlign: 'center', color: 'white' }}>
                                 Our team focuses on raising leadership through...
                             </p>
@@ -165,7 +169,7 @@ const HomePage = () => {
                         <SustainabilityContainer>
                             <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Sustainability</h1>
                             <Icon
-                                src={ SustainabilityIcon }>
+                                src={SustainabilityIcon}>
                             </Icon>
                             <p style={{ textAlign: 'center', color: 'white' }}>
                                 Our team focuses on raising leadership through...
@@ -174,7 +178,7 @@ const HomePage = () => {
                         <EducationContainer>
                             <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Education</h1>
                             <Icon
-                                src={ EducationIcon }>
+                                src={EducationIcon}>
                             </Icon>
                             <p style={{ textAlign: 'center', color: 'white' }}>
                                 Our team focuses on raising leadership through...
@@ -183,7 +187,7 @@ const HomePage = () => {
                         <InnovationContainer>
                             <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Innovation</h1>
                             <Icon
-                                src={ InnovationIcon }>
+                                src={InnovationIcon}>
                             </Icon>
                             <p style={{ textAlign: 'center', color: 'white' }}>
                                 Our team focuses on raising leadership through...
@@ -191,77 +195,79 @@ const HomePage = () => {
                         </InnovationContainer>
                     </ValuesContainer>
                 </HomeValuesContainer>
-                
+                }
+                </VisibilitySensor>
+
                 <HomeSponsorsContainer>
                     <h1 style={{ fontSize: '40px', fontWeight: 'bold', textAlign: 'center', marginBottom: '0px' }}>Sponsors</h1>
                     <p style={{ fontSize: '20px', textAlign: 'center', marginTop: '0', marginBottom: '50px' }}>UBC Solar would like to thank all of our sponsors for helping the team achieve our goals and enabling us to participate in competitions.</p>
                     <DiamondContainer>
                         <p style={{ color: '#70D1F4', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Diamond</p>
                         <DiamondSponsors
-                            src={ DanielFamilyFoundation } />
+                            src={DanielFamilyFoundation} />
                     </DiamondContainer>
                     <GoldContainer>
                         <p style={{ color: '#FFD700', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Gold</p>
                         <GoldSponsorContainer>
                             <GoldSponsors
-                                src={ Filler } />
+                                src={Filler} />
                             <GoldSponsors
-                                src={ PSIM } />
+                                src={PSIM} />
                             <GoldSponsors
-                                src={ Siemens } />
+                                src={Siemens} />
                         </GoldSponsorContainer>
                     </GoldContainer>
                     <SilverContainer>
                         <p style={{ color: '#A9A9A9', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Silver</p>
                         <SilverSponsorContainer>
                             <SilverSponsors
-                                src={ Filler } />
+                                src={Filler} />
                             <SilverSponsors
-                                src={ Altium } />
+                                src={Altium} />
                             <SilverSponsors
-                                src={ Airtech } />    
+                                src={Airtech} />
                         </SilverSponsorContainer>
                     </SilverContainer>
                     <BronzeContainer>
                         <p style={{ color: '#CD7F32', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Bronze</p>
                         <BronzeSponsorContainer>
                             <BronzeSponsors
-                                src={ UBCPhysicsandAstronomy } />
+                                src={UBCPhysicsandAstronomy} />
                             <BronzeSponsors
-                                src={ JLCPCB } />
+                                src={JLCPCB} />
                             <BronzeSponsors
-                                src={ UBCMechanicalEngineering } />
+                                src={UBCMechanicalEngineering} />
                             <BronzeSponsors
-                                src={ Fluor } />
+                                src={Fluor} />
                             <BronzeSponsors
-                                src={ Omron } />
+                                src={Omron} />
                             <BronzeSponsors
-                                src={ MetalPros } />
+                                src={MetalPros} />
                             <BronzeSponsors
-                                src={ AffinityManufacturing } />    
+                                src={AffinityManufacturing} />
                             <BronzeSponsors
-                                src={ WestMountainRadio } />    
+                                src={WestMountainRadio} />
                         </BronzeSponsorContainer>
                     </BronzeContainer>
                     <SupporterContainer>
                         <p style={{ color: '#000000', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Supporter</p>
                         <SupporterSponsorContainer>
                             <SupporterSponsors
-                                src={ CompositesResearchNetwork } />
+                                src={CompositesResearchNetwork} />
                             <SupporterSponsors
-                                src={ UBCElectricalandComputerEngineering } />
+                                src={UBCElectricalandComputerEngineering} />
                             <SupporterSponsors
-                                src={ Vicor } />
+                                src={Vicor} />
                             <SupporterSponsors
-                                src={ VR3 } />
+                                src={VR3} />
                             <SupporterSponsors
-                                src={ TCI } />
+                                src={TCI} />
                         </SupporterSponsorContainer>
                     </SupporterContainer>
                 </HomeSponsorsContainer>
             </HomeContainer>
-            
-            <Footer/>
+
+            <Footer />
         </>
     );
 };
