@@ -15,7 +15,11 @@ import Captain from '../../assets/TeamRoleImages/Captain.png';
 import Mechanical from '../../assets/TeamRoleImages/MechanicalExecutive.png';
 import Electrical from '../../assets/TeamRoleImages/ElectricalExecutive.png';
 import Business from '../../assets/TeamRoleImages/BusinessTeamLead.png';
+import Software from '../../assets/TeamRoleImages/SoftwareTeamLead.png';
 import VehicleDynamics from '../../assets/TeamRoleImages/VehicleDynamicsTeamLead.png';
+import PowerElectronics from '../../assets/TeamRoleImages/PowerElectronicsTeamLead.png';
+import Chassis from '../../assets/TeamRoleImages/ChassisTeamLead.png';
+import Battery1 from '../../assets/TeamRoleImages/BatteryTeamColead1.png';
 
 
 import {
@@ -151,7 +155,7 @@ const TeamRolePage = () => {
                     </LeadProfileContainer>
 
                     <LeadProfileContainer>
-                            <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
+                            <LeadImage src={ Software }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
                                 Ever since my first Javascript program back in 2015, I've loved the idea of using software to solve difficult problems. 
@@ -188,7 +192,39 @@ const TeamRolePage = () => {
                     </LeadProfileContainer>
 
                     <LeadProfileContainer>
-                            <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
+                            <LeadImage src={ PowerElectronics }></LeadImage>
+                            <LeadDescriptionContainer>
+                                <LeadDescription>
+                                I am a fourth year electrical engineering student, and the power electronics co-lead. 
+                                I have been in UBC Solar since my first year, starting out in Vehicle Dynamics (SSWAB).
+                                <br></br><br></br>
+                                Power electronics is primarily in charge of the motor and solar arrays of the car. 
+                                This year, we will be working on implementing a new set of arrays and a new motor.
+                                </LeadDescription>
+                            </LeadDescriptionContainer>
+                            <LeadInfoContainer>
+                                <LeadName>Ardavan Pourkeramati</LeadName>
+                                <LeadPosition>Power Electronics Lead</LeadPosition>
+                            </LeadInfoContainer>
+                    </LeadProfileContainer>
+
+                    <LeadProfileContainer>
+                            <LeadImage src={ Chassis }></LeadImage>
+                            <LeadDescriptionContainer>
+                                <LeadDescription>
+                                As the chassis subteam lead, I work on the core structure of the solar car, use FEA to ensure its structural integrity and produce a high factor of safety. 
+                                <br></br><br></br>
+                                I also understand other components of the car, such as the aeroshell and steering system, and seamlessly integrate these with the chassis.
+                                </LeadDescription>
+                            </LeadDescriptionContainer>
+                            <LeadInfoContainer>
+                                <LeadName>Mikey Sy</LeadName>
+                                <LeadPosition>Chassis Team Lead</LeadPosition>
+                            </LeadInfoContainer>
+                    </LeadProfileContainer>
+
+                    <LeadProfileContainer>
+                            <LeadImage src={ Battery1 }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
                                 I am a third year Engineering Physics student at UBC. 
@@ -200,13 +236,31 @@ const TeamRolePage = () => {
                                 </LeadDescription>
                             </LeadDescriptionContainer>
                             <LeadInfoContainer>
-                                <LeadName>Victor Pham</LeadName>
-                                <LeadPosition>Business Team Lead</LeadPosition>
+                                <LeadName>Mischa Jonal</LeadName>
+                                <LeadPosition>Battery Team Co-lead</LeadPosition>
                             </LeadInfoContainer>
                     </LeadProfileContainer>
 
                     <LeadProfileContainer>
-                            <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
+                            <LeadImage src={ Business }></LeadImage>
+                            <LeadDescriptionContainer>
+                                <LeadDescription>
+                                I am in my third year of engineering at UBC, specializing in environmental engineering.
+                                <br></br><br></br>
+                                I have always had a passion for integrating business and engineering together.
+                                Behind every great engineering team are the finances to back up the cutting edge innovation. The business team works on website management, sponsor outreach,  community engagement, social media management, and financial allocation. 
+                                <br></br><br></br>
+                                The business team is vital to the team's success, as we need to finance solar electric cars costing ~$150,000.
+                                </LeadDescription>
+                            </LeadDescriptionContainer>
+                            <LeadInfoContainer>
+                                <LeadName>Serhii Rubtsov</LeadName>
+                                <LeadPosition>Battery Team Co-lead</LeadPosition>
+                            </LeadInfoContainer>
+                    </LeadProfileContainer>
+
+                    <LeadProfileContainer>
+                            <LeadImage src={ Business }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
                                 I am in my third year of engineering at UBC, specializing in environmental engineering.
@@ -224,61 +278,7 @@ const TeamRolePage = () => {
                     </LeadProfileContainer>
 
                     <LeadProfileContainer>
-                            <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
-                            <LeadDescriptionContainer>
-                                <LeadDescription>
-                                I am in my third year of engineering at UBC, specializing in environmental engineering.
-                                <br></br><br></br>
-                                I have always had a passion for integrating business and engineering together.
-                                Behind every great engineering team are the finances to back up the cutting edge innovation. The business team works on website management, sponsor outreach,  community engagement, social media management, and financial allocation. 
-                                <br></br><br></br>
-                                The business team is vital to the team's success, as we need to finance solar electric cars costing ~$150,000.
-                                </LeadDescription>
-                            </LeadDescriptionContainer>
-                            <LeadInfoContainer>
-                                <LeadName>Victor Pham</LeadName>
-                                <LeadPosition>Business Team Lead</LeadPosition>
-                            </LeadInfoContainer>
-                    </LeadProfileContainer>
-
-                    <LeadProfileContainer>
-                            <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
-                            <LeadDescriptionContainer>
-                                <LeadDescription>
-                                I am in my third year of engineering at UBC, specializing in environmental engineering.
-                                <br></br><br></br>
-                                I have always had a passion for integrating business and engineering together.
-                                Behind every great engineering team are the finances to back up the cutting edge innovation. The business team works on website management, sponsor outreach,  community engagement, social media management, and financial allocation. 
-                                <br></br><br></br>
-                                The business team is vital to the team's success, as we need to finance solar electric cars costing ~$150,000.
-                                </LeadDescription>
-                            </LeadDescriptionContainer>
-                            <LeadInfoContainer>
-                                <LeadName>Victor Pham</LeadName>
-                                <LeadPosition>Business Team Lead</LeadPosition>
-                            </LeadInfoContainer>
-                    </LeadProfileContainer>
-
-                    <LeadProfileContainer>
-                            <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
-                            <LeadDescriptionContainer>
-                                <LeadDescription>
-                                I am in my third year of engineering at UBC, specializing in environmental engineering.
-                                <br></br><br></br>
-                                I have always had a passion for integrating business and engineering together.
-                                Behind every great engineering team are the finances to back up the cutting edge innovation. The business team works on website management, sponsor outreach,  community engagement, social media management, and financial allocation. 
-                                <br></br><br></br>
-                                The business team is vital to the team's success, as we need to finance solar electric cars costing ~$150,000.
-                                </LeadDescription>
-                            </LeadDescriptionContainer>
-                            <LeadInfoContainer>
-                                <LeadName>Victor Pham</LeadName>
-                                <LeadPosition>Business Team Lead</LeadPosition>
-                            </LeadInfoContainer>
-                    </LeadProfileContainer>
-
-                    <LeadProfileContainer>
-                            <LeadImage src={ Business } style={{ opacity: '0' }}></LeadImage>
+                            <LeadImage src={ Business }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
                                 I am in my third year of engineering at UBC, specializing in environmental engineering.

@@ -182,6 +182,7 @@ export const DiamondContainer = styled.div`
 export const DiamondSponsors = styled.img`
     display: flex;
     justify-self: center;
+    transition: 1s ease-in;
 `;
 
 export const GoldContainer = styled.div`
@@ -206,6 +207,7 @@ export const GoldSponsors = styled.img`
     max-height: 10vw;
     max-width: 14vw;
     padding-bottom: 10vh;
+    transition: 1s ease-in;
 `;
 
 export const SilverContainer = styled.div`
@@ -230,6 +232,7 @@ export const SilverSponsors = styled.img`
     max-height: 10vw;
     max-width: 14vw;
     padding-bottom: 10vh;
+    transition: 1s ease-in;
 `;
 
 export const BronzeContainer = styled.div`
@@ -254,6 +257,7 @@ export const BronzeSponsors = styled.img`
     max-height: 10vw;
     max-width: 14vw;
     padding-bottom: 10vh;
+    transition: 1s ease-in;
 `;
 
 export const SupporterContainer = styled.div`
@@ -278,6 +282,7 @@ export const SupporterSponsors = styled.img`
     max-height: 10vw;
     max-width: 14vw;
     padding-bottom: 10vh;
+    transition: 1s ease-in;
 `;
 
 

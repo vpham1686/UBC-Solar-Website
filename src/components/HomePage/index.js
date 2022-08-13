@@ -106,6 +106,41 @@ const HomePage = () => {
         }
     };
 
+    const [ DiamondSponsorActive, setDiamondSponsorActive ] = useState(true);
+    function onDiamondSponsorChange(isVisible) {
+        if (isVisible) {
+            setDiamondSponsorActive(false);
+        }
+    };
+
+    const [ GoldSponsorActive, setGoldSponsorActive ] = useState(true);
+    function onGoldSponsorChange(isVisible) {
+        if (isVisible) {
+            setGoldSponsorActive(false);
+        }
+    };
+
+    const [ SilverSponsorActive, setSilverSponsorActive ] = useState(true);
+    function onSilverSponsorChange(isVisible) {
+        if (isVisible) {
+            setSilverSponsorActive(false);
+        }
+    };
+
+    const [ BronzeSponsorActive, setBronzeSponsorActive ] = useState(true);
+    function onBronzeSponsorChange(isVisible) {
+        if (isVisible) {
+            setBronzeSponsorActive(false);
+        }
+    };
+
+    const [ SupporterSponsorActive, setSupporterSponsorActive ] = useState(true);
+    function onSupporterSponsorChange(isVisible) {
+        if (isVisible) {
+            setSupporterSponsorActive(false);
+        }
+    };
+
     return (
         <>
             <NavigationBar isOpen={isOpen} toggle={toggle} />
@@ -158,9 +193,9 @@ const HomePage = () => {
                     <ValuesContainer>
                         <LeadershipContainer>
                             <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Leadership</h1>
-                            
-  
-
+                            <Icon
+                                src={LeadershipIcon}>
+                            </Icon>
                             <p style={{ textAlign: 'center', color: 'white' }}>
                                 Our team focuses on raising leadership through...
                             </p>
@@ -203,66 +238,88 @@ const HomePage = () => {
                     <p style={{ fontSize: '20px', textAlign: 'center', marginTop: '0', marginBottom: '50px' }}>UBC Solar would like to thank all of our sponsors for helping the team achieve our goals and enabling us to participate in competitions.</p>
                     <DiamondContainer>
                         <p style={{ color: '#70D1F4', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Diamond</p>
-                        <DiamondSponsors
-                            src={DanielFamilyFoundation} />
+                        <VisibilitySensor onChange={onDiamondSponsorChange} partialVisibility={true} active={DiamondSponsorActive}>
+                        {({isVisible}) =>
+                        <DiamondSponsors 
+                            src={DanielFamilyFoundation} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
+                            }
+                        </VisibilitySensor>
                     </DiamondContainer>
+
                     <GoldContainer>
                         <p style={{ color: '#FFD700', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Gold</p>
+                        <VisibilitySensor onChange={onGoldSponsorChange} partialVisibility={true} active={GoldSponsorActive}>
+                        {({isVisible}) =>
                         <GoldSponsorContainer>
                             <GoldSponsors
-                                src={Filler} />
+                                src={Filler} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <GoldSponsors
-                                src={PSIM} />
+                                src={PSIM} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <GoldSponsors
-                                src={Siemens} />
+                                src={Siemens} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                         </GoldSponsorContainer>
+                        }    
+                        </VisibilitySensor>
                     </GoldContainer>
+
                     <SilverContainer>
                         <p style={{ color: '#A9A9A9', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Silver</p>
+                        <VisibilitySensor onChange={onSilverSponsorChange} partialVisibility={true} active={SilverSponsorActive}>
+                        {({isVisible}) =>
                         <SilverSponsorContainer>
                             <SilverSponsors
-                                src={Filler} />
+                                src={Filler} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <SilverSponsors
-                                src={Altium} />
+                                src={Altium} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <SilverSponsors
-                                src={Airtech} />
+                                src={Airtech} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                         </SilverSponsorContainer>
+                        }    
+                        </VisibilitySensor>
                     </SilverContainer>
                     <BronzeContainer>
                         <p style={{ color: '#CD7F32', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Bronze</p>
+                        <VisibilitySensor onChange={onBronzeSponsorChange} partialVisibility={true} active={BronzeSponsorActive}>
+                        {({isVisible}) =>
                         <BronzeSponsorContainer>
                             <BronzeSponsors
-                                src={UBCPhysicsandAstronomy} />
+                                src={UBCPhysicsandAstronomy} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <BronzeSponsors
-                                src={JLCPCB} />
+                                src={JLCPCB} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <BronzeSponsors
-                                src={UBCMechanicalEngineering} />
+                                src={UBCMechanicalEngineering} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <BronzeSponsors
-                                src={Fluor} />
+                                src={Fluor} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <BronzeSponsors
-                                src={Omron} />
+                                src={Omron} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <BronzeSponsors
-                                src={MetalPros} />
+                                src={MetalPros} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <BronzeSponsors
-                                src={AffinityManufacturing} />
+                                src={AffinityManufacturing} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <BronzeSponsors
-                                src={WestMountainRadio} />
+                                src={WestMountainRadio} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                         </BronzeSponsorContainer>
+                        }    
+                        </VisibilitySensor>
                     </BronzeContainer>
                     <SupporterContainer>
                         <p style={{ color: '#000000', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Supporter</p>
+                        <VisibilitySensor onChange={onSupporterSponsorChange} partialVisibility={true} active={SupporterSponsorActive}>
+                        {({isVisible}) =>
                         <SupporterSponsorContainer>
                             <SupporterSponsors
-                                src={CompositesResearchNetwork} />
+                                src={CompositesResearchNetwork} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <SupporterSponsors
-                                src={UBCElectricalandComputerEngineering} />
+                                src={UBCElectricalandComputerEngineering} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <SupporterSponsors
-                                src={Vicor} />
+                                src={Vicor} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <SupporterSponsors
-                                src={VR3} />
+                                src={VR3} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <SupporterSponsors
-                                src={TCI} />
+                                src={TCI} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                         </SupporterSponsorContainer>
+                        }    
+                        </VisibilitySensor>
                     </SupporterContainer>
                 </HomeSponsorsContainer>
             </HomeContainer>
