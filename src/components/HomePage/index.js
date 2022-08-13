@@ -109,8 +109,10 @@ const HomePage = () => {
     const [ DiamondSponsorActive, setDiamondSponsorActive ] = useState(true);
     function onDiamondSponsorChange(isVisible) {
         if (isVisible) {
-            setDiamondSponsorActive(false);
-        }
+            setDiamondSponsorActive(false); }
+        else if (!isVisible) { 
+            setDiamondSponsorActive(true);
+         }
     };
 
     const [ GoldSponsorActive, setGoldSponsorActive ] = useState(true);
@@ -187,7 +189,7 @@ const HomePage = () => {
                     </MeetDescriptionContainer>
                 </HomeMeetContainer>
 
-                <VisibilitySensor onChange={onHomeValuesContainerChange} partialVisibility={true} active={HomeValuesContainerActive}>
+                <VisibilitySensor onChange={onHomeValuesContainerChange} partialVisibility={true} active={HomeValuesContainerActive} offset={{ bottom: 100 }}>
                 {({isVisible}) =>
                 <HomeValuesContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                     <ValuesContainer>
@@ -238,7 +240,7 @@ const HomePage = () => {
                     <p style={{ fontSize: '20px', textAlign: 'center', marginTop: '0', marginBottom: '50px' }}>UBC Solar would like to thank all of our sponsors for helping the team achieve our goals and enabling us to participate in competitions.</p>
                     <DiamondContainer>
                         <p style={{ color: '#70D1F4', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Diamond</p>
-                        <VisibilitySensor onChange={onDiamondSponsorChange} partialVisibility={true} active={DiamondSponsorActive}>
+                        <VisibilitySensor onChange={onDiamondSponsorChange} partialVisibility={true} active={DiamondSponsorActive} offset={{ bottom: 100 }}>
                         {({isVisible}) =>
                         <DiamondSponsors 
                             src={DanielFamilyFoundation} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
@@ -248,7 +250,7 @@ const HomePage = () => {
 
                     <GoldContainer>
                         <p style={{ color: '#FFD700', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Gold</p>
-                        <VisibilitySensor onChange={onGoldSponsorChange} partialVisibility={true} active={GoldSponsorActive}>
+                        <VisibilitySensor onChange={onGoldSponsorChange} partialVisibility={true} active={GoldSponsorActive} offset={{ bottom: 100 }}>
                         {({isVisible}) =>
                         <GoldSponsorContainer>
                             <GoldSponsors
@@ -264,7 +266,7 @@ const HomePage = () => {
 
                     <SilverContainer>
                         <p style={{ color: '#A9A9A9', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Silver</p>
-                        <VisibilitySensor onChange={onSilverSponsorChange} partialVisibility={true} active={SilverSponsorActive}>
+                        <VisibilitySensor onChange={onSilverSponsorChange} partialVisibility={true} active={SilverSponsorActive} offset={{ bottom: 100 }}>
                         {({isVisible}) =>
                         <SilverSponsorContainer>
                             <SilverSponsors
@@ -279,7 +281,7 @@ const HomePage = () => {
                     </SilverContainer>
                     <BronzeContainer>
                         <p style={{ color: '#CD7F32', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Bronze</p>
-                        <VisibilitySensor onChange={onBronzeSponsorChange} partialVisibility={true} active={BronzeSponsorActive}>
+                        <VisibilitySensor onChange={onBronzeSponsorChange} partialVisibility={true} active={BronzeSponsorActive} offset={{ bottom: 100 }}>
                         {({isVisible}) =>
                         <BronzeSponsorContainer>
                             <BronzeSponsors
@@ -304,7 +306,7 @@ const HomePage = () => {
                     </BronzeContainer>
                     <SupporterContainer>
                         <p style={{ color: '#000000', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Supporter</p>
-                        <VisibilitySensor onChange={onSupporterSponsorChange} partialVisibility={true} active={SupporterSponsorActive}>
+                        <VisibilitySensor onChange={onSupporterSponsorChange} partialVisibility={true} active={SupporterSponsorActive} offset={{ bottom: 100 }}>
                         {({isVisible}) =>
                         <SupporterSponsorContainer>
                             <SupporterSponsors
