@@ -4,7 +4,7 @@ export const RecruitmentContainer = styled.div`
     display: grid;
     grid-template-areas: "content image";
     grid-template-columns: 30% 70%;
-    height: 100vh;
+    height: calc(100vh - 60px);
     width: 100%;
 
     @media screen and (max-width: 750px) {
@@ -18,8 +18,7 @@ export const RecruitmentContentContainer = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-height: 90vh;
-    grid-area: content;
+    height: calc(70vh - 60px);
     margin: 5vw;
 `;
 
@@ -38,7 +37,6 @@ export const RecruitmentContentHeaderText = (props) => {
 export const RecruitmentContentParagraph = styled.div`
     font-size: 15px;
     margin-top: 7px;
-    margin-bottom: 7px;
 `;
 
 export const RecruitmentImageContainer = styled.div`
@@ -94,21 +92,24 @@ export const Button = (props) => {
 }
 
 export const RecruitmentFAQContainer = styled.div`
+    padding-top: 10vh;
     height: calc(100vh - 60px);
 `;
 
 export const FAQContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 20vw);
-    grid-template-rows: repeat(1, 25vh);
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(3, 25vh);
     align-items: center;
+    
 `;
 
 export const FAQ = styled.div`
     margin: 0 auto;
-    background: #002245;
-    max-height: 10vw;
-    max-width: 14vw;
+    height: 10vh;
+    width: 45vw;
     padding-bottom: 10vh;
     transition: 1s ease-in;
+    background: #002245;
+    border-radius: 25px;
 `
