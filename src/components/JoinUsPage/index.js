@@ -10,6 +10,9 @@ import {
     Button,
     RecruitmentContentChild,
     RecruitmentContentParagraph,
+    RecruitmentFAQContainer,
+    FAQContainer,
+    FAQ,
 } from './RecruitmentStyle';
 import Footer from '../Footer';
 import TeamPicture from '../../assets/RecruitmentImages/RecruitmentPageImage.png';
@@ -37,16 +40,43 @@ const RecruitmentPage = () => {
                         </RecruitmentContentParagraph>
                         <Button link='#' buttonText='Join Now'/>
                     </RecruitmentContentChild>
-
                 </RecruitmentContentContainer>
-
                 {/* Image */}
                 <RecruitmentImageContainer>
                     <RecruitmentImage src={TeamPicture}></RecruitmentImage>
                 </RecruitmentImageContainer>
 
+                <RecruitmentFAQContainer>
+                    <FAQContainer>
+                        <FAQ>
+                            <h1>Question</h1>
+                            <p>Answer</p>
+                        </FAQ>
+                        <FAQ>
+                        <h1>Question</h1>
+                            <p>Answer</p>
+                        </FAQ>
+                        <FAQ>
+                        <h1>Question</h1>
+                            <p>Answer</p>
+                        </FAQ>
+                        <FAQ>
+                        <h1>Question</h1>
+                            <p>Answer</p>
+                        </FAQ>
+                        <FAQ>
+                        <h1>Question</h1>
+                            <p>Answer</p>
+                        </FAQ>
+                        <FAQ>
+                        <h1>Question</h1>
+                            <p>Answer</p>
+                        </FAQ>
+                    </FAQContainer>
+                </RecruitmentFAQContainer>
+
             </RecruitmentContainer>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };

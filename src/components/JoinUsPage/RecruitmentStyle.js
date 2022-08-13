@@ -4,7 +4,7 @@ export const RecruitmentContainer = styled.div`
     display: grid;
     grid-template-areas: "content image";
     grid-template-columns: 30% 70%;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 
     @media screen and (max-width: 750px) {
@@ -54,6 +54,7 @@ export const RecruitmentImageContainer = styled.div`
 `;
 
 export const RecruitmentImage = styled.img`
+    margin-top: auto;
     height: 90%;
     width: 90%;
     object-fit: cover;
@@ -91,3 +92,23 @@ export const Button = (props) => {
         </ButtonContainer>
     );
 }
+
+export const RecruitmentFAQContainer = styled.div`
+    height: calc(100vh - 60px);
+`;
+
+export const FAQContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(1, 25vh);
+    align-items: center;
+`;
+
+export const FAQ = styled.div`
+    margin: 0 auto;
+    background: #002245;
+    max-height: 10vw;
+    max-width: 14vw;
+    padding-bottom: 10vh;
+    transition: 1s ease-in;
+`

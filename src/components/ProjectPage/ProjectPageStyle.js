@@ -45,11 +45,11 @@ export const ProjectImageContainer = styled.div`
     margin: 0px;
     height: calc(100vh - 60px);
     width: 100%;
-    background-size: contain;
+
     background-position: center;
     background-repeat: no-repeat;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1800px) {
         height: 70vw;
         background-size: contain;
         width: 90%;
@@ -66,7 +66,7 @@ export const ProjectImageSpecs = styled.img`
     object-fit: contain;
     transition: 1.5s;
     transition-timing-function: cubic-bezier(1,-0.12,.83,.67);
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1800px) {
         height: 70vw;
         background-size: contain;
         width: 90%;
