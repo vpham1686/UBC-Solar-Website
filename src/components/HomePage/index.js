@@ -198,8 +198,8 @@ const HomePage = () => {
                             <Icon
                                 src={LeadershipIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white' }}>
-                                Our team focuses on raising leadership through...
+                            <p style={{ textAlign: 'center', color: 'white', fontSize: '1vw', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw' }}>
+                            Our team focuses on raising leadership through providing members with the mentorship and support to further strengthen soft and technical skills that are required to lead a team.
                             </p>
 
                         </LeadershipContainer>
@@ -208,8 +208,8 @@ const HomePage = () => {
                             <Icon
                                 src={SustainabilityIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white' }}>
-                                Our team focuses on raising leadership through...
+                            <p style={{ textAlign: 'center', color: 'white', fontSize: '1vw', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw' }}>
+                            We are a sustainable design team that raises awareness around clean automobile energy and design life cycle sustainability.
                             </p>
                         </SustainabilityContainer>
                         <EducationContainer>
@@ -217,8 +217,8 @@ const HomePage = () => {
                             <Icon
                                 src={EducationIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white' }}>
-                                Our team focuses on raising leadership through...
+                            <p style={{ textAlign: 'center', color: 'white', fontSize: '1vw', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw' }}>
+                            The team encourages continuous learning and creates the opportunities for our members to advance their future career and pursue their passions. 
                             </p>
                         </EducationContainer>
                         <InnovationContainer>
@@ -226,8 +226,8 @@ const HomePage = () => {
                             <Icon
                                 src={InnovationIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white' }}>
-                                Our team focuses on raising leadership through...
+                            <p style={{ textAlign: 'center', color: 'white', fontSize: '1vw', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw' }}>
+                            UBC Solar pushes the limits of technological innovation by designing and manufacturing solar electric race cars that are fully self-sufficient on solar energy.
                             </p>
                         </InnovationContainer>
                     </ValuesContainer>

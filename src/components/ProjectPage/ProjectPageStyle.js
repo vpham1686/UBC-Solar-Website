@@ -45,15 +45,16 @@ export const ProjectImageContainer = styled.div`
     margin: 0px;
     height: calc(100vh - 60px);
     width: 100%;
-
+    background-size: contain;
+    object-fit: contain;
     background-position: center;
     background-repeat: no-repeat;
 
-    @media screen and (max-width: 1800px) {
+    @media screen and (max-width: 1000px) {
         height: 70vw;
         background-size: contain;
         width: 90%;
-        margin: 0px 5vw;
+        margin: -14vw 18vw;
     }
 `;
 
@@ -61,16 +62,16 @@ export const ProjectImageSpecs = styled.img`
     margin: 0px;
     height: calc(100vh - 60px);
     width: 100%;
-    background-size: contain;
-    text-align: center;
     object-fit: contain;
+    background-size: contain;
     transition: 1.5s;
     transition-timing-function: cubic-bezier(1,-0.12,.83,.67);
-    @media screen and (max-width: 1800px) {
+
+    @media screen and (max-width: 1900px) {
         height: 70vw;
         background-size: contain;
-        width: 90%;
-        margin: 0px 5vw;
+        width: 70%;
+        margin: -14vw 18vw;
     }
 `;
 
