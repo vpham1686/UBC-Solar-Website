@@ -156,7 +156,7 @@ export const MeetDescriptionContainer = styled.div`
 
 export const HomeValuesContainer = styled.div`
     margin: 50px 10px;
-    height: calc(80vh - 60px);
+    height: auto;
     transition: 1s ease-in;
     @media screen and (max-width: 1000px) {
         margin: 25px 10px;
