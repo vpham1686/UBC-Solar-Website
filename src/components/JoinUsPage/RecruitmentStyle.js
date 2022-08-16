@@ -91,25 +91,9 @@ export const Button = (props) => {
     );
 }
 
-export const RecruitmentFAQContainer = styled.div`
-    padding-top: 10vh;
-    height: calc(100vh - 60px);
+export const RecruitmentFAQ = styled.h1`
+    width: 100vw;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 `;
-
-export const FAQContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, 50vw);
-    grid-template-rows: repeat(3, 25vh);
-    align-items: center;
-    
-`;
-
-export const FAQ = styled.div`
-    margin: 0 auto;
-    height: 10vh;
-    width: 45vw;
-    padding-bottom: 10vh;
-    transition: 1s ease-in;
-    background: #002245;
-    border-radius: 25px;
-`
