@@ -212,8 +212,11 @@ const TeamRolePage = () => {
                             <LeadImage src={ Chassis }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
-                                As the chassis subteam lead, I work on the core structure of the solar car, use FEA to ensure its structural integrity and produce a high factor of safety. 
+                                I can say that my knowledge with 3 years into mechanical engineering and joining the team in 2019 my engineering skills that the fewer moving parts, the better the chassis FEA. 
+                                Our work does not only involve the structural integrity of the car but also the seamless integration of all the components of the car such as the aeroshell and steering system of the car. 
+                                If I'm not working on the car I'm probably designing the next crackhead robot from my brain or in the gym trying to be a gorilla.
                                 <br></br><br></br>
+                                As the chassis subteam lead, I work on the core structure of the solar car, use FEA to ensure its structural integrity and produce a high factor of safety. 
                                 I also understand other components of the car, such as the aeroshell and steering system, and seamlessly integrate these with the chassis.
                                 </LeadDescription>
                             </LeadDescriptionContainer>
