@@ -41,7 +41,7 @@ export const ArrowLevitate = styled(LinkScroll)`
 `;
 
 export const HomeMottoContainer = styled.div`
-
+    
 `;
 
 export const MottoYellowContainer = styled.div`
@@ -87,49 +87,106 @@ export const Anchor = styled.div`
     top: -60px;
 `;
 
+// export const HomeMeetContainer = styled.div`
+//     display: flex;
+//     flex-direction: row;
+//     height: calc(100vh - 120px);
+//     padding-right: 5vw;
+//     justify-content: space-between;
+//     align-items: center;
+// `;
 export const HomeMeetContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    height: calc(100vh - 120px);
-    padding-right: 5vw;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-areas: "image text";
+    grid-template-columns: 70% 30%;
+    height: calc(100vh-60px);
+    width: 100%;
+    @media screen and (max-width: 1000px) {
+        grid-template-areas: 
+        "image"
+        "text";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
 `;
 
+
 export const MeetImageContainer = styled.img`
-    width: 60vw;
-    object-fit: cover;
-    display: block;
-    padding-left: 25px;
-    height: 75vh;
-    border-radius: 50px;
+    grid-area: image;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+        border-radius: 0px;
+    }
 `;
+
+// export const MeetImageContainer = styled.img`
+//     width: 60vw;
+//     object-fit: cover;
+//     display: block;
+//     padding-left: 25px;
+//     height: 75vh;
+//     border-radius: 50px;
+// `;
 
 export const MeetDescriptionContainer = styled.div`
     background: rgba(0, 33, 69, 0.75);
-    padding: 2vw;
-    width: 25%;
-    height: 60vh;
-    border-radius: 50px;
+    border-radius: 10px;
+    grid-area: text;
+    margin: auto 20px;
+    padding: 15px;
+
+    @media screen and (max-width: 1000px) {
+        border-radius: 0px;
+        margin: 20px;
+    }
 `;
 
+// export const MeetDescriptionContainer = styled.div`
+//     background: rgba(0, 33, 69, 0.75);
+//     padding: 2vw;
+//     width: 25%;
+//     height: 60vh;
+//     border-radius: 50px;
+// `;
+
 export const HomeValuesContainer = styled.div`
-    height: calc(100vh - 60px);
+    margin: 50px 10px;
+    height: calc(80vh - 60px);
     transition: 1s ease-in;
+    @media screen and (max-width: 1000px) {
+        margin: 25px 10px;
+        height: auto;
+    }
 `;
 
 export const ValuesContainer = styled.div`
     display: grid;
-    padding-top: 10vh;
-    grid-template-columns: repeat(4, 25vw);
-    grid-template-rows: repeat(1, calc(80vh - 60px));
+    grid-template-areas: "a b c d";
+    height: auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 23%);
     justify-content: center;
+    @media screen and (max-width: 1000px) {
+        grid-gap: 10px;
+        grid-template-rows: repeat(1, auto);
+        grid-template-columns: 90%;
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d";
+    }
 `;
 
 export const LeadershipContainer = styled.div`
+    grid-area: a;
     background: rgba(0, 33, 69, 0.75);
     border-radius: 50px;
-    width: 20vw;
     margin: 0 auto;
 `;
 
@@ -145,23 +202,23 @@ export const Icon = styled.img`
 `;
 
 export const SustainabilityContainer = styled.div`
+    grid-area: b;
     background: rgba(0, 33, 69, 0.75);
     border-radius: 50px;
-    width: 20vw;
     margin: 0 auto;
 `;
 
 export const EducationContainer = styled.div`
+    grid-area: c;
     background: rgba(0, 33, 69, 0.75);
     border-radius: 50px;
-    width: 20vw;
     margin: 0 auto;
 `;
 
 export const InnovationContainer = styled.div`
+    grid-area: d;
     background: rgba(0, 33, 69, 0.75);
     border-radius: 50px;
-    width: 20vw;
     margin: 0 auto;
 `;
 

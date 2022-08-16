@@ -172,11 +172,11 @@ const HomePage = () => {
                 </HomeMottoContainer>
 
                 <Anchor className='meet'></Anchor>
-                <h1 style={{ fontSize: '80px', fontWeight: 'bold', textAlign: 'center', margin: '10vh 0px 0px 0px', marginBottom: 'auto', color: '#002145' }}>Meet the Team</h1>
+                <h1 style={{ fontSize: '5vw', fontWeight: 'bold', textAlign: 'center', margin: '10vh 0px 0px 0px', marginBottom: 'auto', color: '#002145' }}>Meet the Team</h1>
                 <HomeMeetContainer>
                     <MeetImageContainer src={TeamPhoto} />
                     <MeetDescriptionContainer>
-                        <p style={{ color: 'white', fontSize: '1vw' }}>UBC Solar is an engineering design team that consists
+                        <p style={{ color: 'white', fontSize: '15px' }}>UBC Solar is an engineering design team that consists
                             of dedicated students ranging from programs such as engineering, business, and sciences.
                             We are passionate about pushing the limits of sustainable innovation through the
                             development of electric solar-powered racecars.
@@ -198,8 +198,8 @@ const HomePage = () => {
                             <Icon
                                 src={LeadershipIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white' }}>
-                                Our team focuses on raising leadership through...
+                            <p style={{ textAlign: 'center', color: 'white', padding: '5px'}}>
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                             </p>
 
                         </LeadershipContainer>
@@ -208,8 +208,8 @@ const HomePage = () => {
                             <Icon
                                 src={SustainabilityIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white' }}>
-                                Our team focuses on raising leadership through...
+                            <p style={{ textAlign: 'center', color: 'white', padding: '5px' }}>
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                             </p>
                         </SustainabilityContainer>
                         <EducationContainer>
@@ -217,8 +217,8 @@ const HomePage = () => {
                             <Icon
                                 src={EducationIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white' }}>
-                                Our team focuses on raising leadership through...
+                            <p style={{ textAlign: 'center', color: 'white', padding: '5px' }}>
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                             </p>
                         </EducationContainer>
                         <InnovationContainer>
@@ -227,7 +227,7 @@ const HomePage = () => {
                                 src={InnovationIcon}>
                             </Icon>
                             <p style={{ textAlign: 'center', color: 'white' }}>
-                                Our team focuses on raising leadership through...
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                             </p>
                         </InnovationContainer>
                     </ValuesContainer>
