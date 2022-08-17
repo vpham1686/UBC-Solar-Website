@@ -5,13 +5,12 @@
     justify-content: center;
     align-items: center;
     padding: 0px 3vw;
-
 }
 
 .accordion {
     display: grid;
     grid-template-columns: repeat(2, 50vw);
-    grid-template-rows: repeat(3, 20vh);
+    grid-template-rows: repeat(3, 25vh);
     align-items: center;
     margin-bottom: auto;
 }
@@ -30,6 +29,12 @@
     cursor: pointer;
 }
 
+.content.show {
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+
 .content {
     color: white;
     max-height: 0;
@@ -37,8 +42,11 @@
     transition: all 0.5s cubic-bezier(0,1,0,1);
 }
 
-.content.show {
-    height: auto;
-    max-height: 9999px;
-    transition: all 0.5s cubic-bezier(1,0,1,0);
+
+.timerVisible {
+    opacity: 1;
+}
+
+.timerHidden {
+    opacity: 0;
 }

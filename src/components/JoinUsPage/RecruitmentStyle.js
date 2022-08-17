@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const RecruitmentContainer = styled.div`
     display: grid;
     grid-template-areas: "content image";
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 35% 65%;
     height: calc(100vh - 60px);
     width: 100%;
 
@@ -45,6 +45,7 @@ export const RecruitmentImageContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto 0;
 
     @media screen and (max-width: 750px) {
         display: none;
@@ -96,4 +97,4 @@ export const RecruitmentFAQ = styled.h1`
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-`;
+    `;

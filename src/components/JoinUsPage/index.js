@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 import NavigationBar from '../../components/NavigationBar';
 import Sidebar from '../../components/Sidebar';
@@ -15,6 +15,7 @@ import {
     RecruitmentContentParagraph,
     RecruitmentFAQ,
 } from './RecruitmentStyle';
+
 import Footer from '../Footer';
 import TeamPicture from '../../assets/RecruitmentImages/RecruitmentPageImage.png';
 
@@ -33,24 +34,108 @@ const RecruitmentPage = () => {
         }
         setSelected(i)
     }
+
+    //Warning countdown
+    const [timerDaysW, setTimerDays] = useState('00');
+    const [timerHoursW, setTimerHours] = useState('00');
+    const [timerMinutesW, setTimerMinutes] = useState('00');
+    const [timerSecondsW, setTimerSeconds] = useState('00');
+
+    let interval = useRef();
+
+    const startWarningTimer = () => {
+        const countdownDate = new Date('August, 17 2022 00:57:30').getTime();
+
+        interval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const daysW = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hoursW = Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)));
+            const minutesW = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const secondsW = Math.floor((distance % (1000 * 60)) / 1000);
+
+            if (distance < 0) {
+                //Stop timer after reaching point
+                clearInterval(interval.current);
+                //Timer switches to recruitment period
+                startRecruitmentTimer();
+            } else {
+                //Update timer
+                setTimerDays(daysW);
+                setTimerHours(hoursW);
+                setTimerMinutes(minutesW);
+                setTimerSeconds(secondsW);
+            }
+        
+        }, 1000);
+    };
+
+    useEffect(() => {
+        startWarningTimer();
+        return () => {
+            clearInterval(interval.current);
+        };
+    });
+
+    //Recruitment countdown
+    const [timerDaysR, setTimerDaysR] = useState('00');
+    const [timerHoursR, setTimerHoursR] = useState('00');
+    const [timerMinutesR, setTimerMinutesR] = useState('00');
+    const [timerSecondsR, setTimerSecondsR] = useState('00');
     
+    let intervalR = useRef();
+
+    const startRecruitmentTimer = () => {
+        const countdownDate = new Date('September, 16 2022 23:59:59').getTime();
+
+        intervalR = setInterval(() => {
+            const nowR = new Date().getTime();
+            const distanceR = countdownDate - nowR;
+
+            const daysR = Math.floor(distanceR / (1000 * 60 * 60 * 24));
+            const hoursR = Math.floor((distanceR % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)));
+            const minutesR = Math.floor((distanceR % (1000 * 60 * 60)) / (1000 * 60));
+            const secondsR = Math.floor((distanceR % (1000 * 60)) / 1000);
+
+            if (distanceR < 0) {
+                //Stop timer after reaching point
+                clearInterval(intervalR.current);
+            } else {
+                //Update timer
+                setTimerDaysR(daysR);
+                setTimerHoursR(hoursR);
+                setTimerMinutesR(minutesR);
+                setTimerSecondsR(secondsR);
+            }
+        
+        }, 1000);
+    };
+
+    // useEffect(() => {
+    //     startRecruitmentTimer();
+    //     return () => {
+    //         clearInterval(intervalR.current);
+    //     };
+    // });
+        
     const data = [
         {
             question: 'When can I apply?',
             answer: 
-            'Applications are open every year in September and ocassionally in January and May. Announcements are posted on our social medias, so follow us to stay updated!',
+            'Applications are open every year in September and occasionally in January and May. Announcements are posted on our social media, so follow us to stay updated!',
         },
 
         {
             question: 'Do I need to be an engineering student?',
             answer: 
-            'No, you do not need to be an engineering student to join the team. We welcome students from all programs at UBC to join our team. ',
+            'No, you do not need to be an engineering student to join the team. We welcome students from all backgrounds and programs at UBC to join our team.',
         },
 
         {
             question: 'What are the requirements to join?',
             answer: 
-            'Having technical skills and knowledge for the subteam you would like to join is preferred, but work ethic and willingness to learn are the most important.',
+            'Work ethic and a willingness to learn are the most important attributes that UBC Solar looks for. Technical skills and knowledge for subteams can vary. Mechanical subteams would prefer SolidWorks and hands-on experiences whereas a software subteam prefers candidates who understand programming language(s) like Python, C, Rust, or JavaScript.',
         },
 
         {
@@ -68,8 +153,9 @@ const RecruitmentPage = () => {
         {
             question: 'How can I improve my odds of joining?',
             answer: 
-            'Many candidates who have gotten and passed interviews displayed strong work ethic, passion, some understanding of the subteam work, and are critical thinkers and problem solvers.',
-        }
+            'Many candidates who have gotten and passed interviews displayed strong work ethic, passion, some understanding of the subteam work, and are critical thinkers and problem solvers. Having a strong written application that clearly demonstrates your problem solving abilities and being able to do well on the interviews can increase your odds of joining the team.',
+        },
+
     ]
 
 
@@ -78,7 +164,7 @@ const RecruitmentPage = () => {
             <NavigationBar isOpen={isOpen} toggle={toggle} />
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <RecruitmentContainer>
-
+            
                 {/* Content */}
                 <RecruitmentContentContainer>
                     <RecruitmentContentChild>   
@@ -89,6 +175,23 @@ const RecruitmentPage = () => {
                             gotta trust me on this one.
                         </RecruitmentContentParagraph>
                         <Button link='#' buttonText='Join Now'/>
+                        
+                        {/* Displaying only one timer */}
+                        <div classname='warning'>
+                            <div className={timerDaysW === 0
+                                ? 'timerVisible' : 'timerHidden'}>
+                                    <p style={{ fontWeight: 'bold', marginBottom: 'auto', marginTop: 'auto'}}>Applications Open In:</p>
+                                    <p style={{ fontWeight: 'bold', color: 'red', fontSize: '14px', marginBottom: 'auto', marginTop: 'auto'}}>
+                                        {timerDaysW} day(s), {timerHoursW} hour(s), {timerMinutesW} minute(s), {timerSecondsW} second(s)</p>
+                            </div>
+                        </div>
+                        <div classname='recruitment'>
+                            <div className={timerDaysW === 0 ? 'timerHidden' : 'timerVisible'}>
+                                    <p style={{ fontWeight: 'bold', marginBottom: 'auto', marginTop: 'auto'}}>Applications Closes In:</p>
+                                    <p style={{ fontWeight: 'bold', color: 'red', fontSize: '14px', marginBottom: 'auto', marginTop: 'auto'}}>
+                                        {timerDaysR} day(s), {timerHoursR} hour(s), {timerMinutesR} minute(s), {timerSecondsR} second(s)</p>
+                            </div>
+                        </div>
                     </RecruitmentContentChild>
                 </RecruitmentContentContainer>
                 {/* Image */}
