@@ -172,11 +172,11 @@ const HomePage = () => {
                 </HomeMottoContainer>
 
                 <Anchor className='meet'></Anchor>
-                <h1 style={{ fontSize: '80px', fontWeight: 'bold', textAlign: 'center', margin: '10vh 0px 0px 0px', marginBottom: 'auto', color: '#002145' }}>Meet the Team</h1>
+                <h1 style={{ fontSize: '5vw', fontWeight: 'bold', textAlign: 'center', margin: '10vh 0px 0px 0px', marginBottom: 'auto', color: '#002145' }}>Meet the Team</h1>
                 <HomeMeetContainer>
                     <MeetImageContainer src={TeamPhoto} />
                     <MeetDescriptionContainer>
-                        <p style={{ color: 'white', fontSize: '1vw' }}>UBC Solar is an engineering design team that consists
+                        <p style={{ color: 'white', fontSize: '15px' }}>UBC Solar is an engineering design team that consists
                             of dedicated students ranging from programs such as engineering, business, and sciences.
                             We are passionate about pushing the limits of sustainable innovation through the
                             development of electric solar-powered racecars.
@@ -198,7 +198,7 @@ const HomePage = () => {
                             <Icon
                                 src={LeadershipIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white', fontSize: '1vw', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw' }}>
+                            <p style={{ textAlign: 'center', color: 'white',  paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw' }}>
                             Our team focuses on raising leadership through providing members with the mentorship and support to further strengthen soft and technical skills that are required to lead a team.
                             </p>
 
@@ -208,7 +208,7 @@ const HomePage = () => {
                             <Icon
                                 src={SustainabilityIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white', fontSize: '1vw', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw' }}>
+                            <p style={{ textAlign: 'center', color: 'white',  paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw'  }}>
                             We are a sustainable design team that raises awareness around clean automobile energy and design life cycle sustainability.
                             </p>
                         </SustainabilityContainer>
@@ -217,7 +217,7 @@ const HomePage = () => {
                             <Icon
                                 src={EducationIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white', fontSize: '1vw', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw' }}>
+                            <p style={{ textAlign: 'center', color: 'white',  paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw'  }}>
                             The team encourages continuous learning and creates the opportunities for our members to advance their future career and pursue their passions. 
                             </p>
                         </EducationContainer>
@@ -226,7 +226,7 @@ const HomePage = () => {
                             <Icon
                                 src={InnovationIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white', fontSize: '1vw', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw' }}>
+                            <p style={{textAlign: 'center', color: 'white', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw'  }}>
                             UBC Solar pushes the limits of technological innovation by designing and manufacturing solar electric race cars that are fully self-sufficient on solar energy.
                             </p>
                         </InnovationContainer>
