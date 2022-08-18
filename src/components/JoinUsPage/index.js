@@ -14,6 +14,7 @@ import {
     RecruitmentContentChild,
     RecruitmentContentParagraph,
     RecruitmentFAQ,
+    ButtonContainer,
 } from './RecruitmentStyle';
 
 import Footer from '../Footer';
@@ -44,7 +45,17 @@ const RecruitmentPage = () => {
     let interval = useRef();
 
     const startWarningTimer = () => {
-        const countdownDate = new Date('August, 17 2022 00:57:30').getTime();
+        const countdownDate = new Date(Date.UTC(2022, 7, 25, 7, 0, 0)).getTime();
+        // Timing System: 
+        // Date.UTC(Year, Month, Day, Hour, Minute, Second)
+        // Year: Simple Year
+        // Month: Integer 0 - 11, 0 for January, 11 for December
+        // Day: Integer 1 - 31
+        // Hour: Integer 0 - 23
+        // Minute: Integer 0 - 59
+        // Second: Integer 0 - 59
+        // UTC = PST + 7 (~Mid March - Early November)
+        // UTC = PST + 8 (~Early November - Mid March)
 
         interval = setInterval(() => {
             const now = new Date().getTime();
@@ -87,7 +98,17 @@ const RecruitmentPage = () => {
     let intervalR = useRef();
 
     const startRecruitmentTimer = () => {
-        const countdownDate = new Date('September, 16 2022 23:59:59').getTime();
+        const countdownDate = new Date(Date.UTC(2022, 8, 16, 7, 0, 0)).getTime();
+        // Timing System: 
+        // Date.UTC(Year, Month, Day, Hour, Minute, Second)
+        // Year: Simple Year
+        // Month: Integer 0 - 11, 0 for January, 11 for December
+        // Day: Integer 1 - 31
+        // Hour: Integer 0 - 23
+        // Minute: Integer 0 - 59
+        // Second: Integer 0 - 59
+        // UTC = PST + 7 (~Mid March - Early November)
+        // UTC = PST + 8 (~Early November - Mid March)
 
         intervalR = setInterval(() => {
             const nowR = new Date().getTime();
@@ -174,24 +195,36 @@ const RecruitmentPage = () => {
                             There are many great reasons for joining us, I'm currently too lazy to type them all out so you just
                             gotta trust me on this one.
                         </RecruitmentContentParagraph>
-                        <Button link='#' buttonText='Join Now'/>
+
+                        <a href='https://linktr.ee/ubcsolar' target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>
+                        <ButtonContainer>
+                            <p style={{ fontWeight: 'bold', fontSize: '20px' }}>Join Now</p>
+                        </ButtonContainer>
+                        </a>
                         
                         {/* Displaying only one timer */}
                         <div classname='warning'>
-                            <div className={timerDaysW === 0
-                                ? 'timerVisible' : 'timerHidden'}>
-                                    <p style={{ fontWeight: 'bold', marginBottom: 'auto', marginTop: 'auto'}}>Applications Open In:</p>
+                            <div className={timerSecondsW === 0 && timerMinutesW === 0 && timerHoursW === 0 && timerDaysW === 0
+                                ? 'hidden' : 'visible'}>
+                                    <p style={{ fontWeight: 'bold', marginBottom: 'auto', marginTop: '1vw' }}>Applications Open In:</p>
                                     <p style={{ fontWeight: 'bold', color: 'red', fontSize: '14px', marginBottom: 'auto', marginTop: 'auto'}}>
                                         {timerDaysW} day(s), {timerHoursW} hour(s), {timerMinutesW} minute(s), {timerSecondsW} second(s)</p>
                             </div>
                         </div>
                         <div classname='recruitment'>
-                            <div className={timerDaysW === 0 ? 'timerHidden' : 'timerVisible'}>
-                                    <p style={{ fontWeight: 'bold', marginBottom: 'auto', marginTop: 'auto'}}>Applications Closes In:</p>
+                            <div className={timerSecondsW === 0 && timerMinutesW === 0 && timerHoursW === 0 && timerDaysW === 0
+                                ? 'visible' : 'hidden'}>
+                                    <p style={{ fontWeight: 'bold', marginBottom: 'auto', marginTop: '-3.5vw'}}>Applications Closes In:</p>
                                     <p style={{ fontWeight: 'bold', color: 'red', fontSize: '14px', marginBottom: 'auto', marginTop: 'auto'}}>
                                         {timerDaysR} day(s), {timerHoursR} hour(s), {timerMinutesR} minute(s), {timerSecondsR} second(s)</p>
                             </div>
+
+                            <div className={timerSecondsR === 0 && timerMinutesR === 0 && timerHoursR === 0 && timerDaysR === 0
+                                ? 'visible' : 'hidden'}>
+                            <p style={{ fontWeight: 'bold', color: 'red', marginBottom: 'auto' }}>Applications have closed!</p>
+                            </div>
                         </div>
+
                     </RecruitmentContentChild>
                 </RecruitmentContentContainer>
                 {/* Image */}
@@ -221,7 +254,7 @@ const RecruitmentPage = () => {
                     </div>
                 </div>
 
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 };

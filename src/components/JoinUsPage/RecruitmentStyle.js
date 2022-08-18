@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkRouter } from 'react-router-dom';
 
 export const RecruitmentContainer = styled.div`
     display: grid;
@@ -80,17 +81,8 @@ export const ButtonContainer = styled.div`
     background-color: #002145;
     color: #ffffff;
     border-radius: 30px;
+    cursor: pointer;
 `;
-
-export const Button = (props) => {
-    return (
-        <ButtonContainer>
-            <Link href={props.link} target="blank">
-                <ButtonText>{props.buttonText}</ButtonText>
-            </Link>
-        </ButtonContainer>
-    );
-}
 
 export const RecruitmentFAQ = styled.h1`
     width: 100vw;
