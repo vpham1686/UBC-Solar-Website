@@ -17,33 +17,31 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <li className={(isOpen? "slidein": "slideout")}>
-                        <SidebarLink to='about' smooth={true} offset={-75} onClick={toggle}>
-                            About
-                        </SidebarLink>
-                    </li>
-
-                    <li className={(isOpen? "slidein": "slideout")}>
-                        <SidebarLink to='projects' smooth={true} offset={-75} onClick={toggle}>
-                            Projects
-                        </SidebarLink>
-                    </li>
-
-                    <li className={(isOpen? "slidein": "slideout")}>
-                        <SidebarLink to='competitions' smooth={true} offset={-75} onClick={toggle}>
-                            Competitions
-                        </SidebarLink>
-                    </li>
-
-                    <li className={(isOpen? "slidein": "slideout")}>
-                        <SidebarLink to='sponsors' smooth={true} offset={-75} onClick={toggle}>
-                            Sponsors
-                        </SidebarLink>
-                    </li>
-
-                    <li className={(isOpen? "slidein": "slideout")}>
-                        <SidebarRoute to='/sponsor-us'>
-                            Sponsor Us
+                        <SidebarRoute to='/' offset={-75} onClick={toggle}>
+                            Home
                         </SidebarRoute>
+                    </li>
+
+                    <li className={(isOpen? "slidein": "slideout")}>
+                        <SidebarRoute to='/projects'  offset={-75} onClick={toggle}>
+                            Projects
+                        </SidebarRoute>
+                    </li>
+
+                    <li className={(isOpen? "slidein": "slideout")}>
+                        <SidebarRoute to='/competitions' offset={-75} onClick={toggle}>
+                            Competitions
+                        </SidebarRoute>
+                    </li>
+
+                    <li className={(isOpen? "slidein": "slideout")}>
+                        <SidebarRoute to='/team-roles' offset={-75} onClick={toggle}>
+                            Team Roles
+                        </SidebarRoute>
+                    </li>
+
+                    <li className={(isOpen? "slidein": "slideout")}>
+                        <a href='https://drive.google.com/file/d/1E40IN7ro8bu5YJBgEa-oPB5TQk6k-lW0/view' target='blank' style={{ textDecoration: 'none', color: '#ffffff' }}>Sponsor Us</a>
                     </li>
                 </SidebarMenu>
                 {/* <SideBtnWrap>
