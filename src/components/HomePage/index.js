@@ -99,6 +99,8 @@ const HomePage = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+
+    //Animate In
     const [ HomeValuesContainerActive, setHomeValuesContainerActive ] = useState(true);
     function onHomeValuesContainerChange(isVisible) {
         if (isVisible) {
@@ -110,9 +112,6 @@ const HomePage = () => {
     function onDiamondSponsorChange(isVisible) {
         if (isVisible) {
             setDiamondSponsorActive(false); }
-        else if (!isVisible) { 
-            setDiamondSponsorActive(true);
-         }
     };
 
     const [ GoldSponsorActive, setGoldSponsorActive ] = useState(true);

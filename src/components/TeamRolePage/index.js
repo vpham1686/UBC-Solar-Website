@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NavigationBar from '../../components/NavigationBar';
 import Sidebar from '../../components/Sidebar';
-import { FaAngleDown } from 'react-icons/fa';
-import { Parallax } from 'react-scroll-parallax';
-import { ParallaxProvider } from "react-scroll-parallax";
+import VisibilitySensor from 'react-visibility-sensor';
 
 import TeamRoleHero from '../../assets/TeamRoleImages/TeamRoles.png';
 
@@ -11,23 +9,24 @@ import Footer from '../Footer';
 
 //Team Leads
 import Captain from '../../assets/TeamRoleImages/Captain.png';
-
 import Mechanical from '../../assets/TeamRoleImages/MechanicalExecutive.png';
 import Electrical from '../../assets/TeamRoleImages/ElectricalExecutive.png';
+
 import Business from '../../assets/TeamRoleImages/BusinessTeamLead.png';
 import Software from '../../assets/TeamRoleImages/SoftwareTeamLead.png';
 import VehicleDynamics from '../../assets/TeamRoleImages/VehicleDynamicsTeamLead.png';
 import PowerElectronics from '../../assets/TeamRoleImages/PowerElectronicsTeamLead.png';
 import Chassis from '../../assets/TeamRoleImages/ChassisTeamLead.png';
 import Battery1 from '../../assets/TeamRoleImages/BatteryTeamColead1.png';
+import Battery2 from '../../assets/TeamRoleImages/BatteryTeamColead2.png';
+import LowVoltageSystems from '../../assets/TeamRoleImages/LowVoltageSystemsTeamLead.png';
+import Aeroshell from '../../assets/TeamRoleImages/AeroshellTeamLead.png';
 
 
 import {
     TeamRoleContainer,
     HeroContainer,
     HeroPhoto,
-    ArrowLevitate,
-    Anchor,
     TeamLeadContainer,
     LeadProfileContainer,
     LeadImage,
@@ -58,6 +57,92 @@ const TeamRolePage = () => {
       return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    //Animate In
+    const [ teamCaptain, setCap ] = useState(true);
+    function teamCaptainVisible(isVisible) {
+        if (isVisible) {
+            setCap(false);
+        }
+    };
+
+    const [ electrical, setElectrical ] = useState(true);
+    function electricalVisible(isVisible) {
+        if (isVisible) {
+            setElectrical(false);
+        }
+    };
+
+    const [ mechanical, setMechanical ] = useState(true);
+    function mechanicalVisible(isVisible) {
+        if (isVisible) {
+            setMechanical(false);
+        }
+    };
+
+    const [ business, setBusiness ] = useState(true);
+    function businessVisible(isVisible) {
+        if (isVisible) {
+            setBusiness(false);
+        }
+    };
+
+    const [ software, setSoftware ] = useState(true);
+    function softwareVisible(isVisible) {
+        if (isVisible) {
+            setSoftware(false);
+        }
+    };
+
+    const [ vehicleDynamics, setVehicleDynamics ] = useState(true);
+    function vehicleDynamicsVisible(isVisible) {
+        if (isVisible) {
+            setVehicleDynamics(false);
+        }
+    };
+
+    const [ powerElectronics, setPowerElectronics ] = useState(true);
+    function powerElectronicsVisible(isVisible) {
+        if (isVisible) {
+            setPowerElectronics(false);
+        }
+    };
+
+    const [ chassis, setChassis ] = useState(true);
+    function chassisVisible(isVisible) {
+        if (isVisible) {
+            setChassis(false);
+        }
+    };
+
+    const [ battery1, setBattery1 ] = useState(true);
+    function battery1Visible(isVisible) {
+        if (isVisible) {
+            setBattery1(false);
+        }
+    };
+
+    const [ battery2, setBattery2 ] = useState(true);
+    function battery2Visible(isVisible) {
+        if (isVisible) {
+            setBattery2(false);
+        }
+    };
+
+    const [ lowVoltageSystems, setLowVoltageSystems ] = useState(true);
+    function lowVoltageSystemsVisible(isVisible) {
+        if (isVisible) {
+            setLowVoltageSystems(false);
+        }
+    };
+    
+    const [ aeroshell, setAeroshell ] = useState(true);
+    function aeroshellVisible(isVisible) {
+        if (isVisible) {
+            setAeroshell(false);
+        }
+    };
+
+
     return (
         <>
         <NavigationBar isOpen={isOpen }toggle={toggle} />
@@ -69,15 +154,14 @@ const TeamRolePage = () => {
                         <HeroPhoto
                             src={ TeamRoleHero }>
                         </HeroPhoto>
-                        <ArrowLevitate to='team'>
-                        <FaAngleDown size="80px" cursor="pointer" ></FaAngleDown>
-                        </ArrowLevitate>
+
                 </HeroContainer>
 
-                <Anchor className='team'></Anchor>
                 <TeamLeadContainer>
 
-                    <LeadProfileContainer>
+                <VisibilitySensor onChange={teamCaptainVisible} partialVisibility={true} active={teamCaptain} offset={{ bottom: 100 }}>
+                {({isVisible}) =>
+                    <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                             <LeadImage src={ Captain }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
@@ -94,8 +178,12 @@ const TeamRolePage = () => {
                                 <LeadPosition>Captain</LeadPosition>
                             </LeadInfoContainer>
                     </LeadProfileContainer>
+                }
+                </VisibilitySensor>
 
-                    <LeadProfileContainer>
+                <VisibilitySensor onChange={electricalVisible} partialVisibility={true} active={electrical} offset={{ bottom: 100 }}>
+                {({isVisible}) =>
+                    <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                             <LeadImage src={ Electrical }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
@@ -116,8 +204,12 @@ const TeamRolePage = () => {
                                 <LeadPosition>Electrical Executive</LeadPosition>
                             </LeadInfoContainer>
                     </LeadProfileContainer>
+                }
+                </VisibilitySensor>
 
-                    <LeadProfileContainer>
+                <VisibilitySensor onChange={mechanicalVisible} partialVisibility={true} active={mechanical} offset={{ bottom: 100 }}>
+                {({isVisible}) =>
+                    <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                             <LeadImage src={ Mechanical }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
@@ -134,18 +226,25 @@ const TeamRolePage = () => {
                                 <LeadPosition>Mechanical Executive</LeadPosition>
                             </LeadInfoContainer>
                     </LeadProfileContainer>
+                }
+                </VisibilitySensor>
 
-                    <LeadProfileContainer>
+                <VisibilitySensor onChange={businessVisible} partialVisibility={true} active={business} offset={{ bottom: 100 }}>
+                {({isVisible}) =>
+                    <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                             <LeadImage src={ Business }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
-                                I am in my third year of engineering at UBC, specializing in environmental engineering.
+                                I am in my third year of engineering at UBC, specializing in environmental engineering. 
                                 <br></br><br></br>
-                                I have always had a passion for integrating business and engineering together.
+                                I have always had a passion and saw value for integrating business and engineering together.
                                 Behind every great engineering team are the finances to back up the cutting edge innovation.
-                                The business team works on website software, team finances, sponsorship relations,  community engagement, and social media management. 
-                                <br></br><br></br>
+                                The business team works on website software, team finances, sponsorship relations, social media management, and community engagement. 
                                 The business team is vital to the team's success, as we need to finance solar electric cars costing ~$150,000!
+                                <br></br><br></br>
+                                As the business team lead, I handle some team logistics and manage the business team projects. 
+                                UBC Solar has changed my life as I have learnt technical skills, management techniques, and made many lifelong friends on the design team.
+                                
                                 </LeadDescription>
                             </LeadDescriptionContainer>
                             <LeadInfoContainer>
@@ -153,8 +252,12 @@ const TeamRolePage = () => {
                                 <LeadPosition>Business Team Lead</LeadPosition>
                             </LeadInfoContainer>
                     </LeadProfileContainer>
+                }
+                </VisibilitySensor>
 
-                    <LeadProfileContainer>
+                <VisibilitySensor onChange={softwareVisible} partialVisibility={true} active={software} offset={{ bottom: 100 }}>
+                {({isVisible}) =>
+                    <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                             <LeadImage src={ Software }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
@@ -171,8 +274,12 @@ const TeamRolePage = () => {
                                 <LeadPosition>Software Team Lead</LeadPosition>
                             </LeadInfoContainer>
                     </LeadProfileContainer>
+                }
+                </VisibilitySensor>
 
-                    <LeadProfileContainer>
+                <VisibilitySensor onChange={vehicleDynamicsVisible} partialVisibility={true} active={vehicleDynamics} offset={{ bottom: 100 }}>
+                {({isVisible}) =>
+                    <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                             <LeadImage src={ VehicleDynamics }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
@@ -190,8 +297,12 @@ const TeamRolePage = () => {
                                 <LeadPosition>Vehicle Dynamics Team Lead</LeadPosition>
                             </LeadInfoContainer>
                     </LeadProfileContainer>
+                }
+                </VisibilitySensor>
 
-                    <LeadProfileContainer>
+                <VisibilitySensor onChange={powerElectronicsVisible} partialVisibility={true} active={powerElectronics} offset={{ bottom: 100 }}>
+                {({isVisible}) =>
+                    <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                             <LeadImage src={ PowerElectronics }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
@@ -207,8 +318,12 @@ const TeamRolePage = () => {
                                 <LeadPosition>Power Electronics Lead</LeadPosition>
                             </LeadInfoContainer>
                     </LeadProfileContainer>
+                }
+                </VisibilitySensor>
 
-                    <LeadProfileContainer>
+                <VisibilitySensor onChange={chassisVisible} partialVisibility={true} active={chassis} offset={{ bottom: 100 }}>
+                {({isVisible}) =>
+                    <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                             <LeadImage src={ Chassis }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
@@ -225,9 +340,37 @@ const TeamRolePage = () => {
                                 <LeadPosition>Chassis Team Lead</LeadPosition>
                             </LeadInfoContainer>
                     </LeadProfileContainer>
+                }
+                </VisibilitySensor>
 
-                    <LeadProfileContainer>
+                <VisibilitySensor onChange={battery1Visible} partialVisibility={true} active={battery1} offset={{ bottom: 100 }}>
+                {({isVisible}) =>
+                    <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                             <LeadImage src={ Battery1 }></LeadImage>
+                            <LeadDescriptionContainer>
+                                <LeadDescription>
+                                Hey! I am Serhii. 
+                                I am an engineering physics student and a mechanical co-lead of the Battery team. 
+                                I have joined UBC Solar in 2020 as a chassis member. 
+                                Since then I have transitioned to low voltage systems and in December of 2021 I became a battery co-lead. 
+                                Throughout my journey I have learned a lot of technical and communication skills that are crucial for my engineering career.
+                                <br></br><br></br>
+                                On the Battery Mech subteam we design the most efficient battery pack for our solar race cars and ensure its safe and reliable. 
+                                Our team members gain a lot of experience in computer aided design (CAD) and mechanical-electrical intregration.
+                                </LeadDescription>
+                            </LeadDescriptionContainer>
+                            <LeadInfoContainer>
+                                <LeadName>Serhii Rubtsov</LeadName>
+                                <LeadPosition>Battery Team Co-lead</LeadPosition>
+                            </LeadInfoContainer>
+                    </LeadProfileContainer>
+                }
+                </VisibilitySensor>
+
+                <VisibilitySensor onChange={battery2Visible} partialVisibility={true} active={battery2} offset={{ bottom: 100 }}>
+                {({isVisible}) =>
+                    <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
+                            <LeadImage src={ Battery2 }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
                                 I am a third year Engineering Physics student at UBC. 
@@ -243,62 +386,54 @@ const TeamRolePage = () => {
                                 <LeadPosition>Battery Team Co-lead</LeadPosition>
                             </LeadInfoContainer>
                     </LeadProfileContainer>
+                }
+                </VisibilitySensor>
 
-                    <LeadProfileContainer>
-                            <LeadImage src={ Business }></LeadImage>
+                <VisibilitySensor onChange={lowVoltageSystemsVisible} partialVisibility={true} active={lowVoltageSystems} offset={{ bottom: 100 }}>
+                {({isVisible}) =>
+                    <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
+                            <LeadImage src={ LowVoltageSystems }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
-                                I am in my third year of engineering at UBC, specializing in environmental engineering.
+                                I am a second year engineering student specialising in computer engineering and have been a part of UBC Solar for about two years now. 
+                                Throughout my time here, the experience has been both rewarding and enjoyable as I learn and discover new things.
                                 <br></br><br></br>
-                                I have always had a passion for integrating business and engineering together.
-                                Behind every great engineering team are the finances to back up the cutting edge innovation. The business team works on website management, sponsor outreach,  community engagement, social media management, and financial allocation. 
-                                <br></br><br></br>
-                                The business team is vital to the team's success, as we need to finance solar electric cars costing ~$150,000.
+                                As the name implies, the low voltage systems team is responsible for the development and application of low voltage systems for our solar car. 
+                                Namely the driver interface, vehicle manoeuvring, lights, navigation, communication and data logging. 
+                                Our team primarily designs, assembles and tests boards, as well as the wiring of these modules.
                                 </LeadDescription>
                             </LeadDescriptionContainer>
                             <LeadInfoContainer>
-                                <LeadName>Serhii Rubtsov</LeadName>
-                                <LeadPosition>Battery Team Co-lead</LeadPosition>
+                                <LeadName>Anthony Vu</LeadName>
+                                <LeadPosition>Low Voltage Systems Team Lead</LeadPosition>
                             </LeadInfoContainer>
                     </LeadProfileContainer>
-
-                    <LeadProfileContainer>
-                            <LeadImage src={ Business }></LeadImage>
+                }
+                </VisibilitySensor>
+                
+                <VisibilitySensor onChange={aeroshellVisible} partialVisibility={true} active={aeroshell} offset={{ bottom: 100 }}>
+                {({isVisible}) =>
+                    <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
+                            <LeadImage src={ Aeroshell }></LeadImage>
                             <LeadDescriptionContainer>
                                 <LeadDescription>
-                                I am in my third year of engineering at UBC, specializing in environmental engineering.
+                                I am a fourth year Engineering Physics student at UBC. 
+                                I joined UBC Solar in my first year and have learned more from it than I could have ever imagined.
                                 <br></br><br></br>
-                                I have always had a passion for integrating business and engineering together.
-                                Behind every great engineering team are the finances to back up the cutting edge innovation. The business team works on website management, sponsor outreach,  community engagement, social media management, and financial allocation. 
+                                The aeroshell sub-team is responsible for the entire exterior of the car, from the carbon fibre body to the custom 3D-printed light mounts. 
+                                We ensure that the car is as aerodynamic as possible to increase efficiency and allow us to drive faster and farther.
                                 <br></br><br></br>
-                                The business team is vital to the team's success, as we need to finance solar electric cars costing ~$150,000.
+                                In my spare time, I enjoy playing volleyball and soccer with my friends.
                                 </LeadDescription>
                             </LeadDescriptionContainer>
                             <LeadInfoContainer>
-                                <LeadName>Victor Pham</LeadName>
-                                <LeadPosition>Business Team Lead</LeadPosition>
+                                <LeadName>Noah Dolter</LeadName>
+                                <LeadPosition>Aeroshell Team Lead</LeadPosition>
                             </LeadInfoContainer>
                     </LeadProfileContainer>
-
-                    <LeadProfileContainer>
-                            <LeadImage src={ Business }></LeadImage>
-                            <LeadDescriptionContainer>
-                                <LeadDescription>
-                                I am in my third year of engineering at UBC, specializing in environmental engineering.
-                                <br></br><br></br>
-                                I have always had a passion for integrating business and engineering together.
-                                Behind every great engineering team are the finances to back up the cutting edge innovation. The business team works on website management, sponsor outreach,  community engagement, social media management, and financial allocation. 
-                                <br></br><br></br>
-                                The business team is vital to the team's success, as we need to finance solar electric cars costing ~$150,000.
-                                </LeadDescription>
-                            </LeadDescriptionContainer>
-                            <LeadInfoContainer>
-                                <LeadName>Victor Pham</LeadName>
-                                <LeadPosition>Business Team Lead</LeadPosition>
-                            </LeadInfoContainer>
-                    </LeadProfileContainer>
+                }
+                </VisibilitySensor>
                 </TeamLeadContainer>
-
             </TeamRoleContainer>
 
             <Footer/>

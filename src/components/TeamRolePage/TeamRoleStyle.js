@@ -19,41 +19,35 @@ export const HeroPhoto = styled.img`
     overflow: auto;
 `;
 
-export const ArrowLevitate = styled(LinkScroll)`
-    position: absolute;
-    display: flex;    
-
-    z-index: 5;
-    color: #E5B13A;
-
-    // Animation
-    animation-name: ArrowLevitate;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-
-    @keyframes ArrowLevitate {
-        from { transform: translate(0, 0px);  }
-        65%  { transform: translate(0, 15px); }
-        to   { transform: translate(0,-0px);  }
-    }
-`;
-
-export const Anchor = styled.div`
-
-`;
-
 export const TeamLeadContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 33.333vw);
-    grid-template-rows: repeat(6, 90vh);
+    grid-template-rows: repeat(4, 90vh);
     justify-items: center;
     padding-top: 50px;
+
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(1, 100vw);
+        grid-template-rows: repeat(12, 90vh);
+    }
+
+    @media screen and (max-width: 750px) {
+        grid-template-rows: repeat(12, 70vh);
+    }
 `;
 
 export const LeadProfileContainer = styled.div`
     position: relative;
     height: 33vw;
+    transition: 1s ease-in;
+
+    @media screen and (max-width: 1200px) {
+        height: 100vw;
+    }
+
+    @media screen and (max-width: 750px) {
+        height: 120vw;
+    }
 `;
 
 export const LeadImage = styled.img`
@@ -84,6 +78,17 @@ export const LeadDescription = styled.p`
     text-align: center;
     font-size: 1vw;
     color: #ffffff;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 22px;
+        width: 65vw;
+    }
+
+    
+    @media screen and (max-width: 750px) {
+        font-size: 13px;
+        width: 80vw;
+    }
 `;
 
 export const LeadInfoContainer = styled.div`
@@ -96,11 +101,27 @@ export const LeadName = styled.p`
     margin-top: auto;
     font-weight: bold;
     font-size: 23px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 750px) {
+        font-size: 23px;
+    }
 `;
 
 export const LeadPosition = styled.p`
     text-align: center;
     margin-top: auto;
     font-size: 14px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 750px) {
+        font-size: 16px;
+    }
 `;
 
