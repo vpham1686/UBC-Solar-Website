@@ -15,7 +15,7 @@ export const SidebarContainer = styled.div`
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
 
-        @media screen and (min-width: 769px) {
+        @media screen and (min-width: 901px) {
             display: none;
         }
 

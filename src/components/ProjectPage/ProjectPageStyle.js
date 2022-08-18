@@ -54,7 +54,7 @@ export const ProjectImageContainer = styled.div`
         height: 70vw;
         background-size: contain;
         width: 90%;
-        margin: -14vw 18vw;
+        margin: auto;
     }
 `;
 
@@ -70,8 +70,8 @@ export const ProjectImageSpecs = styled.img`
     @media screen and (max-width: 1900px) {
         height: 70vw;
         background-size: contain;
-        width: 70%;
-        margin: -14vw 18vw;
+        width: 90%;
+        margin: auto;
     }
 `;
 
