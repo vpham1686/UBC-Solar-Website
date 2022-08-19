@@ -13,8 +13,7 @@ export const HomeHeroContainer = styled.div`
 `;
 
 export const HeroPhoto = styled.img`
-    //Height is exact for fitting one section
-    height: calc(100vh - 60px);
+    height: 46vw;
     width: 100%;
     object-fit: cover;
     overflow: auto;
@@ -37,6 +36,10 @@ export const ArrowLevitate = styled(LinkScroll)`
         from { transform: translate(0, 0px);  }
         65%  { transform: translate(0, 15px); }
         to   { transform: translate(0,-0px);  }
+    }
+
+    @media screen and (max-width: 750px) {
+        display: none;
     }
 `;
 
@@ -158,6 +161,7 @@ export const HomeValuesContainer = styled.div`
     margin: 50px 10px;
     height: auto;
     transition: 1s ease-in;
+    
     @media screen and (max-width: 1000px) {
         margin: 25px 10px;
         height: auto;
@@ -240,6 +244,10 @@ export const DiamondSponsors = styled.img`
     display: flex;
     justify-self: center;
     transition: 1s ease-in;
+
+    @media screen and (max-width: 750px) {
+        max-width: 200px;
+    }
 `;
 
 export const GoldContainer = styled.div`
@@ -254,9 +262,14 @@ export const GoldContainer = styled.div`
 
 export const GoldSponsorContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 20vw);
+    grid-template-columns: repeat(2, 40vw);
     grid-template-rows: repeat(1, 25vh);
     align-items: center;
+
+    @media screen and (max-width: 750px) {
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: repeat(1, 15vh);
+    }
 `;
 
 export const GoldSponsors = styled.img`
@@ -265,6 +278,16 @@ export const GoldSponsors = styled.img`
     max-width: 14vw;
     padding-bottom: 10vh;
     transition: 1s ease-in;
+
+    @media screen and (max-width: 1200px) {
+        zoom: 1.4;
+        padding-bottom: 3vh;
+    }
+
+    @media screen and (max-width: 750px) {
+        zoom: 2;
+        padding-bottom: 3vh;
+    }
 `;
 
 export const SilverContainer = styled.div`
@@ -279,9 +302,14 @@ export const SilverContainer = styled.div`
 
 export const SilverSponsorContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 20vw);
-    grid-template-rows: repeat(1, 25vh);
+    grid-template-columns: repeat(2, 40vw);
+    grid-template-rows: repeat(1, 20vh);
     align-items: center;
+
+    @media screen and (max-width: 750px) {
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: repeat(1, 15vh);
+    }
 `;
 
 export const SilverSponsors = styled.img`
@@ -290,6 +318,16 @@ export const SilverSponsors = styled.img`
     max-width: 14vw;
     padding-bottom: 10vh;
     transition: 1s ease-in;
+
+    @media screen and (max-width: 1200px) {
+        zoom: 1.4;
+        padding-bottom: 3vh;
+    }
+
+    @media screen and (max-width: 750px) {
+        zoom: 2;
+        padding-bottom: 3vh;
+    }
 `;
 
 export const BronzeContainer = styled.div`
@@ -307,6 +345,11 @@ export const BronzeSponsorContainer = styled.div`
     grid-template-columns: repeat(4, 20vw);
     grid-template-rows: repeat(1, 25vh);
     align-items: center;
+
+    @media screen and (max-width: 750px) {
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: repeat(4, 15vh);
+    }
 `;
 
 export const BronzeSponsors = styled.img`
@@ -315,6 +358,16 @@ export const BronzeSponsors = styled.img`
     max-width: 14vw;
     padding-bottom: 10vh;
     transition: 1s ease-in;
+
+    @media screen and (max-width: 1200px) {
+        zoom: 1.4;
+        padding-bottom: 3vh;
+    }
+
+    @media screen and (max-width: 750px) {
+        zoom: 2;
+        padding-bottom: 3vh;
+    }
 `;
 
 export const SupporterContainer = styled.div`
@@ -332,6 +385,11 @@ export const SupporterSponsorContainer = styled.div`
     grid-template-columns: repeat(4, 20vw);
     grid-template-rows: repeat(1, 25vh);
     align-items: center;
+
+    @media screen and (max-width: 750px) {
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: repeat(1, 15vh);
+    }
 `;
 
 export const SupporterSponsors = styled.img`
@@ -340,6 +398,16 @@ export const SupporterSponsors = styled.img`
     max-width: 14vw;
     padding-bottom: 10vh;
     transition: 1s ease-in;
+
+    @media screen and (max-width: 1200px) {
+        zoom: 1.4;
+        padding-bottom: 3vh;
+    }
+
+    @media screen and (max-width: 750px) {
+        zoom: 2;
+        padding-bottom: 3vh;
+    }
 `;
 
 

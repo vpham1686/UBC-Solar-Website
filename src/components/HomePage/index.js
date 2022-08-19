@@ -38,8 +38,6 @@ import Vicor from '../../assets/Sponsors/Vicor.png';
 import VR3 from '../../assets/Sponsors/VR3.png';
 import TCI from '../../assets/Sponsors/TCI.png';
 
-import Filler from '../../assets/Sponsors/Filler.png';
-
 
 import {
     HomeContainer,
@@ -171,11 +169,11 @@ const HomePage = () => {
                 </HomeMottoContainer>
 
                 <Anchor className='meet'></Anchor>
-                <h1 style={{ fontSize: '5vw', fontWeight: 'bold', textAlign: 'center', margin: '10vh 0px 0px 0px', marginBottom: 'auto', color: '#002145' }}>Meet the Team</h1>
+                <h1 style={{ fontSize: '4vw', fontWeight: 'bold', textAlign: 'center', margin: '10vh 0px 0px 0px', marginBottom: 'auto', color: '#002145' }}>Meet the Team</h1>
                 <HomeMeetContainer>
                     <MeetImageContainer src={TeamPhoto} />
                     <MeetDescriptionContainer>
-                        <p style={{ color: 'white', fontSize: '15px' }}>UBC Solar is an engineering design team that consists
+                        <p style={{ fontSize: '1vh', color: 'white', fontSize: '15px' }}>UBC Solar is an engineering design team that consists
                             of dedicated students ranging from programs such as engineering, business, and sciences.
                             We are passionate about pushing the limits of sustainable innovation through the
                             development of electric solar-powered racecars.
@@ -236,7 +234,7 @@ const HomePage = () => {
 
                 <HomeSponsorsContainer>
                     <h1 style={{ fontSize: '40px', fontWeight: 'bold', textAlign: 'center', marginBottom: '0px' }}>Sponsors</h1>
-                    <p style={{ fontSize: '20px', textAlign: 'center', marginTop: '0', marginBottom: '50px' }}>UBC Solar would like to thank all of our sponsors for helping the team achieve our goals and enabling us to participate in competitions.</p>
+                    <p style={{ fontSize: '2vh', textAlign: 'center', marginTop: '0', marginBottom: '50px' }}>UBC Solar would like to thank all of our sponsors for helping the team achieve our goals and enabling us to participate in competitions.</p>
                     <DiamondContainer>
                         <p style={{ color: '#70D1F4', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Diamond</p>
                         <VisibilitySensor onChange={onDiamondSponsorChange} partialVisibility={true} active={DiamondSponsorActive} offset={{ bottom: 100 }}>
@@ -253,8 +251,6 @@ const HomePage = () => {
                         {({isVisible}) =>
                         <GoldSponsorContainer>
                             <GoldSponsors
-                                src={Filler} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
-                            <GoldSponsors
                                 src={PSIM} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <GoldSponsors
                                 src={Siemens} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
@@ -269,11 +265,9 @@ const HomePage = () => {
                         {({isVisible}) =>
                         <SilverSponsorContainer>
                             <SilverSponsors
-                                src={Filler} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
-                            <SilverSponsors
                                 src={Altium} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
                             <SilverSponsors
-                                src={Airtech} style={{ opacity: `${isVisible ? '1' : '0'}` }}/>
+                                src={Airtech} style={{ opacity: `${isVisible ? '1' : '0'}`}}/>
                         </SilverSponsorContainer>
                         }    
                         </VisibilitySensor>
