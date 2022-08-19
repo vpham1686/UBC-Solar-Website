@@ -192,8 +192,8 @@ const RecruitmentPage = () => {
                         <RecruitmentContentHeaderText font='15px' text='Positions Available' />
                         <RecruitmentContentHeaderText font='40px' text='Work with us' />
                         <RecruitmentContentParagraph>
-                            There are many great reasons for joining us, I'm currently too lazy to type them all out so you just
-                            gotta trust me on this one.
+                            UBC Solar offers many great opportunities for students of all backgrounds. 
+                            Join us on our journey to to be part of the development of sustainable automobiles and push the limits of technology together.
                         </RecruitmentContentParagraph>
 
                         <a href='https://linktr.ee/ubcsolar' target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>
