@@ -1,8 +1,45 @@
 import styled from 'styled-components';
 import { Link as LinkScroll } from 'react-scroll';
+import TeamRolesMainImage from '../../assets/TeamRoleImages/TeamRolesMainImage.png';
 
 export const TeamRoleContainer = styled.div`
-    
+    overflow: hidden;
+`;
+
+export const TeamRolesMainImageContainer = styled.div`
+    height: calc(100vh - 60px);
+    width: 100%;
+    background-image: url(${TeamRolesMainImage});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+
+    @media screen and (max-width: 600px) {
+        background: #E5B13A;
+        height: 100px;
+        margin-bottom: 0;
+    }
+`;
+
+export const TeamRolesMainImageContentContainer = styled.div`
+    height: auto;
+    width: auto;
+`;
+
+export const TeamRolesMainImageContentText = styled.h1`
+    margin: 0px 0px 175px 0px;
+    color: white;
+    font-size: 80px;
+
+    @media screen and (max-width: 600px) {
+        color: #002145;
+        font-size: 50px;
+        margin: 0;
+    }
 `;
 
 export const HeroContainer = styled.div`
@@ -18,7 +55,7 @@ export const HeroPhoto = styled.img`
     object-fit: cover;
     overflow: auto;
 `;
-
+// 90vh 90vh 70vh
 export const TeamLeadContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 33.333vw);
@@ -28,11 +65,11 @@ export const TeamLeadContainer = styled.div`
 
     @media screen and (max-width: 1200px) {
         grid-template-columns: repeat(1, 100vw);
-        grid-template-rows: repeat(12, 90vh);
+        grid-template-rows: repeat(12, 120vw);
     }
 
     @media screen and (max-width: 750px) {
-        grid-template-rows: repeat(12, 70vh);
+        grid-template-rows: repeat(12, 150vw);
     }
 `;
 
