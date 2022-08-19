@@ -39,8 +39,7 @@ const ProjectPage = () => {
                     <p>
                     After countless all-nighters from many dedicated members preparing for the competition, driving 12 - 14 hours a day down to Topeka, Kansas, the team officially broke UBC Solar personal records at the Formula Sun Grand Prix 2022 competition! 
                     Learning from the mistakes of the 2017 FSGP competition, the team carefully planned the logistics and engineering designs to minimize as much risk as possible for the car, Daybreak.
-                    Passing strict safety requirements and a rigorous dynamics test for the first time while also racing the solar car on the racetrack for the first time in history; competing against many other top universities from all over North America. 
-                    Our drivers: Cywin Tapia and James Seto spent countless days driving the solar car, determined to perfect their techniques through the extreme Kansas heat.
+                    The team passed strict safety requirements and a rigorous dynamics test for the first time and raced the solar car on the racetrack for the first time in history; competing against many other top universities from all over North America.                     
                     This competition was a huge learning opportunity for our members and also provided the team with new ideas from cooperating with other top universities. 
                     The competition has sparked the future success for our team and allowed us to pursue more ambitious endeavors with the experiences we gained.
                     </p>

@@ -387,7 +387,7 @@ const TeamRolePage = () => {
                                     </LeadDescription>
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
-                                    <LeadName>Mischa Jonal</LeadName>
+                                    <LeadName>Mischa Johal</LeadName>
                                     <LeadPosition>Battery Team Co-lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>

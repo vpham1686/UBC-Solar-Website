@@ -123,7 +123,7 @@ export const MeetImageContainer = styled.img`
 `
 
 export const MeetDescriptionContainer = styled.div`
-    background: rgba(0, 33, 69, 0.75);
+    background: rgba(229, 177, 58, 0.95);
     border-radius: 10px;
     grid-area: text;
     margin: auto 20px;
@@ -166,8 +166,8 @@ export const ValuesContainer = styled.div`
 `;
 
 export const LeadershipContainer = styled.div`
-    grid-area: a;
-    background: rgba(0, 33, 69, 0.75);
+    grid-area: d;
+    background: rgba(229, 177, 58, 0.95);
     border-radius: 50px;
     margin: 0 auto;
 `;
@@ -185,21 +185,21 @@ export const Icon = styled.img`
 
 export const SustainabilityContainer = styled.div`
     grid-area: b;
-    background: rgba(0, 33, 69, 0.75);
+    background: rgba(229, 177, 58, 0.95);
     border-radius: 50px;
     margin: 0 auto;
 `;
 
 export const EducationContainer = styled.div`
     grid-area: c;
-    background: rgba(0, 33, 69, 0.75);
+    background: rgba(229, 177, 58, 0.95);
     border-radius: 50px;
     margin: 0 auto;
 `;
 
 export const InnovationContainer = styled.div`
-    grid-area: d;
-    background: rgba(0, 33, 69, 0.75);
+    grid-area: a;
+    background: rgba(229, 177, 58, 0.95);
     border-radius: 50px;
     margin: 0 auto;
 `;

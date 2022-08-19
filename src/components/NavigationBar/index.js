@@ -38,7 +38,7 @@ const Navbar = ({ isOpen, toggle }) => {
                                 <NavLinks to='/competitions'>Competitions</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='/team-roles'>Team Roles</NavLinks>
+                                <NavLinks to='/team-roles'>Our Team</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to='/recruitment'>Join Us</NavLinks>

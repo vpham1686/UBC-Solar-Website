@@ -181,11 +181,11 @@ const HomePage = () => {
                 </HomeMottoContainer>
 
                 <Anchor className='meet'></Anchor>
-                <h1 style={{ fontSize: '4vw', fontWeight: 'bold', textAlign: 'center', margin: '10vh 0px 0px 0px', marginBottom: 'auto', color: '#002145' }}>Meet the Team</h1>
+                <h1 style={{ fontSize: '4vw', fontWeight: 'bold', textAlign: 'center', margin: '10vh 0px 0px 0px', marginBottom: 'auto', color: '#000000' }}>Meet the Team</h1>
                 <HomeMeetContainer>
                     <MeetImageContainer src={TeamPhoto} />
                     <MeetDescriptionContainer>
-                        <p style={{ fontSize: '1vh', color: 'white', fontSize: '15px' }}>UBC Solar is an engineering design team that consists
+                        <p style={{ fontSize: '1vh', color: '#000000', fontSize: '15px' }}>UBC Solar is an engineering design team that consists
                             of dedicated students ranging from programs such as engineering, business, and sciences.
                             We are passionate about pushing the limits of sustainable innovation through the
                             development of electric solar-powered racecars.
@@ -202,43 +202,42 @@ const HomePage = () => {
                 {({isVisible}) =>
                 <HomeValuesContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                     <ValuesContainer>
-                        <LeadershipContainer>
-                            <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Leadership</h1>
+                        <InnovationContainer>
+                            <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: '#000000' }}>Innovation</h1>
                             <Icon
-                                src={LeadershipIcon}>
+                                src={InnovationIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white',  paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw' }}>
-                            Our team focuses on raising leadership through providing members with the mentorship and support to further strengthen soft and technical skills that are required to lead a team.
+                            <p style={{textAlign: 'center', color: '#000000', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw'  }}>
+                            UBC Solar pushes the limits of technological innovation by designing and manufacturing solar electric race cars that are fully self-sufficient on solar energy.
                             </p>
-
-                        </LeadershipContainer>
+                        </InnovationContainer>
                         <SustainabilityContainer>
-                            <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Sustainability</h1>
+                            <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: '#000000' }}>Sustainability</h1>
                             <Icon
                                 src={SustainabilityIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white',  paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw'  }}>
+                            <p style={{ textAlign: 'center', color: '#000000',  paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw'  }}>
                             We are a sustainable design team that raises awareness around clean automobile energy and design life cycle sustainability.
                             </p>
                         </SustainabilityContainer>
                         <EducationContainer>
-                            <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Education</h1>
+                            <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: '#000000' }}>Education</h1>
                             <Icon
                                 src={EducationIcon}>
                             </Icon>
-                            <p style={{ textAlign: 'center', color: 'white',  paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw'  }}>
+                            <p style={{ textAlign: 'center', color: '#000000',  paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw'  }}>
                             The team encourages continuous learning and creates the opportunities for our members to advance their future career and pursue their passions. 
                             </p>
                         </EducationContainer>
-                        <InnovationContainer>
-                            <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: 'white' }}>Innovation</h1>
+                        <LeadershipContainer>
+                            <h1 style={{ textAlign: 'center', marginBottom: 'auto', color: '#000000' }}>Leadership</h1>
                             <Icon
-                                src={InnovationIcon}>
+                                src={LeadershipIcon}>
                             </Icon>
-                            <p style={{textAlign: 'center', color: 'white', paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw'  }}>
-                            UBC Solar pushes the limits of technological innovation by designing and manufacturing solar electric race cars that are fully self-sufficient on solar energy.
+                            <p style={{ textAlign: 'center', color: '#000000',  paddingLeft: '10px', paddingRight: '10px', paddingTop: '2vw' }}>
+                            Our team raises leadership through providing members with the mentorship and support to further strengthen soft and technical skills that are required to lead a team.
                             </p>
-                        </InnovationContainer>
+                        </LeadershipContainer>
                     </ValuesContainer>
                 </HomeValuesContainer>
                 }
