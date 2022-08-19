@@ -49,7 +49,7 @@ export const ProjectImageContainer = styled.div`
     object-fit: contain;
     background-position: center;
     background-repeat: no-repeat;
-
+    text-align: center;
     @media screen and (max-width: 1000px) {
         height: 70vw;
         background-size: contain;
