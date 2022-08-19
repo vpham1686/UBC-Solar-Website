@@ -13,7 +13,7 @@ export const HomeHeroContainer = styled.div`
 `;
 
 export const HeroPhoto = styled.img`
-    height: 46vw;
+    height: calc(100vh - 60px);
     width: 100%;
     object-fit: cover;
     overflow: auto;
@@ -90,14 +90,6 @@ export const Anchor = styled.div`
     top: -60px;
 `;
 
-// export const HomeMeetContainer = styled.div`
-//     display: flex;
-//     flex-direction: row;
-//     height: calc(100vh - 120px);
-//     padding-right: 5vw;
-//     justify-content: space-between;
-//     align-items: center;
-// `;
 export const HomeMeetContainer = styled.div`
     display: grid;
     grid-template-areas: "image text";
@@ -113,7 +105,6 @@ export const HomeMeetContainer = styled.div`
     }
 `;
 
-
 export const MeetImageContainer = styled.img`
     grid-area: image;
     height: auto;
@@ -125,16 +116,7 @@ export const MeetImageContainer = styled.img`
         width: 100%;
         border-radius: 0px;
     }
-`;
-
-// export const MeetImageContainer = styled.img`
-//     width: 60vw;
-//     object-fit: cover;
-//     display: block;
-//     padding-left: 25px;
-//     height: 75vh;
-//     border-radius: 50px;
-// `;
+`
 
 export const MeetDescriptionContainer = styled.div`
     background: rgba(0, 33, 69, 0.75);
@@ -148,14 +130,6 @@ export const MeetDescriptionContainer = styled.div`
         margin: 20px;
     }
 `;
-
-// export const MeetDescriptionContainer = styled.div`
-//     background: rgba(0, 33, 69, 0.75);
-//     padding: 2vw;
-//     width: 25%;
-//     height: 60vh;
-//     border-radius: 50px;
-// `;
 
 export const HomeValuesContainer = styled.div`
     margin: 50px 10px;
@@ -409,25 +383,3 @@ export const SupporterSponsors = styled.img`
         padding-bottom: 3vh;
     }
 `;
-
-
-
-// export const AboutContainer = styled.div`
-//     display: flex;
-//     background: #002145;
-//     height: 800px;
-//     position: relative;
-//     z-index: 5;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 1rem;
-//     color: white;
-
-//     @media screen and (max-width: 1200px) {
-//         height: 1100px;
-//     }
-
-//     @media screen and (max-width: 420px) {
-//         height: 1000px;
-//     }
-// `;

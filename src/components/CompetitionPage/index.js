@@ -36,13 +36,22 @@ const ProjectPage = () => {
                 <ProjectImage backgroundImage={ProjectPageDaybreak} />
                 <ProjectTextContainer>
                     <ProjectTextName>Formula Sun Grand Prix 2022</ProjectTextName>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>
+                    After countless all-nighters from many dedicated members preparing for the competition, driving 12 - 14 hours a day down to Topeka, Kansas, our team officially broke UBC Solar personal records at the Formula Sun Grand Prix 2022 competition! 
+                    Learning from the mistakes of the 2017 FSGP competition, our team carefully planned the logistics and engineering designs to minimize as much risk as possible for our car, Daybreak.
+                    Passing strict safety requirements and a rigorous dynamics test for the first time while also racing our solar car on the racetrack for the first time in history; competing against many other top universities from all over North America. 
+                    Our drivers: Cywin Tapia and James Seto spent countless days driving the solar car, determined to perfect their techniques through the extreme Kansas heat.
+                    This competition was a huge learning opportunity for our members and also provided the team with new ideas from cooperating with other top universities. 
+                    The competition has sparked the future success for our team and allowed us to pursue more ambitious endeavors with the experiences we gained.
+                    </p>
+                    
                 </ProjectTextContainer>
                 <ProjectImage backgroundImage={ProjectPageRaven} />
                 <LastProjectTextContainer>
                     <ProjectTextName>Formula Sun Grand Prix 2017</ProjectTextName>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+                    <p>
+                    T
+                    </p>
                 </LastProjectTextContainer>
             </div>
             <Footer />
