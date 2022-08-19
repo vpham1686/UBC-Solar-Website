@@ -17,6 +17,10 @@ export const HeroPhoto = styled.img`
     width: 100%;
     object-fit: cover;
     overflow: auto;
+
+    @media screen and (max-width: 1200px) {
+        height: 46vw;
+    }
 `;
 
 export const ArrowLevitate = styled(LinkScroll)`
