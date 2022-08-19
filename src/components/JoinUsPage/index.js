@@ -160,9 +160,9 @@ const RecruitmentPage = () => {
         },
 
         {
-            question: 'Question?',
+            question: 'What if I have no experience?',
             answer: 
-            'Hehe.',
+            'Our team looks for members who are dedicated to the team and passionate. Here on UBC Solar, we welcome people to apply regardless of experience. We believe that the technical skills can be taught while being part of the team.',
         },
 
         {
