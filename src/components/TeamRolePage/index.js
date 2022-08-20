@@ -159,7 +159,7 @@ const TeamRolePage = () => {
                 </HeroContainer> */}
                 <TeamRolesMainImageContainer>
                     <TeamRolesMainImageContentContainer>
-                        <TeamRolesMainImageContentText>Team Roles</TeamRolesMainImageContentText>
+                        <TeamRolesMainImageContentText>Our Team</TeamRolesMainImageContentText>
                     </TeamRolesMainImageContentContainer>
                 </TeamRolesMainImageContainer>
                 <TeamLeadContainer>
