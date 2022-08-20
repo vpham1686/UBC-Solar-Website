@@ -59,9 +59,11 @@ export const ProjectImageContainer = styled.div`
 `;
 
 export const ProjectImageSpecs = styled.img`
-    margin: 0px;
-    height: calc(100vh - 60px);
-    width: 100%;
+    margin: auto auto 100px auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
     background-size: contain;
     transition: 1.5s;
