@@ -140,19 +140,9 @@ const HomePage = () => {
         }
     };
 
-    //Bug Inquiries
-    const [contact, setContact] = useState(true);
-    function contacts() {
-      if (contact){
-        console.log('Hello world! Oh- you found us! We are the developers of this website. Please contact Victordkpham888@gmail.com || Markdeguzman204@gmail.com for any inquiries or bugs on the website.');
-        setContact(false);
-      }
-    }
 
     return (
         <>
-            {/* Bug Inquiries */}
-            {contacts()}
             
             <NavigationBar isOpen={isOpen} toggle={toggle} />
             <Sidebar isOpen={isOpen} toggle={toggle} />

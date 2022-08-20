@@ -17,12 +17,6 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <li className={(isOpen? "slidein": "slideout")}>
-                        <SidebarRoute to='/' offset={-75} onClick={toggle}>
-                            Home
-                        </SidebarRoute>
-                    </li>
-
-                    <li className={(isOpen? "slidein": "slideout")}>
                         <SidebarRoute to='/projects'  offset={-75} onClick={toggle}>
                             Projects
                         </SidebarRoute>
@@ -37,6 +31,12 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <li className={(isOpen? "slidein": "slideout")}>
                         <SidebarRoute to='/team-roles' offset={-75} onClick={toggle}>
                             Team Roles
+                        </SidebarRoute>
+                    </li>
+
+                    <li className={(isOpen? "slidein": "slideout")}>
+                        <SidebarRoute to='/recruitment' offset={-75} onClick={toggle}>
+                            Join Us
                         </SidebarRoute>
                     </li>
 
