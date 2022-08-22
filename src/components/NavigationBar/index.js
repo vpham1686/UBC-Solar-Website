@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react'
 import Logo from '../../assets/NavigationBarImages/Logo.svg';
 import {
