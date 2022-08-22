@@ -42,7 +42,7 @@ const Navbar = ({ isOpen, toggle }) => {
                         <NavBtnLink to='/sponsor-us' smooth={true} offset={-75}>Sponsor Us</NavBtnLink>
                     </a>
                     </NavBtn> 
-                    
+                    {/* //Test// */}
 
                 </NavbarContainer>
             </Nav>
