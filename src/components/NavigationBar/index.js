@@ -34,15 +34,6 @@ const Navbar = ({ isOpen, toggle }) => {
                             <NavItem>
                                 <NavLinks to='/projects'>Projects</NavLinks>
                             </NavItem>
-                            <NavItem>
-                                <NavLinks to='/competitions'>Competitions</NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks to='/team-roles'>Our Team</NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks to='/recruitment'>Join Us</NavLinks>
-                            </NavItem>
                         </NavMenu>
                     </NavNav>
 
