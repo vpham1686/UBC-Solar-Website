@@ -23,12 +23,30 @@ const Sidebar = ({ isOpen, toggle }) => {
                     </li>
 
                     <li className={(isOpen? "slidein": "slideout")}>
+                        <SidebarRoute to='/competitions' offset={-75} onClick={toggle}>
+                            Competitions
+                        </SidebarRoute>
+                    </li>
+
+                    <li className={(isOpen? "slidein": "slideout")}>
+                        <SidebarRoute to='/team-roles' offset={-75} onClick={toggle}>
+                            Team Roles
+                        </SidebarRoute>
+                    </li>
+
+                    <li className={(isOpen? "slidein": "slideout")}>
+                        <SidebarRoute to='/recruitment' offset={-75} onClick={toggle}>
+                            Join Us
+                        </SidebarRoute>
+                    </li>
+
+                    <li className={(isOpen? "slidein": "slideout")}>
                         <a href='https://drive.google.com/file/d/1E40IN7ro8bu5YJBgEa-oPB5TQk6k-lW0/view' target='blank' style={{ textDecoration: 'none', color: '#ffffff' }}>Sponsor Us</a>
                     </li>
                 </SidebarMenu>
-                {/* <SideBtnWrap>
+                <SideBtnWrap>
                     <SidebarRoute to='/sponsor-us'>Sponsor Us</SidebarRoute>
-                </SideBtnWrap> */}
+                </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
     );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react'
 import Logo from '../../assets/NavigationBarImages/Logo.svg';
 import {
@@ -33,6 +34,15 @@ const Navbar = ({ isOpen, toggle }) => {
                             <NavItem>
                                 <NavLinks to='/projects'>Projects</NavLinks>
                             </NavItem>
+                            <NavItem>
+                                <NavLinks to='/competitions'>Competitions</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to='/team-roles'>Our Team</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to='/recruitment'>Join Us</NavLinks>
+                            </NavItem>
                         </NavMenu>
                     </NavNav>
 
@@ -42,7 +52,7 @@ const Navbar = ({ isOpen, toggle }) => {
                         <NavBtnLink to='/sponsor-us' smooth={true} offset={-75}>Sponsor Us</NavBtnLink>
                     </a>
                     </NavBtn> 
-                    {/* //Test// */}
+                    
 
                 </NavbarContainer>
             </Nav>
