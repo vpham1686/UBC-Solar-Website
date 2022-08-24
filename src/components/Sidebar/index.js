@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 
                     <li className={(isOpen? "slidein": "slideout")}>
                         <SidebarRoute to='/team-roles' offset={-75} onClick={toggle}>
-                            Team Roles
+                            Our Team
                         </SidebarRoute>
                     </li>
 
