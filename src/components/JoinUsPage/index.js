@@ -205,7 +205,7 @@ const RecruitmentPage = () => {
                         {/* Displaying only one timer */}
                         <div classname='warning'>
                             <div className={timerSecondsW === 0 && timerMinutesW === 0 && timerHoursW === 0 && timerDaysW === 0
-                                ? 'hidden' : 'visible'}>
+                                ? 'visible' : 'hidden'}>
                                     <p style={{ fontWeight: 'bold', marginBottom: 'auto', marginTop: '1vw' }}>Applications Open In:</p>
                                     <p style={{ fontWeight: 'bold', color: 'red', fontSize: '14px', marginBottom: 'auto', marginTop: 'auto'}}>
                                         {timerDaysW} day(s), {timerHoursW} hour(s), {timerMinutesW} minute(s), {timerSecondsW} second(s)</p>
@@ -213,7 +213,7 @@ const RecruitmentPage = () => {
                         </div>
                         <div classname='recruitment'>
                             <div className={timerSecondsW === 0 && timerMinutesW === 0 && timerHoursW === 0 && timerDaysW === 0
-                                ? 'visible' : 'hidden'}>
+                                ? 'hidden' : 'visible'}>
                                     <p style={{ fontWeight: 'bold', marginBottom: 'auto', marginTop: '-3.5vw'}}>Applications Closes In:</p>
                                     <p style={{ fontWeight: 'bold', color: 'red', fontSize: '14px', marginBottom: 'auto', marginTop: 'auto'}}>
                                         {timerDaysR} day(s), {timerHoursR} hour(s), {timerMinutesR} minute(s), {timerSecondsR} second(s)</p>
