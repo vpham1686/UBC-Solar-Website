@@ -1,11 +1,8 @@
 import React from 'react';
 import {
     SidebarContainer,
-    CloseIcon,
-    Icon,
     SidebarWrapper,
     SidebarMenu,
-    SidebarLink,
     SideBtnWrap,
     SidebarRoute
 } from './SidebarStyle';
