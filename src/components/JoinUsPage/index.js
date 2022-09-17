@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 import NavigationBar from '../../components/NavigationBar';
 import Sidebar from '../../components/Sidebar';
-import './Recruitment.css'
+import './Recruitment.css';
 
 import {
     RecruitmentContainer,
@@ -98,7 +98,7 @@ const RecruitmentPage = () => {
     let intervalR = useRef();
 
     const startRecruitmentTimer = () => {
-        const countdownDate = new Date(Date.UTC(2022, 8, 16, 7, 0, 0)).getTime();
+        const countdownDate = new Date(Date.UTC(2022, 8, 17, 7, 0, 0)).getTime();
         // Timing System: 
         // Date.UTC(Year, Month, Day, Hour, Minute, Second)
         // Year: Simple Year

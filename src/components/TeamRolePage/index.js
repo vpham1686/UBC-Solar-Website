@@ -169,16 +169,18 @@ const TeamRolePage = () => {
                                 <LeadImage src={Captain}></LeadImage>
                                 <LeadDescriptionContainer>
                                     <LeadDescription>
-                                        Hi, I'm Blake! I'm in my fourth year of Engineering Physics and have been on UBC Solar since my second year of university.
-                                        Being on the team has been the most valuable and fun part of my undergrad, and has been a true enrichment to my studies.
-                                        <br></br><br></br>
-                                        Solar is full of dedicated and hardworking members who dedicate massive amounts of time to build an awesome Solar Car!
-                                        On the team, I'm in charge of making sure the team reaches its goals.
-                                        I oversee technical directive, timeline, and budget to ensure the team has what it needs to succeed.
+                                    Hey, I'm Serhii! 
+                                    I'm an Engineering Physics student and I have been on the team since September of 2020. 
+                                    During this time I have been able to work on mechanical and electrical projects which are crucial for my future career. 
+                                    UBC Solar helps me solidify the knowldege I gain at the university and apply it in a fun and meaningful way.
+                                    <br></br><br></br>
+                                    Solar has very hardworking and dedicated members who together build a race solar car from scratch! 
+                                    It is my pleasure and duty to make sure that the team has all the resources we need to succed. 
+                                    As a captain, I oversee technical directive, timeline, and budget to ensure that our members are able to bring their amazing ideas to life.
                                     </LeadDescription>
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
-                                    <LeadName>Blake Shular</LeadName>
+                                    <LeadName>Serhii Rubtsov</LeadName>
                                     <LeadPosition>Captain</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
@@ -333,7 +335,7 @@ const TeamRolePage = () => {
                                     <LeadDescription>
                                         I can say that my knowledge with 3 years into mechanical engineering and joining the team in 2019 my engineering skills that the fewer moving parts, the better the chassis FEA.
                                         Our work does not only involve the structural integrity of the car but also the seamless integration of all the components of the car such as the aeroshell and steering system of the car.
-                                        If I'm not working on the car I'm probably designing the next crackhead robot from my brain or in the gym trying to be a gorilla.
+                                        If I'm not working on the car I'm probably designing robots or in the gym.
                                         <br></br><br></br>
                                         As the chassis subteam lead, I work on the core structure of the solar car, use FEA to ensure its structural integrity and produce a high factor of safety.
                                         I also understand other components of the car, such as the aeroshell and steering system, and seamlessly integrate these with the chassis.
@@ -353,18 +355,16 @@ const TeamRolePage = () => {
                                 <LeadImage src={Battery1}></LeadImage>
                                 <LeadDescriptionContainer>
                                     <LeadDescription>
-                                        Hey! I am Serhii.
-                                        I am an engineering physics student and a mechanical co-lead of the Battery team.
-                                        I have joined UBC Solar in 2020 as a chassis member.
-                                        Since then I have transitioned to low voltage systems and in December of 2021 I became a battery co-lead.
-                                        Throughout my journey I have learned a lot of technical and communication skills that are crucial for my engineering career.
-                                        <br></br><br></br>
-                                        On the Battery Mech subteam we design the most efficient battery pack for our solar race cars and ensure its safe and reliable.
-                                        Our team members gain a lot of experience in computer aided design (CAD) and mechanical-electrical intregration.
+                                    I am third-year mechanical engineering student and co-lead of the Battery team focusing on the mechanical side of the battery. 
+                                    Starting out at Solar on the Aeroshell team, I learned about composite materials and aerodynamics. 
+                                    Eager to learn more about the integration of mechanical and electrical systems, I made the change to the Battery team.
+                                    <br></br><br></br>
+                                    Members of the Battery team can expect to develop a large knowledgebase working on projects ranging from designing temperature sensing PCBs in Altium to manufacturing a composite battery enclosure. 
+                                    Together the Battery sub-team is responsible for keeping the heart of the car up and running safely.
                                     </LeadDescription>
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
-                                    <LeadName>Serhii Rubtsov</LeadName>
+                                    <LeadName>Rhys Northcote</LeadName>
                                     <LeadPosition>Battery Team Co-lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
