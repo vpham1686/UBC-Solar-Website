@@ -48,7 +48,7 @@ const Navbar = ({ isOpen, toggle }) => {
 
                     
                     <NavBtn>
-                    <a href='https://drive.google.com/file/d/1E40IN7ro8bu5YJBgEa-oPB5TQk6k-lW0/view?usp=sharing' target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+                    <a href='https://drive.google.com/file/d/1XhEDDYYJZG2PpdJbay46nI9qRbhyY8oS/view?usp=sharing' target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
                         <NavBtnLink to='/sponsor-us' smooth={true} offset={-75}>Sponsor Us</NavBtnLink>
                     </a>
                     </NavBtn> 
