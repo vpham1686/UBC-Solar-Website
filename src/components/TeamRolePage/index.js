@@ -12,13 +12,15 @@ import Captain from '../../assets/TeamRoleImages/Captain.png';
 import Mechanical from '../../assets/TeamRoleImages/MechanicalExecutive.png';
 import Electrical from '../../assets/TeamRoleImages/ElectricalExecutive.png';
 
-import Business from '../../assets/TeamRoleImages/BusinessTeamLead.png';
+import Business1 from '../../assets/TeamRoleImages/BusinessTeamCoLead1.png';
+import Business2 from '../../assets/TeamRoleImages/BusinessTeamCoLead2.png';
 import Software from '../../assets/TeamRoleImages/SoftwareTeamLead.png';
 import VehicleDynamics from '../../assets/TeamRoleImages/VehicleDynamicsTeamLead.png';
 import PowerElectronics from '../../assets/TeamRoleImages/PowerElectronicsTeamLead.png';
 import Chassis from '../../assets/TeamRoleImages/ChassisTeamLead.png';
-import Battery1 from '../../assets/TeamRoleImages/BatteryTeamColead1.png';
-import Battery2 from '../../assets/TeamRoleImages/BatteryTeamColead2.png';
+import BatteryElec from '../../assets/TeamRoleImages/BatteryElecTeamLead.png';
+import BatteryMech1 from '../../assets/TeamRoleImages/BatteryMechTeamLead1.png';
+import BatteryMech2 from '../../assets/TeamRoleImages/BatteryMechTeamLead2.png';
 import LowVoltageSystems from '../../assets/TeamRoleImages/LowVoltageSystemsTeamLead.png';
 import Aeroshell from '../../assets/TeamRoleImages/AeroshellTeamLead.png';
 
@@ -82,10 +84,17 @@ const TeamRolePage = () => {
         }
     };
 
-    const [business, setBusiness] = useState(true);
-    function businessVisible(isVisible) {
+    const [business1, setBusiness1] = useState(true);
+    function business1Visible(isVisible) {
         if (isVisible) {
-            setBusiness(false);
+            setBusiness1(false);
+        }
+    };
+
+    const [business2, setBusiness2] = useState(true);
+    function business2Visible(isVisible) {
+        if (isVisible) {
+            setBusiness2(false);
         }
     };
 
@@ -117,17 +126,24 @@ const TeamRolePage = () => {
         }
     };
 
-    const [battery1, setBattery1] = useState(true);
-    function battery1Visible(isVisible) {
+    const [batteryElec1, setBatteryElec1] = useState(true);
+    function batteryElec1Visible(isVisible) {
         if (isVisible) {
-            setBattery1(false);
+            setBatteryElec1(false);
         }
     };
 
-    const [battery2, setBattery2] = useState(true);
-    function battery2Visible(isVisible) {
+    const [batteryMech1, setBatteryMech1] = useState(true);
+    function batteryMech1Visible(isVisible) {
         if (isVisible) {
-            setBattery2(false);
+            setBatteryMech1(false);
+        }
+    };
+
+    const [batteryMech2, setBatteryMech2] = useState(true);
+    function batteryMech2Visible(isVisible) {
+        if (isVisible) {
+            setBatteryMech2(false);
         }
     };
 
@@ -235,10 +251,10 @@ const TeamRolePage = () => {
                         }
                     </VisibilitySensor>
 
-                    <VisibilitySensor onChange={businessVisible} partialVisibility={true} active={business} offset={{ bottom: 100 }}>
+                    <VisibilitySensor onChange={business1Visible} partialVisibility={true} active={business1} offset={{ bottom: 100 }}>
                         {({ isVisible }) =>
                             <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
-                                <LeadImage src={Business}></LeadImage>
+                                <LeadImage src={Business1}></LeadImage>
                                 <LeadDescriptionContainer>
                                     <LeadDescription>
                                         I am in my third year of engineering at UBC, specializing in environmental engineering.
@@ -255,7 +271,30 @@ const TeamRolePage = () => {
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
                                     <LeadName>Victor Pham</LeadName>
-                                    <LeadPosition>Business Team Lead</LeadPosition>
+                                    <LeadPosition>Business Team Co-Lead</LeadPosition>
+                                </LeadInfoContainer>
+                            </LeadProfileContainer>
+                        }
+                    </VisibilitySensor>
+
+                    <VisibilitySensor onChange={business2Visible} partialVisibility={true} active={business2} offset={{ bottom: 100 }}>
+                        {({ isVisible }) =>
+                            <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
+                                <LeadImage src={Business2}></LeadImage>
+                                <LeadDescriptionContainer>
+                                    <LeadDescription>
+                                    I'm currently in my third year at UBC Sauder specializing in Marketing. 
+                                    <br></br><br></br>
+                                    I love being able to optimize and improve projects that allow me to use my creativity. 
+                                    UBC Solar has been a great way for me to do that. 
+                                    <br></br><br></br>
+                                    I joined in my second year and am appreciative of how Solar has helped me grow my skills in terms of leadership, management, and as well as teamwork. 
+                                    I now know the behind the scenes of how engineering and business integrates and balances together and am so excited for what the business team can accomplish together!
+                                    </LeadDescription>
+                                </LeadDescriptionContainer>
+                                <LeadInfoContainer>
+                                    <LeadName>Julia Zhou</LeadName>
+                                    <LeadPosition>Business Team Co-Lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
                         }
@@ -267,16 +306,18 @@ const TeamRolePage = () => {
                                 <LeadImage src={Software}></LeadImage>
                                 <LeadDescriptionContainer>
                                     <LeadDescription>
-                                        Ever since my first Javascript program back in 2015, I've loved the idea of using software to solve difficult problems.
-                                        <br></br><br></br>
-                                        Having been a member since 2019, I can tell you that being part of the software team here at Solar means working on projects that involve a vast breadth of engineering and computing concepts far outside what is taught in the classroom in an environment that strongly encourages creativity and innovation.
-                                        Our work not only involves developing software that goes straight into the safety-critical control systems in our car but also software that extracts runtime information from our car and builds data-driven strategies from it.
-                                        <br></br><br></br>
-                                        Outside of Solar, you'll usually find me perfecting my jump-shot or losing skin at my local bouldering gym.
+                                    I am a second year computer engineering student who has a focus on firmware and embedded systems. 
+                                    <br></br><br></br>
+                                    Joining UBC Solar transformed my career growth and personal development. 
+                                    I can't express enough that you get out what you put in. 
+                                    Taking initiative at UBC Solar has opened so many opportunities and taught me technical skills that I would never be able to learn from school.
+                                    <br></br><br></br>
+                                    The software subteam designs, implements, and tests the safety-critical control systems of our car. 
+                                    We also work on a simulation and telemetry network that extracts runtime information from our car and builds data-driven strategies from it.
                                     </LeadDescription>
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
-                                    <LeadName>Mihir Nimgade</LeadName>
+                                    <LeadName>Matthew Chow</LeadName>
                                     <LeadPosition>Software Team Lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
@@ -349,32 +390,54 @@ const TeamRolePage = () => {
                         }
                     </VisibilitySensor>
 
-                    <VisibilitySensor onChange={battery1Visible} partialVisibility={true} active={battery1} offset={{ bottom: 100 }}>
+                    <VisibilitySensor onChange={batteryMech1Visible} partialVisibility={true} active={batteryMech1} offset={{ bottom: 100 }}>
                         {({ isVisible }) =>
                             <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
-                                <LeadImage src={Battery1}></LeadImage>
+                                <LeadImage src={BatteryMech1}></LeadImage>
                                 <LeadDescriptionContainer>
                                     <LeadDescription>
-                                    I am third-year mechanical engineering student and co-lead of the Battery team focusing on the mechanical side of the battery. 
-                                    Starting out at Solar on the Aeroshell team, I learned about composite materials and aerodynamics. 
-                                    Eager to learn more about the integration of mechanical and electrical systems, I made the change to the Battery team.
+                                    I am a second year Mechanical Engineering student and a co-lead of the Battery Mechanical team (BATM).
                                     <br></br><br></br>
-                                    Members of the Battery team can expect to develop a large knowledgebase working on projects ranging from designing temperature sensing PCBs in Altium to manufacturing a composite battery enclosure. 
-                                    Together the Battery sub-team is responsible for keeping the heart of the car up and running safely.
+                                    As a part of the BATM team you will learn about battery pack design and manufacturing.
+                                    You will gain experience designing with programs like SolidWorks and using different manufacturing processes such as composite formation, and 3D printing. BATM develops the pack so that the electrical components can be integrated seamlessly into the design.
+                                    <br></br><br></br>
+                                    My experience with UBC Solar has allowed me to apply concepts learned in class in hands-on ways!
                                     </LeadDescription>
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
-                                    <LeadName>Rhys Northcote</LeadName>
-                                    <LeadPosition>Battery Team Co-lead</LeadPosition>
+                                    <LeadName>Julie Ibrahimova</LeadName>
+                                    <LeadPosition>Battery Mech Team Co-lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
                         }
                     </VisibilitySensor>
 
-                    <VisibilitySensor onChange={battery2Visible} partialVisibility={true} active={battery2} offset={{ bottom: 100 }}>
+                    <VisibilitySensor onChange={batteryMech2Visible} partialVisibility={true} active={batteryMech2} offset={{ bottom: 100 }}>
                         {({ isVisible }) =>
                             <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
-                                <LeadImage src={Battery2}></LeadImage>
+                                <LeadImage src={BatteryMech2}></LeadImage>
+                                <LeadDescriptionContainer>
+                                    <LeadDescription>
+                                    I'm a second year Engineering Physics student and one of the co-leads on the Battery team. 
+                                    <br></br><br></br>
+                                    I joined Solar to experience engineering outside of the classroom and it has been an amazing experience so far. 
+                                    Since joining the Battery team, I have learned much about both the mechanical and electrical engineering that goes into the battery. 
+                                    The intersection between these two very different fields of engineering in which the Battery team operates is truly special and my time here at Solar has been nothing short of amazing.
+                                    On the Battery team, members can expect to gain a wide variety of skills from using SolidWorks and Altium to design pieces of the battery to developing practical skills in manufacturing the battery like soldering and creating composite layups.
+                                    </LeadDescription>
+                                </LeadDescriptionContainer>
+                                <LeadInfoContainer>
+                                    <LeadName>Justin Tandjung</LeadName>
+                                    <LeadPosition>Battery Mechanical Team Co-lead</LeadPosition>
+                                </LeadInfoContainer>
+                            </LeadProfileContainer>
+                        }
+                    </VisibilitySensor>
+
+                    <VisibilitySensor onChange={batteryElec1Visible} partialVisibility={true} active={batteryElec1} offset={{ bottom: 100 }}>
+                        {({ isVisible }) =>
+                            <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
+                                <LeadImage src={BatteryElec}></LeadImage>
                                 <LeadDescriptionContainer>
                                     <LeadDescription>
                                         I am a third year Engineering Physics student at UBC.
@@ -387,7 +450,7 @@ const TeamRolePage = () => {
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
                                     <LeadName>Mischa Johal</LeadName>
-                                    <LeadPosition>Battery Team Co-lead</LeadPosition>
+                                    <LeadPosition>Battery Electrical Team Lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
                         }
@@ -437,6 +500,7 @@ const TeamRolePage = () => {
                             </LeadProfileContainer>
                         }
                     </VisibilitySensor>
+                    
                 </TeamLeadContainer>
             </TeamRoleContainer>
 

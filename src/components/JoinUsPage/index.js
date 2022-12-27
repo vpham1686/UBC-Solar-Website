@@ -45,7 +45,7 @@ const RecruitmentPage = () => {
     let interval = useRef();
 
     const startWarningTimer = () => {
-        const countdownDate = new Date(Date.UTC(2022, 7, 25, 7, 0, 0)).getTime();
+        const countdownDate = new Date(Date.UTC(2022, 11, 27, 8, 0, 0)).getTime();
         // Timing System: 
         // Date.UTC(Year, Month, Day, Hour, Minute, Second)
         // Year: Simple Year
@@ -98,7 +98,7 @@ const RecruitmentPage = () => {
     let intervalR = useRef();
 
     const startRecruitmentTimer = () => {
-        const countdownDate = new Date(Date.UTC(2022, 8, 17, 7, 0, 0)).getTime();
+        const countdownDate = new Date(Date.UTC(2023, 0, 21, 8, 0, 0)).getTime();
         // Timing System: 
         // Date.UTC(Year, Month, Day, Hour, Minute, Second)
         // Year: Simple Year

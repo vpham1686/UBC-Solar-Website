@@ -57,7 +57,7 @@ export const HeroPhoto = styled.img`
 export const TeamLeadContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 33.333vw);
-    grid-template-rows: repeat(4, 90vh);
+    grid-template-rows: repeat(5, 90vh);
     justify-items: center;
     padding-top: 50px;
     @media screen and (max-width: 1200px) {
