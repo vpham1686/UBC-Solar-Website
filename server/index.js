@@ -7,6 +7,9 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const port = process.env.PORT || 8080;
 
+// route imports
+const postRoutes = require('./routes/post/index');
+
 // connect to database
 mongoose.connect('mongodb://localhost:27017/ubcsolar', { useNewUrlParser: true });
 mongoose.connection.on('connected', () => {
@@ -30,5 +33,6 @@ app.get('/', (req, res) => {
     res.send('UBC Solar');
 });
 
+app.use(postRoutes);
 
 
