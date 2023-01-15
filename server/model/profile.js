@@ -9,13 +9,19 @@ const ProfileSchema = new mongoose.Schema({
         },
         "last": {
             type: String,
-            required: true,
             maxlength: 20
         }
     },
-    "bio": {
+    "email": {
         type: String,
         required: true,
+        unique: true,
+        trim: true,
+        maxlength: 100
+    },
+    "bio": {
+        type: String,
+        default: "",
         maxlength: 500
     },
     "dateJoined": {
@@ -25,37 +31,28 @@ const ProfileSchema = new mongoose.Schema({
     },
     "role": {
         type: String,
+        default: "general",
         required: true,
         enum: ["admin", "general"]
     },
     "id": {
         type: Number,
-        required: true,
     },
     "socialMedia": {
         "linkedIn": {
             type: String,
-            required: true,
             maxlength: 100
         },
         "instagram": {
             type: String,
-            required: true,
             maxlength: 100
         },
         "facebook": {
             type: String,
-            required: true,
-            maxlength: 100
-        },
-        "email": {
-            type: String,
-            required: true,
             maxlength: 100
         },
         "phoneNumber": {
             type: String,
-            required: true,
             maxlength: 100
         }
     }
