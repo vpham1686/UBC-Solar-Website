@@ -228,6 +228,26 @@ export const DiamondSponsors = styled.img`
     }
 `;
 
+export const PlatinumContainer = styled.div`
+    border-top: 5px solid;
+    border-color: #00008B;
+    display: grid;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 8vh;
+`;
+
+export const PlatinumSponsors = styled.img`
+    display: flex;
+    justify-self: center;
+    transition: 1s ease-in;
+    max-height: 200px;
+    @media screen and (max-width: 750px) {
+        max-width: 200px;
+    }
+`;
+
 export const GoldContainer = styled.div`
     border-top: 5px solid;
     border-color: #FFD700;
