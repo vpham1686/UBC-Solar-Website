@@ -38,7 +38,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     </li>
 
                     <li className={(isOpen? "slidein": "slideout")}>
-                        <a href='https://drive.google.com/file/d/1E40IN7ro8bu5YJBgEa-oPB5TQk6k-lW0/view' target='blank' style={{ textDecoration: 'none', color: '#ffffff' }}>Sponsor Us</a>
+                        <a href='https://drive.google.com/file/d/1XhEDDYYJZG2PpdJbay46nI9qRbhyY8oS/view?usp=sharing' target='blank' style={{ textDecoration: 'none', color: '#ffffff' }}>Sponsor Us</a>
                     </li>
                 </SidebarMenu>
                 <SideBtnWrap>
