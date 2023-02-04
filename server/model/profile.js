@@ -33,7 +33,6 @@ const ProfileSchema = new mongoose.Schema({
         type: String,
         default: "general",
         required: true,
-        enum: ["admin", "general"]
     },
     "id": {
         type: Number,
