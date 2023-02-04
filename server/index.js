@@ -6,8 +6,12 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const port = process.env.PORT || 8080;
+const connectionString = process.env.MONGODB_URI || 'mongodb://localhost:27017/ubcsolar';
 const asyncWrapper = require('./common/asyncWrapper');
-const profile = require('./model/profile');
+// const profile = require('./model/profile');
+const admin = require('./model/admin');
+const member = require('./model/member');
+const sponsor = require('./model/sponsor');
 
 // route imports
 const postRoutes = require('./routes/post/index');
@@ -22,12 +26,12 @@ const {
     InvalidRouteError } = require('./errors/errorHandling');
 
 // connect to database
-mongoose.connect('mongodb://localhost:27017/ubcsolar', { useNewUrlParser: true });
-mongoose.connection.on('connected', () => {
-    console.log('Connected to mongoDB');
-});
-mongoose.connection.on('error', (err) => {
-    console.log('Database error: ' + err);
+mongoose.connect(connectionString, { useNewUrlParser: true }, (err) => {
+    if (err) {
+        console.log('Error connecting to database: ' + err);
+    } else {
+        console.log('Connected to database');
+    }
 });
 
 // middleware
@@ -38,8 +42,10 @@ app.use(bodyParser.json());
 app.listen(port, async () => {
 
     // Development only: drop database and create index
-    // await profile.db.dropDatabase();
-    // await profile.db.collection('profiles').createIndex({ "email": 1 }, { unique: true })
+    // await member.db.dropDatabase();
+    // await member.db.collection('Member').createIndex({ "email": 1 }, { unique: true })
+    // await admin.db.collection('Admin').createIndex({ "email": 1 }, { unique: true })
+    // await sponsor.db.collection('Sponsor').createIndex({ "email": 1 }, { unique: true })
 
     console.log('Server started on port: ' + port);
 });
