@@ -6,6 +6,7 @@ import ProjectPage from "./components/ProjectPage";
 import CompetitionPage from "./components/CompetitionPage";
 import TeamRolePage from "./components/TeamRolePage";
 import RecruitmentPage from "./components/JoinUsPage";
+import LoginPage from './components/LoginPage';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <Route path="/competitions" element={<CompetitionPage />} />
       <Route path="/team-roles" element={<TeamRolePage />} />
       <Route path="/recruitment" element={<RecruitmentPage />} />
+      <Route path="/login" element={<LoginPage />} />
       {/* Should create an error page (Something simple like an image or something) for any invalid routes */}
       <Route path="*" element={<Home />} />
     </Routes>
