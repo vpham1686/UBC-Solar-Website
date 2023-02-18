@@ -15,14 +15,19 @@ import Electrical from '../../assets/TeamRoleImages/ElectricalExecutive.png';
 import Business1 from '../../assets/TeamRoleImages/BusinessTeamCoLead1.png';
 import Business2 from '../../assets/TeamRoleImages/BusinessTeamCoLead2.png';
 import Software from '../../assets/TeamRoleImages/SoftwareTeamLead.png';
+import Simulation from '../../assets/TeamRoleImages/SimulationTeamLead.png';
 import VehicleDynamics from '../../assets/TeamRoleImages/VehicleDynamicsTeamLead.png';
+import VehicleDynamics2 from '../../assets/TeamRoleImages/VehicleDynamicsTeamLead2.png';
 import PowerElectronics from '../../assets/TeamRoleImages/PowerElectronicsTeamLead.png';
 import Chassis from '../../assets/TeamRoleImages/ChassisTeamLead.png';
+import Chassis2 from '../../assets/TeamRoleImages/ChassisTeamLead2.png';
 import BatteryElec from '../../assets/TeamRoleImages/BatteryElecTeamLead.png';
 import BatteryMech1 from '../../assets/TeamRoleImages/BatteryMechTeamLead1.png';
 import BatteryMech2 from '../../assets/TeamRoleImages/BatteryMechTeamLead2.png';
 import LowVoltageSystems from '../../assets/TeamRoleImages/LowVoltageSystemsTeamLead.png';
 import Aeroshell from '../../assets/TeamRoleImages/AeroshellTeamLead.png';
+import Aeroshell2 from '../../assets/TeamRoleImages/AeroshellTeamLead2.png';
+
 
 
 import {
@@ -105,10 +110,24 @@ const TeamRolePage = () => {
         }
     };
 
+    const [simulation, setSimulation] = useState(true);
+    function simulationVisible(isVisible) {
+        if (isVisible) {
+            setSimulation(false);
+        }
+    };
+
     const [vehicleDynamics, setVehicleDynamics] = useState(true);
     function vehicleDynamicsVisible(isVisible) {
         if (isVisible) {
             setVehicleDynamics(false);
+        }
+    };
+
+    const [vehicleDynamics2, setVehicleDynamics2] = useState(true);
+    function vehicleDynamics2Visible(isVisible) {
+        if (isVisible) {
+            setVehicleDynamics2(false);
         }
     };
 
@@ -126,10 +145,24 @@ const TeamRolePage = () => {
         }
     };
 
+    const [chassis2, setChassis2] = useState(true);
+    function chassis2Visible(isVisible) {
+        if (isVisible) {
+            setChassis2(false);
+        }
+    };
+
     const [batteryElec1, setBatteryElec1] = useState(true);
     function batteryElec1Visible(isVisible) {
         if (isVisible) {
             setBatteryElec1(false);
+        }
+    };
+
+    const [batteryElec2, setBatteryElec2] = useState(true);
+    function batteryElec2Visible(isVisible) {
+        if (isVisible) {
+            setBatteryElec2(false);
         }
     };
 
@@ -158,6 +191,13 @@ const TeamRolePage = () => {
     function aeroshellVisible(isVisible) {
         if (isVisible) {
             setAeroshell(false);
+        }
+    };
+
+    const [aeroshell2, setAeroshell2] = useState(true);
+    function aeroshell2Visible(isVisible) {
+        if (isVisible) {
+            setAeroshell2(false);
         }
     };
 
@@ -209,20 +249,15 @@ const TeamRolePage = () => {
                                 <LeadImage src={Electrical}></LeadImage>
                                 <LeadDescriptionContainer>
                                     <LeadDescription>
-                                        I am a fourth-year ECE student who has a focus on firmware.
-                                        I joined UBC Solar in my first year at UBC and have found it tremendously important for my career growth.
-                                        <br></br><br></br>
-                                        In my first year, I joined as a member of the software team.
-                                        When I first joined, I worked on firmware projects including cruise control and regen braking for the car.
-                                        I eventually started getting more involved with the electrical side of the team and worked on more general electrical projects.
-                                        At the start of my second year, I became the electrical lead for the team.
-                                        As the electrical lead, my role mainly focuses on supporting the electrical teams.
-                                        I spend a lot of my time training new members and assisting in technical projects.
-                                        Another aspect is working with sponsors to get the tools to build the car effectively.
+                                    I am a third year Engineering Physics student at UBC. I joined UBC Solar's Battery sub-team in my first year at university and have learned many technical and leadership skills in my journey from member to Electrical Lead!
+                                    <br></br><br></br>
+                                    I support UBC Solar's electrical teams with technical design advice and project managment, and work closley with the mechanical executive and team captain to ensure that core deadlines are set and met, ensuring our car meets key milstones leading up to competition. 
+                                    <br></br><br></br>
+                                    Overall, I am dedicated to building a friendly and motivating techincal environment at UBC Solar, working with everyone from our newest recruits to UBC Solar alumnus. 
                                     </LeadDescription>
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
-                                    <LeadName>Nic Ricci</LeadName>
+                                    <LeadName>Mischa Johal</LeadName>
                                     <LeadPosition>Electrical Executive</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
@@ -271,7 +306,7 @@ const TeamRolePage = () => {
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
                                     <LeadName>Victor Pham</LeadName>
-                                    <LeadPosition>Business Team Co-Lead</LeadPosition>
+                                    <LeadPosition>Business Team Co-lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
                         }
@@ -294,7 +329,7 @@ const TeamRolePage = () => {
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
                                     <LeadName>Julia Zhou</LeadName>
-                                    <LeadPosition>Business Team Co-Lead</LeadPosition>
+                                    <LeadPosition>Business Team Co-lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
                         }
@@ -324,6 +359,27 @@ const TeamRolePage = () => {
                         }
                     </VisibilitySensor>
 
+                    <VisibilitySensor onChange={simulationVisible} partialVisibility={true} active={simulation} offset={{ bottom: 100 }}>
+                        {({ isVisible }) =>
+                            <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
+                                <LeadImage src={Simulation}></LeadImage>
+                                <LeadDescriptionContainer>
+                                    <LeadDescription>
+                                    Hi! I'm a fourth year Engineering Physics Student and the simulation team lead at UBC Solar. The ultimate goal of the team is to develop a real time race strategy software that the team can use for optimal driving to maximize success at competition.
+                                    <br></br><br></br>
+                                    Developing models of different sub-systems of the car for the simulation, I learnt a lot about the different electro-mechanical systems that form the car. I have also gained a lot of software development skills and best practices that I have applied at my work placements and will continue to use for the rest of my career.
+                                    <br></br><br></br>
+                                    There's is always an exciting new challenge at Solar and a group of passionate friends who are determined to build a great solar powered race car.
+                                    </LeadDescription>
+                                </LeadDescriptionContainer>
+                                <LeadInfoContainer>
+                                    <LeadName>Renu Rajamagesh</LeadName>
+                                    <LeadPosition>Simulation Team Lead</LeadPosition>
+                                </LeadInfoContainer>
+                            </LeadProfileContainer>
+                        }
+                    </VisibilitySensor>
+
                     <VisibilitySensor onChange={vehicleDynamicsVisible} partialVisibility={true} active={vehicleDynamics} offset={{ bottom: 100 }}>
                         {({ isVisible }) =>
                             <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
@@ -341,7 +397,70 @@ const TeamRolePage = () => {
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
                                     <LeadName>Sina Allen</LeadName>
-                                    <LeadPosition>Vehicle Dynamics Team Lead</LeadPosition>
+                                    <LeadPosition>Vehicle Dynamics Team Co-lead</LeadPosition>
+                                </LeadInfoContainer>
+                            </LeadProfileContainer>
+                        }
+                    </VisibilitySensor>
+
+                    <VisibilitySensor onChange={vehicleDynamics2Visible} partialVisibility={true} active={vehicleDynamics2} offset={{ bottom: 100 }}>
+                        {({ isVisible }) =>
+                            <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
+                                <LeadImage src={VehicleDynamics2}></LeadImage>
+                                <LeadDescriptionContainer>
+                                    <LeadDescription>
+                                    I am a fourth year Mechanical Engineering student in the general engineering stream and a co-lead of the Vehicle Dynamics sub-team.
+                                    <br></br><br></br>
+                                    At Vehicle Dynamics, our team works to optimize the behaviour and manufacturability of the suspension, steering, wheels, and braking apects of the car.
+                                    <br></br><br></br>
+                                    In my spare time, you can find me playing soccer, rock climbing, mountain biking, splitboarding, or most other outdoor activities.
+                                    </LeadDescription>
+                                </LeadDescriptionContainer>
+                                <LeadInfoContainer>
+                                    <LeadName>Sam Bonnell</LeadName>
+                                    <LeadPosition>Vehicle Dynamics Co-lead</LeadPosition>
+                                </LeadInfoContainer>
+                            </LeadProfileContainer>
+                        }
+                    </VisibilitySensor>
+
+                    <VisibilitySensor onChange={aeroshellVisible} partialVisibility={true} active={aeroshell} offset={{ bottom: 100 }}>
+                        {({ isVisible }) =>
+                            <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
+                                <LeadImage src={Aeroshell}></LeadImage>
+                                <LeadDescriptionContainer>
+                                    <LeadDescription>
+                                        I am a fourth year Engineering Physics student at UBC.
+                                        I joined UBC Solar in my first year and have learned more from it than I could have ever imagined.
+                                        <br></br><br></br>
+                                        The aeroshell sub-team is responsible for the entire exterior of the car, from the carbon fibre body to the custom 3D-printed light mounts.
+                                        We ensure that the car is as aerodynamic as possible to increase efficiency and allow us to drive faster and farther.
+                                        <br></br><br></br>
+                                        In my spare time, I enjoy playing volleyball and soccer with my friends.
+                                    </LeadDescription>
+                                </LeadDescriptionContainer>
+                                <LeadInfoContainer>
+                                    <LeadName>Noah Dolter</LeadName>
+                                    <LeadPosition>Aeroshell Team Co-lead</LeadPosition>
+                                </LeadInfoContainer>
+                            </LeadProfileContainer>
+                        }
+                    </VisibilitySensor>
+
+                    <VisibilitySensor onChange={aeroshell2Visible} partialVisibility={true} active={aeroshell2} offset={{ bottom: 100 }}>
+                        {({ isVisible }) =>
+                            <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
+                                <LeadImage src={Aeroshell2}></LeadImage>
+                                <LeadDescriptionContainer>
+                                    <LeadDescription>
+                                    I am a third-year Mechanical Engineering student at UBC. I joined Solar in my second year, and it has been an incredibly fun and rewarding experience. Being on Solar teaches you so many technical skills that you wouldn't otherwise learn in class.
+                                    <br></br><br></br>
+                                    My favourite part of the aeroshell subteam is the hands-on work that we do. We build the entire carbon fibre exterior of the car using composite manufacturing processes. We also do a lot of SolidWorks modelling and analyze the aerodynamics of the aeroshell with CFD. It's a great mix of design and manufacturing work.
+                                    </LeadDescription>
+                                </LeadDescriptionContainer>
+                                <LeadInfoContainer>
+                                    <LeadName>Claire Kylheku</LeadName>
+                                    <LeadPosition>Aeroshell Team Co-lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
                         }
@@ -384,7 +503,28 @@ const TeamRolePage = () => {
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
                                     <LeadName>Mikey Sy</LeadName>
-                                    <LeadPosition>Chassis Team Lead</LeadPosition>
+                                    <LeadPosition>Chassis Team Co-lead</LeadPosition>
+                                </LeadInfoContainer>
+                            </LeadProfileContainer>
+                        }
+                    </VisibilitySensor>
+                    
+                    <VisibilitySensor onChange={chassis2Visible} partialVisibility={true} active={chassis2} offset={{ bottom: 100 }}>
+                        {({ isVisible }) =>
+                            <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
+                                <LeadImage src={Chassis2}></LeadImage>
+                                <LeadDescriptionContainer>
+                                    <LeadDescription>
+                                    I'm a third year integrated engineering student, majoring in mechanical engineering and minoring in electrical engineering.
+                                    <br></br><br></br>
+                                    I love working on the UBC Solar team because it's a great way to take all the theoretical content you learn about in lectures, and apply it in a way that is fun, challenging and rewarding.
+                                    <br></br><br></br>
+                                    What I like about working on the chassis subteam is how often you get to collaborate with other subteams. Working to integrate their components into the solar car,  you gain a great understanding of how each individual part functions, and an appreciation for how they all work together. 
+                                    </LeadDescription>
+                                </LeadDescriptionContainer>
+                                <LeadInfoContainer>
+                                    <LeadName>Liam Andrew</LeadName>
+                                    <LeadPosition>Chassis Team Co-lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
                         }
@@ -406,7 +546,7 @@ const TeamRolePage = () => {
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
                                     <LeadName>Julie Ibrahimova</LeadName>
-                                    <LeadPosition>Battery Mech Team Co-lead</LeadPosition>
+                                    <LeadPosition>Battery Mechanical Team Co-lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
                         }
@@ -440,16 +580,13 @@ const TeamRolePage = () => {
                                 <LeadImage src={BatteryElec}></LeadImage>
                                 <LeadDescriptionContainer>
                                     <LeadDescription>
-                                        I am a third year Engineering Physics student at UBC.
-                                        I joined UBC Solar's Battery sub-team in my first year at university and have learned many technical and leadership skills in my journey from member to co-lead!
-                                        <br></br><br></br>
-                                        The Battery sub-team is responsible for the safe operation of the car's lithium-ion battery pack.
-                                        Our members ensure our battery can charge safely, and is at an optimal temperature, state of charge, and voltage to keep the rest of the car's electrical systems - from turn signals to main motor - running smoothly.
-                                        Our team members come from diverse technical backgrounds, and tackle projects such as fault-detection firmware, current-sensing PCB design, and mechanical integration of the battery pack with the rest of the car.
+                                    I am a third year Mechanical Engineering student at UBC and a lead on the Battery Electrical Team. I joined the chassis sub-team during my first year with UBC Solar and transitioned over to BMS to learn more about electrical and firmware design. My experience on the BMS team has been really valuable and I continue to learn more with every new project.
+                                    <br></br><br></br>
+                                    The Battery sub-team is responsible for the safe operation of the car's lithium-ion battery pack. We make sure that the battery can charge safely, and is at an optimal temperature, state of charge, and voltage to keep the rest of the car's electrical systems running smoothly. As a BMS team member, we get to work on various firmware and PCB design projects and also perform a lot of testing to make sure our code and circuit boards are functioning as intended.
                                     </LeadDescription>
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
-                                    <LeadName>Mischa Johal</LeadName>
+                                    <LeadName>Bhavita Jindal</LeadName>
                                     <LeadPosition>Battery Electrical Team Lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
@@ -473,29 +610,6 @@ const TeamRolePage = () => {
                                 <LeadInfoContainer>
                                     <LeadName>Anthony Vu</LeadName>
                                     <LeadPosition>Low Voltage Systems Team Lead</LeadPosition>
-                                </LeadInfoContainer>
-                            </LeadProfileContainer>
-                        }
-                    </VisibilitySensor>
-
-                    <VisibilitySensor onChange={aeroshellVisible} partialVisibility={true} active={aeroshell} offset={{ bottom: 100 }}>
-                        {({ isVisible }) =>
-                            <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
-                                <LeadImage src={Aeroshell}></LeadImage>
-                                <LeadDescriptionContainer>
-                                    <LeadDescription>
-                                        I am a fourth year Engineering Physics student at UBC.
-                                        I joined UBC Solar in my first year and have learned more from it than I could have ever imagined.
-                                        <br></br><br></br>
-                                        The aeroshell sub-team is responsible for the entire exterior of the car, from the carbon fibre body to the custom 3D-printed light mounts.
-                                        We ensure that the car is as aerodynamic as possible to increase efficiency and allow us to drive faster and farther.
-                                        <br></br><br></br>
-                                        In my spare time, I enjoy playing volleyball and soccer with my friends.
-                                    </LeadDescription>
-                                </LeadDescriptionContainer>
-                                <LeadInfoContainer>
-                                    <LeadName>Noah Dolter</LeadName>
-                                    <LeadPosition>Aeroshell Team Lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
                         }
