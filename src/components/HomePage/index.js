@@ -70,6 +70,7 @@ import {
     DiamondContainer,
     DiamondSponsors,
     PlatinumContainer,
+    PlatinumSponsorContainer,
     PlatinumSponsors,
     GoldContainer,
     GoldSponsorContainer,
@@ -262,9 +263,13 @@ const HomePage = () => {
                         <p style={{ color: '#00008B', fontWeight: 'bold', textAlign: 'center', fontSize: '30px', marginTop: '-42px', background: 'white', padding: '0px', marginLeft: 'auto', marginRight: 'auto', padding: '16px' }}>Platinum</p>
                         <VisibilitySensor onChange={onPlatinumSponsorChange} partialVisibility={true} active={PlatinumSponsorActive} offset={{ bottom: 100 }}>
                             {({ isVisible }) =>
-                                <PlatinumSponsors
-                                    src={Ansys} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
-                            }
+                                <PlatinumSponsorContainer>
+                                    <PlatinumSponsors
+                                        src={Ansys} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
+                                    <PlatinumSponsors
+                                        src={AffinityManufacturing} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
+                                </PlatinumSponsorContainer>
+                                }
                         </VisibilitySensor>
                     </PlatinumContainer>
 
@@ -291,6 +296,8 @@ const HomePage = () => {
                                         src={Altium} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <SilverSponsors
                                         src={Airtech} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
+                                    <SilverSponsors
+                                        src={UBCMechanicalEngineering} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                 </SilverSponsorContainer>
                             }
                         </VisibilitySensor>
@@ -305,17 +312,15 @@ const HomePage = () => {
                                     <BronzeSponsors
                                         src={JLCPCB} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <BronzeSponsors
-                                        src={UBCMechanicalEngineering} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
-                                    <BronzeSponsors
                                         src={Fluor} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <BronzeSponsors
                                         src={Omron} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <BronzeSponsors
                                         src={MetalPros} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <BronzeSponsors
-                                        src={AffinityManufacturing} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
-                                    <BronzeSponsors
                                         src={WestMountainRadio} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
+                                    <BronzeSponsors
+                                        src={UBCElectricalandComputerEngineering} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                 </BronzeSponsorContainer>
                             }
                         </VisibilitySensor>
@@ -327,8 +332,6 @@ const HomePage = () => {
                                 <SupporterSponsorContainer>
                                     <SupporterSponsors
                                         src={CompositesResearchNetwork} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
-                                    <SupporterSponsors
-                                        src={UBCElectricalandComputerEngineering} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <SupporterSponsors
                                         src={Vicor} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <SupporterSponsors
