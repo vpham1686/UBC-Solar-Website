@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-build.tar.gz
+build.tar.gz 
 
 # testing
 /coverage
