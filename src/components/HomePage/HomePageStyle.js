@@ -238,6 +238,18 @@ export const PlatinumContainer = styled.div`
     padding-bottom: 8vh;
 `;
 
+export const PlatinumSponsorContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    grid-template-rows: repeat(1, 25vh);
+    align-items: center;
+
+    @media screen and (max-width: 750px) {
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: repeat(1, 15vh);
+    }
+`;
+
 export const PlatinumSponsors = styled.img`
     display: flex;
     justify-self: center;
