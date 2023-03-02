@@ -36,6 +36,23 @@ export const NavBtn = styled.nav`
     }
 `;
 
+export const NavBtnLink1 = styled.nav`
+    border-radius: 50px;
+    background: #E5B13A;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #04112E;
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    border: 5px solid #E5B13A;
+    cursor: pointer;
+    transition: all 1s ease-out;
+    text-decoration: none;
+`;
+
 export const NavBtnLink = styled.div`
     border-radius: 50px;
     background: #E5B13A;

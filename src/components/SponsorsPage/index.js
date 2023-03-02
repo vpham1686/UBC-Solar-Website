@@ -39,6 +39,7 @@ import {
     HomeHeroContainer,
     HeroPhoto,
     NavBtn,
+    NavBtnLink1,
     NavBtnLink,
 
     HomeSponsorsContainer,
@@ -121,8 +122,11 @@ const SponsorsPage = () => {
                         src={HeroImage}>
                     </HeroPhoto>
                     <NavBtn>
-                        <a href='https://donate.give.ubc.ca/page/80953/donate/1?transaction.dirgift=UBC+Solar%20G1921' rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                        <a href='https://donate.give.ubc.ca/page/80953/donate/1?transaction.dirgift=UBC+Solar%20G1921' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <NavBtnLink>Join the Race!</NavBtnLink>
+                        </a>
+                        <a href='https://drive.google.com/file/d/18VHTVuMaERjM3njf7STEic4TstogXmPf/view?usp=sharing' target="_blank" style={{ textDecoration: 'none', marginLeft: '5vh'}}>
+                            <NavBtnLink1>Sponsorship Package</NavBtnLink1>
                         </a>
                     </NavBtn>
                 </HomeHeroContainer>
@@ -145,7 +149,7 @@ const SponsorsPage = () => {
                             {({ isVisible }) =>
                                 <PlatinumSponsorContainer>
                                     <PlatinumSponsors
-                                        src={Ansys} style={{ opacity: `${isVisible ? '1' : '0'}` }} height="300px"/>
+                                        src={Ansys} style={{ opacity: `${isVisible ? '1' : '0'}` }} height="300px" />
                                     <PlatinumSponsors
                                         src={Affinity} style={{ opacity: `${isVisible ? '1' : '0'}` }} height="300px" />
                                 </PlatinumSponsorContainer>
