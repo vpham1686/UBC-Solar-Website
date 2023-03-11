@@ -31,7 +31,7 @@ export const ProjectMainImageContentContainer = styled.div`
 export const ProjectMainImageContentText = styled.h1`
     margin: 0px 0px 175px 0px;
     color: white;
-    font-size: 80px;
+    font-size: 140px;
     @media screen and (max-width: 600px) {
         color: #002145;
         font-size: 50px;

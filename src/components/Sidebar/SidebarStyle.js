@@ -6,18 +6,14 @@ export const SidebarContainer = styled.div`
 
     position: fixed;
     z-index: 999;
-    width: 100vw;
-    height: calc(100% - 5rem);
+    width: 100%;
+    height: calc(100% - 2.7rem);
     background-color: rgba(0, 0, 0, 0.7);
     align-items: center;
 
     &.opened {
         transition: all 0.4s ease-in-out;
         transform: translateX(0);
-
-        @media screen and (min-width: 901px) {
-            display: none;
-        }
 
         nav {
             width: 100%;
@@ -31,7 +27,7 @@ export const SidebarContainer = styled.div`
         }
 
         li {
-            height: calc((100% - 5rem)/5);
+            height: calc((100% - 2.7rem)/5);
             text-align: center;
         }
 
@@ -204,12 +200,8 @@ export const SidebarMenu = styled.ul`
 export const SidebarLink = styled(LinkScroll)`
 `;
 
-export const SideBtnWrap = styled.div`
-    display: flex;
-    justify-content: center;
-`;
-
 export const SidebarRoute = styled(LinkRouter)`
     text-decoration: none;
     color: white;
+    font-weight: 650;
 `;

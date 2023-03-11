@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react'
 import Logo from '../../assets/NavigationBarImages/Logo.svg';
 import {
@@ -15,6 +14,7 @@ import {
 } from './NavigationBarStyle';
 
 const Navbar = ({ isOpen, toggle }) => {
+
     return (
         <>
             <Nav className='/'>
@@ -32,24 +32,24 @@ const Navbar = ({ isOpen, toggle }) => {
                     <NavNav className="stroke">
                         <NavMenu>
                             <NavItem>
-                                <NavLinks to='/projects'>Projects</NavLinks>
+                                <NavLinks to='/projects'>Our Garage</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to='/competitions'>Competitions</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='/team-roles'>Our Team</NavLinks>
+                                <NavLinks to='/recruitment'>Recruiting</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='/recruitment'>Join Us</NavLinks>
+                                <NavLinks to='/team-roles'>About</NavLinks>
                             </NavItem>
                         </NavMenu>
                     </NavNav>
 
-
+                    
                     <NavBtn>
-                    <a href='https://drive.google.com/file/d/1XhEDDYYJZG2PpdJbay46nI9qRbhyY8oS/view?usp=sharing' target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
-                        <NavBtnLink to='/sponsor-us' smooth={true} offset={-75}>Sponsor Us</NavBtnLink>
+                    <a href='/sponsorships' rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+                        <NavBtnLink to='/sponsorships' smooth={true} offset={-75}>Sponsor Us</NavBtnLink>
                     </a>
                     </NavBtn> 
                     

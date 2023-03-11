@@ -45,7 +45,7 @@ const RecruitmentPage = () => {
     let interval = useRef();
 
     const startWarningTimer = () => {
-        const countdownDate = new Date(Date.UTC(2022, 11, 27, 8, 0, 0)).getTime();
+        const countdownDate = new Date(Date.UTC(2023, 0, 1, 7, 0, 0)).getTime();
         // Timing System: 
         // Date.UTC(Year, Month, Day, Hour, Minute, Second)
         // Year: Simple Year
@@ -98,7 +98,7 @@ const RecruitmentPage = () => {
     let intervalR = useRef();
 
     const startRecruitmentTimer = () => {
-        const countdownDate = new Date(Date.UTC(2023, 0, 21, 8, 0, 0)).getTime();
+        const countdownDate = new Date(Date.UTC(2023, 0, 21, 23, 59, 59)).getTime();
         // Timing System: 
         // Date.UTC(Year, Month, Day, Hour, Minute, Second)
         // Year: Simple Year
@@ -182,7 +182,7 @@ const RecruitmentPage = () => {
 
     return (
         <>
-            <NavigationBar isOpen={isOpen} toggle={toggle} />
+        <NavigationBar isOpen={isOpen} toggle={toggle} />
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <RecruitmentContainer>
             
@@ -192,8 +192,8 @@ const RecruitmentPage = () => {
                         <RecruitmentContentHeaderText font='15px' text='Positions Available' />
                         <RecruitmentContentHeaderText font='40px' text='Work with us' />
                         <RecruitmentContentParagraph>
-                            UBC Solar offers many great opportunities for students of all backgrounds. 
-                            Join us on our journey to to be part of the development of sustainable automobiles and push the limits of technology together.
+                            UBC Solar offers great opportunities for students of all backgrounds and specializations. 
+                            Join our journey to push the limits of sustainable technology together.
                         </RecruitmentContentParagraph>
 
                         <a href='https://linktr.ee/ubcsolar' target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none'}}>
