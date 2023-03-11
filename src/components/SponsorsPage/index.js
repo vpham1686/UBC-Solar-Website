@@ -15,7 +15,7 @@ import Siemens from '../../assets/Sponsors/Siemens.png';
 
 import Altium from '../../assets/Sponsors/Altium.png';
 import Airtech from '../../assets/Sponsors/Airtech.png';
-import Ansys from '../../assets/Sponsors/Ansys.jpeg';
+import Ansys from '../../assets/Sponsors/Ansys.png';
 import Affinity from "../../assets/Sponsors/Affinity.png"
 
 import UBCPhysicsandAstronomy from '../../assets/Sponsors/UBCPhysicsandAstronomy.png';
@@ -24,7 +24,6 @@ import UBCMechanicalEngineering from '../../assets/Sponsors/UBCMechanicalEnginee
 import Fluor from '../../assets/Sponsors/Fluor.png';
 import Omron from '../../assets/Sponsors/Omron.png';
 import MetalPros from '../../assets/Sponsors/MetalPros.png';
-import AffinityManufacturing from '../../assets/Sponsors/AffinityManufacturing.png';
 import WestMountainRadio from '../../assets/Sponsors/WestMountainRadio.png';
 
 import CompositesResearchNetwork from '../../assets/Sponsors/CompositesResearchNetwork.png';
