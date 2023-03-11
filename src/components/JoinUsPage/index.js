@@ -182,6 +182,7 @@ const RecruitmentPage = () => {
 
     return (
         <>
+        <NavigationBar isOpen={isOpen} toggle={toggle} />
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <RecruitmentContainer>
             

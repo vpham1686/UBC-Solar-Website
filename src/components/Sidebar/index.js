@@ -3,7 +3,6 @@ import {
     SidebarContainer,
     SidebarWrapper,
     SidebarMenu,
-    SideBtnWrap,
     SidebarRoute
 } from './SidebarStyle';
 
@@ -14,8 +13,14 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <li className={(isOpen? "slidein": "slideout")}>
-                        <SidebarRoute to='/projects'  offset={-75} onClick={toggle}>
-                            Projects
+                        <SidebarRoute to='/team-roles'  offset={-75} onClick={toggle}>
+                            About
+                        </SidebarRoute>
+                    </li>
+
+                    <li className={(isOpen? "slidein": "slideout")}>
+                        <SidebarRoute to='/projects' offset={-75} onClick={toggle}>
+                            Our Garage
                         </SidebarRoute>
                     </li>
 
@@ -26,24 +31,17 @@ const Sidebar = ({ isOpen, toggle }) => {
                     </li>
 
                     <li className={(isOpen? "slidein": "slideout")}>
-                        <SidebarRoute to='/team-roles' offset={-75} onClick={toggle}>
-                            Our Team
-                        </SidebarRoute>
-                    </li>
-
-                    <li className={(isOpen? "slidein": "slideout")}>
                         <SidebarRoute to='/recruitment' offset={-75} onClick={toggle}>
-                            Join Us
+                            Recruiting
                         </SidebarRoute>
                     </li>
 
                     <li className={(isOpen? "slidein": "slideout")}>
-                        <a href='https://drive.google.com/file/d/1E40IN7ro8bu5YJBgEa-oPB5TQk6k-lW0/view' target='blank' style={{ textDecoration: 'none', color: '#ffffff' }}>Sponsor Us</a>
+                        <SidebarRoute to='/sponsorships' offset={-75} onClick={toggle}>
+                            Sponsor Us
+                        </SidebarRoute>
                     </li>
                 </SidebarMenu>
-                <SideBtnWrap>
-                    <SidebarRoute to='/sponsor-us'>Sponsor Us</SidebarRoute>
-                </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
     );

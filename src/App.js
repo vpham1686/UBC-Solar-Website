@@ -7,7 +7,6 @@ import CompetitionPage from "./components/CompetitionPage";
 import TeamRolePage from "./components/TeamRolePage";
 import RecruitmentPage from "./components/JoinUsPage";
 import SponsorsPage from './components/SponsorsPage';
-import Navbar from './components/NavigationBar';
 
 function App() {
 
@@ -27,7 +26,6 @@ function App() {
 
   return (
     <>
-    <Navbar />
     <Routes>
       {/* Bug Inquiries */}
       {contacts()}

@@ -24,6 +24,7 @@ const ProjectPage = () => {
 
     return (
         <>
+            <NavigationBar isOpen={isOpen} toggle={toggle} />
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <div style={{ marginBottom: '5vh' }}>
                 <ProjectMainImageContainer>

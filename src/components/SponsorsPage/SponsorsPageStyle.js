@@ -258,6 +258,7 @@ export const PlatinumContainer = styled.div`
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    height: auto;
     
 `;
 
@@ -265,6 +266,8 @@ export const PlatinumSponsors = styled.img`
     display: flex;
     justify-self: center;
     transition: 1s ease-in;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 
     @media screen and (max-width: 750px) {
         max-width: 200px;
@@ -276,7 +279,8 @@ export const PlatinumSponsorContainer = styled.div`
     grid-template-columns: repeat(2, 40vw);
     grid-template-rows: repeat(1, 20vh);
     align-items: center;
-    padding-bottom: 7vh;
+    padding-top: 1vh;
+    padding-bottom: 8vh;
 
     @media screen and (max-width: 750px) {
         grid-template-columns: repeat(2, 40vw);

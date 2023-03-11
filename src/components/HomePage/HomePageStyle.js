@@ -109,8 +109,8 @@ export const HomeValuesContainer = styled.div`
 export const MapContainer = styled.div`
     margin: 50px 50px;
     background: #002145; 
-    height: 600px;
-    width: 1200px;
+    height: auto;
+    width: auto;
     transition: 1s ease-in;
 
 
@@ -128,9 +128,9 @@ export const ValuesContainer = styled.div`
     grid-template-columns: repeat(4, 23%);
     justify-content: center;
     @media screen and (max-width: 1000px) {
-        grid-gap: 10px;
+        grid-gap: 20px;
         grid-template-rows: repeat(1, auto);
-        grid-template-columns: 90%;
+        grid-template-columns: 75%;
         grid-template-areas: 
         "a"
         "b"
@@ -155,6 +155,10 @@ export const Icon = styled.img`
 
     transition: 1.5s;
     transition-timing-function: cubic-bezier(1,-0.12,.83,.67);
+
+    @media screen {
+        width: 20%;
+    }
 `;
 
 export const SustainabilityContainer = styled.div`

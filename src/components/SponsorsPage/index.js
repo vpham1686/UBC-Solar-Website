@@ -32,6 +32,7 @@ import UBCElectricalandComputerEngineering from '../../assets/Sponsors/UBCElectr
 import Vicor from '../../assets/Sponsors/Vicor.png';
 import VR3 from '../../assets/Sponsors/VR3.png';
 import TCI from '../../assets/Sponsors/TCI.png';
+import StRegis from '../../assets/Sponsors/StRegis.png';
 
 
 import {
@@ -114,6 +115,7 @@ const SponsorsPage = () => {
 
     return (
         <>
+            <NavigationBar isOpen={isOpen} toggle={toggle} />
             <Sidebar isOpen={isOpen} toggle={toggle} />
 
             <HomeContainer>
@@ -125,7 +127,7 @@ const SponsorsPage = () => {
                         <a href='https://donate.give.ubc.ca/page/80953/donate/1?transaction.dirgift=UBC+Solar%20G1921' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <NavBtnLink>Join the Race!</NavBtnLink>
                         </a>
-                        <a href='https://drive.google.com/file/d/18VHTVuMaERjM3njf7STEic4TstogXmPf/view?usp=sharing' target="_blank" style={{ textDecoration: 'none', marginLeft: '5vh'}}>
+                        <a href='https://drive.google.com/file/d/18VHTVuMaERjM3njf7STEic4TstogXmPf/view?usp=sharing' target="_blank" style={{ textDecoration: 'none', marginLeft: '5vh' }}>
                             <NavBtnLink1>Sponsorship Package</NavBtnLink1>
                         </a>
                     </NavBtn>
@@ -203,6 +205,8 @@ const SponsorsPage = () => {
                                         src={MetalPros} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <BronzeSponsors
                                         src={WestMountainRadio} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
+                                    <BronzeSponsors
+                                        src={StRegis} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                 </BronzeSponsorContainer>
                             }
                         </VisibilitySensor>

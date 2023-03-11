@@ -64,7 +64,9 @@ const HomePage = () => {
 
     return (
         <>
+            <NavigationBar isOpen={isOpen} toggle={toggle} />
             <Sidebar isOpen={isOpen} toggle={toggle} />
+            
             <HomeContainer>
                 <HomeHeroContainer style={{ transform: `translateY(${offsetY * 0.39}px)` }}>
                     <HeroPhoto
@@ -140,11 +142,11 @@ const HomePage = () => {
                 <MapContainer>
                     <h1 style={{ verticalalign: 'middle', fontSize: '4vw', fontWeight: 'bold', textAlign: 'left', margin: '8vh 10vh 5vh 10vh', marginBottom: 'auto', color: 'white', paddingTop: '5vh' }}>2023 Objectives...</h1>
                     
-                    <ol style={{ verticalalign: 'middle', fontSize: '2vw', fontWeight: 'bold', textAlign: 'left', margin: '5vh 1vh 5vh 20vh', color: 'white', paddingBottom: '0vh' }}>
-                        <p>⛅ Finish Brightside design - Our newest car!</p>
-                        <p>⛅ </p>
-                        <p>☀️ Expand our team to over 70 members!</p>
-                        <p>☀️ Have fun with friends made along the way </p>
+                    <ol style={{ verticalalign: 'middle', fontSize: '2vw', fontWeight: 'bold', textAlign: 'left', margin: '5vh 1vh 5vh 20vh', color: 'white', paddingBottom: '5vh' }}>
+                        <p>☀️ Finish Brightside design - Our newest car!</p>
+                        <p>☀️ Launch a successful crowdfunding campaign</p>
+                        <p>☀️ Start manufacturing by May 12st</p>
+                        <p>☀️ Expand our network or industry and professional connections</p>
                     </ol>
                     
                     
