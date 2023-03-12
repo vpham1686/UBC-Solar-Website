@@ -15,7 +15,7 @@ import Siemens from '../../assets/Sponsors/Siemens.png';
 
 import Altium from '../../assets/Sponsors/Altium.png';
 import Airtech from '../../assets/Sponsors/Airtech.png';
-import Ansys from '../../assets/Sponsors/Ansys.png';
+import Ansys from '../../assets/Sponsors/ANSYS.png'; //Don't forget to capitalize if it is capitalized in the assets section.
 import Affinity from "../../assets/Sponsors/Affinity.png"
 
 import UBCPhysicsandAstronomy from '../../assets/Sponsors/UBCPhysicsandAstronomy.png';
