@@ -32,7 +32,7 @@ export const NavBtn = styled.nav`
     align-items: center;
 
     @media screen and (max-width: 900px) {
-        display: none;
+        
     }
 `;
 
@@ -51,6 +51,10 @@ export const NavBtnLink1 = styled.nav`
     cursor: pointer;
     transition: all 1s ease-out;
     text-decoration: none;
+
+    @media screen {
+        height: 60%;
+    }
 `;
 
 export const NavBtnLink = styled.div`
