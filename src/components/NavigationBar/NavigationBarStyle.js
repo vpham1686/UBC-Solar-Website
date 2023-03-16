@@ -120,7 +120,7 @@ export const NavBtn = styled.nav`
     }
 `;
 
-export const NavBtnLink = styled.div`
+export const NavBtnLink = styled(LinkRouter)`
     border-radius: 50px;
     background: linear-gradient(to right, #E5B13A 50%, #04112E 50%);
     background-size: 200% 100%;

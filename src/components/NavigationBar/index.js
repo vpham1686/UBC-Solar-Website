@@ -48,9 +48,7 @@ const Navbar = ({ isOpen, toggle }) => {
 
                     
                     <NavBtn>
-                    <a href='/sponsorships' rel="noopener noreferrer" style={{textDecoration: 'none'}}>
                         <NavBtnLink to='/sponsorships' smooth={true} offset={-75}>Sponsor Us</NavBtnLink>
-                    </a>
                     </NavBtn> 
                     
 
