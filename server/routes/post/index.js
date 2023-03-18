@@ -16,4 +16,15 @@ router.post("/profile", asyncWrapper(async (req, res) => {
     res.send("User created");
 }));
 
+router.post("/uploadResume", asyncWrapper(async (req, res) => {
+    const resume = { name, email, bio, dateJoined, linkedin, role, socialMedia } = req.body;
+    if (!user) {
+        res.status(400).json({ "errorMsg": "User not found" });
+    }
+    await profile.create(user).catch(err => {
+        throw new ProfileDbError("Error creating user: Please check documentation");
+    })
+    res.send("User created");
+}));
+
 module.exports = router;
