@@ -2,11 +2,13 @@ import styled from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 
 export const Nav = styled.nav`
-    background: #04112E;
+    background: rgba(4, 17, 46);
     height: 60px;
+    width: 100%;
+    font-weight: 650;
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 17px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -100,7 +102,7 @@ export const NavLinks = styled(LinkRouter)`
     display: flex;
     align-items: center;
     text-decorartion: none;
-    padding: 0 1rem;
+    padding: 0 15px;
     height: 100%;
     cursor: pointer;
 
@@ -118,22 +120,24 @@ export const NavBtn = styled.nav`
     }
 `;
 
-export const NavBtnLink = styled.div`
+export const NavBtnLink = styled(LinkRouter)`
     border-radius: 50px;
-    background: #E5B13A;
+    background: linear-gradient(to right, #E5B13A 50%, #04112E 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
     white-space: nowrap;
-    padding: 10px 22px;
-    color: #010606;
-    font-size: 16px;
+    padding: 7px 18px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
     outline: none;
-    border: none;
+    border: 3px solid #E5B13A;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 1s ease-out;
     text-decoration: none;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
+        background-position: left bottom;
+        color: #04112E;
     }
 `;

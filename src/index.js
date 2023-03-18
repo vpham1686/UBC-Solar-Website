@@ -4,14 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { GoogleOAuthProvider } from '@react-oauth/google';
 
 ReactDOM.render(
-  <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_OAUTH_CLIENT_ID}>
-    <Router>
-      <App />
-    </Router>
-  </GoogleOAuthProvider>,
+  <Router>
+    <App />
+  </Router>,
   document.getElementById('root')
 );
 
