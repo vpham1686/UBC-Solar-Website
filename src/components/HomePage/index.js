@@ -37,6 +37,12 @@ import {
 
 } from './HomePageStyle';
 
+import {
+NavBtn,
+NavBtnLink,
+NavBtnLink1
+} from '../SponsorsPage/SponsorsPageStyle'
+
 const HomePage = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -72,6 +78,15 @@ const HomePage = () => {
                     <HeroPhoto
                         src={HeroImage}>
                     </HeroPhoto>
+
+                    {/* crowdfunding button */}
+
+                    <NavBtn>
+                        <a href='https://crowdfundraising.ubc.ca/projects/race-for-the-sun/' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                            <NavBtnLink>Crowdfunding Campaign</NavBtnLink>
+                        </a>
+                       
+                    </NavBtn>
                     <ArrowLevitate to='meet'>
                         <FaAngleDown size="80px" cursor="pointer" ></FaAngleDown>
                     </ArrowLevitate>

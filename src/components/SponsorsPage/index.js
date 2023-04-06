@@ -12,6 +12,9 @@ import DanielFamilyFoundation from '../../assets/Sponsors/DanielFamilyFoundation
 
 import PSIM from '../../assets/Sponsors/PSIM.png';
 import Siemens from '../../assets/Sponsors/Siemens.png';
+import Lenovo from '../../assets/Sponsors/Lenovo.png';
+
+
 
 import Altium from '../../assets/Sponsors/Altium.png';
 import Airtech from '../../assets/Sponsors/Airtech.png';
@@ -25,6 +28,8 @@ import Fluor from '../../assets/Sponsors/Fluor.png';
 import Omron from '../../assets/Sponsors/Omron.png';
 import MetalPros from '../../assets/Sponsors/MetalPros.png';
 import WestMountainRadio from '../../assets/Sponsors/WestMountainRadio.png';
+import Sunpower from '../../assets/Sponsors/Sunpower.png';
+
 
 import CompositesResearchNetwork from '../../assets/Sponsors/CompositesResearchNetwork.png';
 import UBCElectricalandComputerEngineering from '../../assets/Sponsors/UBCElectricalandComputerEngineering.png';
@@ -32,6 +37,7 @@ import Vicor from '../../assets/Sponsors/Vicor.png';
 import VR3 from '../../assets/Sponsors/VR3.png';
 import TCI from '../../assets/Sponsors/TCI.png';
 import StRegis from '../../assets/Sponsors/StRegis.png';
+import Phytools from '../../assets/Sponsors/Phytools.png';
 
 
 import {
@@ -167,6 +173,8 @@ const SponsorsPage = () => {
                                         src={PSIM} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <GoldSponsors
                                         src={Siemens} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
+                                    <GoldSponsors
+                                        src={Lenovo} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                 </GoldSponsorContainer>
                             }
                         </VisibilitySensor>
@@ -206,6 +214,8 @@ const SponsorsPage = () => {
                                         src={WestMountainRadio} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <BronzeSponsors
                                         src={StRegis} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
+                                    <BronzeSponsors
+                                        src={Sunpower} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                 </BronzeSponsorContainer>
                             }
                         </VisibilitySensor>
@@ -225,6 +235,8 @@ const SponsorsPage = () => {
                                         src={VR3} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <SupporterSponsors
                                         src={TCI} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
+                                    <SupporterSponsors
+                                        src={Phytools} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                 </SupporterSponsorContainer>
                             }
                         </VisibilitySensor>

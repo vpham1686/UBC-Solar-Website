@@ -286,7 +286,7 @@ const TeamRolePage = () => {
                         }
                     </VisibilitySensor>
 
-                    <VisibilitySensor onChange={business1Visible} partialVisibility={true} active={business1} offset={{ bottom: 100 }}>
+                    {/* <VisibilitySensor onChange={business1Visible} partialVisibility={true} active={business1} offset={{ bottom: 100 }}>
                         {({ isVisible }) =>
                             <LeadProfileContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                                 <LeadImage src={Business1}></LeadImage>
@@ -310,7 +310,7 @@ const TeamRolePage = () => {
                                 </LeadInfoContainer>
                             </LeadProfileContainer>
                         }
-                    </VisibilitySensor>
+                    </VisibilitySensor> */}
 
                     <VisibilitySensor onChange={business2Visible} partialVisibility={true} active={business2} offset={{ bottom: 100 }}>
                         {({ isVisible }) =>
