@@ -10,6 +10,7 @@ import LeadershipIcon from '../../assets/HomePageImages/LeadershipIcon.png';
 import SustainabilityIcon from '../../assets/HomePageImages/SustainabilityIcon.png';
 import EducationIcon from '../../assets/HomePageImages/EducationIcon.png';
 import InnovationIcon from '../../assets/HomePageImages/InnovationIcon.png';
+import { NavBtn, NavBtnLink } from '../HomePage/HomePageStyle';
 
 import Footer from '../Footer';
 import {
@@ -75,6 +76,11 @@ const HomePage = () => {
                     <ArrowLevitate to='meet'>
                         <FaAngleDown size="80px" cursor="pointer" ></FaAngleDown>
                     </ArrowLevitate>
+                    <NavBtn>
+                        <a href='https://crowdfundraising.ubc.ca/projects/race-for-the-sun/' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                            <NavBtnLink>Brightside Crowdfunding!</NavBtnLink>
+                        </a>
+                    </NavBtn>
                 </HomeHeroContainer>
 
                 <HomeMottoContainer>

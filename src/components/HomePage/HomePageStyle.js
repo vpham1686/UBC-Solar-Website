@@ -46,6 +46,42 @@ export const ArrowLevitate = styled(LinkScroll)`
     }
 `;
 
+export const NavBtn = styled.nav`
+    position: absolute;
+    display: flex;    
+    top: 65%;
+    z-index: 5;
+    color: #E5B13A;
+    align-items: center;
+
+    @media screen and (max-width: 900px) {
+        
+    }
+`;
+
+export const NavBtnLink = styled.div`
+    border-radius: 50px;
+    background: #04112E;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    border: 5px solid #E5B13A;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    text-decoration: none;
+
+    &:hover {
+        background-position: left bottom;
+        color: #04112E;
+        background: #E5B13A;
+    }
+`;
+
 export const HomeMottoContainer = styled.div`
     opacity: 100%;
 `;
