@@ -145,8 +145,8 @@ const HomePage = () => {
                     <ol style={{ verticalalign: 'middle', fontSize: '2vw', fontWeight: 'bold', textAlign: 'left', margin: '5vh 1vh 5vh 20vh', color: 'white', paddingBottom: '5vh' }}>
                         <p>☀️ Finish Brightside design - Our newest car!</p>
                         <p>☀️ Launch a successful crowdfunding campaign</p>
-                        <p>☀️ Start manufacturing by May 12st</p>
-                        <p>☀️ Expand our network or industry and professional connections</p>
+                        <p>☀️ Start manufacturing by April 12</p>
+                        <p>☀️ Expand our network of industry and professional connections</p>
                     </ol>
                     
                     

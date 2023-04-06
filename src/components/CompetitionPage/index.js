@@ -55,7 +55,8 @@ const ProjectPage = () => {
                     The solar car, Raven, was not fully tested before committing to the competition which led to some engineering faults along the journey. 
                     Sections of the aeroshell were cracked from the drive to the competition site. 
                     This setback made it difficult for the team to work on improving other vehicle systems and repairing the aeroshell in the span of the competition scrutineering period. 
-                    The team unfortunately did not pass dynamics testing and did not get to bring Raven onto the racetrack. On the brightside, the team learnt many valuable techniques to further improve future solar car designs and brought back valuable experiences that led to the improved competition logistics for Daybreak in 2022.
+                    The team unfortunately did not pass dynamics testing and did not get to bring Raven onto the racetrack. 
+                    On the brightside, the team learnt many valuable techniques to further improve future solar car designs and brought back valuable experiences that led to the improved competition logistics for Daybreak in 2022.
                     </p>
                 </LastProjectTextContainer>
             </div>
