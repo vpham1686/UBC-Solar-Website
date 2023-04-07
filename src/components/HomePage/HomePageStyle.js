@@ -54,9 +54,6 @@ export const NavBtn = styled.nav`
     color: #E5B13A;
     align-items: center;
 
-    @media screen and (max-width: 900px) {
-        
-    }
 `;
 
 export const NavBtnLink = styled.div`
@@ -79,6 +76,11 @@ export const NavBtnLink = styled.div`
         background-position: left bottom;
         color: #04112E;
         background: #E5B13A;
+    }
+    @media screen and (max-width: 900px) {
+        font-size: calc(10px + 1.5vw);
+        padding: calc(8px + .5vw) calc(16px + 1vw);
+        border: calc(2px + .5vw) solid #E5B13A;
     }
 `;
 
@@ -160,11 +162,10 @@ export const ValuesContainer = styled.div`
     display: grid;
     grid-template-areas: "a b c d";
     height: auto;
-    grid-gap: 50px;
+    grid-gap: 3vw;
     grid-template-columns: repeat(4, 23%);
     justify-content: center;
     @media screen and (max-width: 1000px) {
-        grid-gap: 20px;
         grid-template-rows: repeat(1, auto);
         grid-template-columns: 75%;
         grid-template-areas: 
@@ -172,6 +173,19 @@ export const ValuesContainer = styled.div`
         "b"
         "c"
         "d";
+    }
+`;
+
+export const ValuesTitle = styled.div`
+    text-align: center;
+    margin-top: 2.5vh;
+    margin-bottom: 2vh;
+    color: black;
+    font-size: 4vh;
+    font-weight: bold;
+
+    @media screen and (max-width: 1250px) {
+        font-size: 3vh;
     }
 `;
 

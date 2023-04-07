@@ -17,7 +17,7 @@ export const TeamRolesMainImageContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 10vh;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 730px) {
         background: #E5B13A;
         height: 100px;
         margin-bottom: 0;
@@ -33,7 +33,7 @@ export const TeamRolesMainImageContentText = styled.h1`
     margin: 0px 0px 175px 0px;
     color: white;
     font-size: 140px;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 730px) {
         color: #002145;
         font-size: 50px;
         margin: 0;

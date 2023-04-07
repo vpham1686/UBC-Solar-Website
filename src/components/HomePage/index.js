@@ -35,6 +35,7 @@ import {
     EducationContainer,
     InnovationContainer,
     Icon,
+    ValuesTitle
 
 } from './HomePageStyle';
 
@@ -104,7 +105,7 @@ const HomePage = () => {
                         <HomeValuesContainer style={{ opacity: `${isVisible ? '1' : '0'}` }}>
                             <ValuesContainer>
                                 <InnovationContainer>
-                                    <h1 style={{ textAlign: 'center', marginBottom: '5vh', color: '#000000' }}>Innovation</h1>
+                                    <ValuesTitle>Innovation</ValuesTitle>
                                     <Icon
                                         src={InnovationIcon}>
                                     </Icon>
@@ -113,7 +114,7 @@ const HomePage = () => {
                                     </h4>
                                 </InnovationContainer>
                                 <SustainabilityContainer>
-                                    <h1 style={{ textAlign: 'center', marginBottom: '5vh', color: '#000000' }}>Sustainability</h1>
+                                    <ValuesTitle>Sustainability</ValuesTitle>
                                     <Icon
                                         src={SustainabilityIcon}>
                                     </Icon>
@@ -122,7 +123,7 @@ const HomePage = () => {
                                     </h4>
                                 </SustainabilityContainer>
                                 <EducationContainer>
-                                    <h1 style={{ textAlign: 'center', marginBottom: '5vh', color: '#000000' }}>Education</h1>
+                                    <ValuesTitle>Education</ValuesTitle>
                                     <Icon
                                         src={EducationIcon}>
                                     </Icon>
@@ -131,7 +132,7 @@ const HomePage = () => {
                                     </h4>
                                 </EducationContainer>
                                 <LeadershipContainer>
-                                    <h1 style={{ textAlign: 'center', marginBottom: '5vh', color: '#000000' }}>Leadership</h1>
+                                    <ValuesTitle>Leadership</ValuesTitle>
                                     <Icon
                                         src={LeadershipIcon}>
                                     </Icon>

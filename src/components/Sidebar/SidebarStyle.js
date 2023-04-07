@@ -7,7 +7,7 @@ export const SidebarContainer = styled.div`
     position: fixed;
     z-index: 999;
     width: 100%;
-    height: calc(100% - 2.7rem);
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     align-items: center;
 
@@ -102,7 +102,7 @@ export const SidebarContainer = styled.div`
 
     &.closed {
         transition: all 0.1s ease-in-out;
-        transform: translateX(-100vw);
+        transform: translateX(-1000vw);
 
         nav {
             width: 100%;
