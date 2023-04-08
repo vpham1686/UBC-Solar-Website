@@ -114,13 +114,6 @@ export const NavLinks = styled(LinkRouter)`
 export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
-
-    @media screen and (max-width: 955px) {
-        display: none;
-    }
-`;
-
-export const NavBtnLink = styled.div`
     border-radius: 50px;
     background: linear-gradient(to right, #E5B13A 50%, #04112E 50%);
     background-size: 200% 100%;
@@ -135,6 +128,18 @@ export const NavBtnLink = styled.div`
     cursor: pointer;
     transition: all 1s ease-out;
     text-decoration: none;
+    height: 3vh;
+
+    @media screen and (max-width: 955px) {
+        display: none;
+    }
+    &:hover {
+        background-position: left bottom;
+        color: #04112E;
+    }
+`;
+
+export const NavBtnLink = styled(LinkRouter)`
 
     &:hover {
         background-position: left bottom;
