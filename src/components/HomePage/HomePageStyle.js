@@ -46,6 +46,44 @@ export const ArrowLevitate = styled(LinkScroll)`
     }
 `;
 
+export const NavBtn = styled.nav`
+    position: absolute;
+    display: flex;    
+    top: 65%;
+    z-index: 5;
+    color: #E5B13A;
+    align-items: center;
+
+`;
+
+export const NavBtnLink = styled.div`
+    border-radius: 50px;
+    background: #04112E;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    border: 5px solid #E5B13A;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    text-decoration: none;
+
+    &:hover {
+        background-position: left bottom;
+        color: #04112E;
+        background: #E5B13A;
+    }
+    @media screen and (max-width: 900px) {
+        font-size: calc(10px + 1.5vw);
+        padding: calc(8px + .5vw) calc(16px + 1vw);
+        border: calc(2px + .5vw) solid #E5B13A;
+    }
+`;
+
 export const HomeMottoContainer = styled.div`
     opacity: 100%;
 `;
@@ -124,11 +162,10 @@ export const ValuesContainer = styled.div`
     display: grid;
     grid-template-areas: "a b c d";
     height: auto;
-    grid-gap: 50px;
+    grid-gap: 3vw;
     grid-template-columns: repeat(4, 23%);
     justify-content: center;
     @media screen and (max-width: 1000px) {
-        grid-gap: 20px;
         grid-template-rows: repeat(1, auto);
         grid-template-columns: 75%;
         grid-template-areas: 
@@ -136,6 +173,19 @@ export const ValuesContainer = styled.div`
         "b"
         "c"
         "d";
+    }
+`;
+
+export const ValuesTitle = styled.div`
+    text-align: center;
+    margin-top: 2.5vh;
+    margin-bottom: 2vh;
+    color: black;
+    font-size: 4vh;
+    font-weight: bold;
+
+    @media screen and (max-width: 1250px) {
+        font-size: 3vh;
     }
 `;
 

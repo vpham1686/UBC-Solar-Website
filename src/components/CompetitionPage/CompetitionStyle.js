@@ -16,7 +16,7 @@ export const ProjectMainImageContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 10vh;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1020px) {
         background: #E5B13A;
         height: 100px;
         margin-bottom: 0;
@@ -32,7 +32,7 @@ export const ProjectMainImageContentText = styled.h1`
     margin: 0px 0px 175px 0px;
     color: white;
     font-size: 140px;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1020px) {
         color: #002145;
         font-size: 50px;
         margin: 0;
@@ -104,7 +104,7 @@ export const ProjectTextContainer = styled.div`
 export const LastProjectTextContainer = styled.div`
     text-align: center;
     padding: 2% 10%;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1020px) {
         marginBottom: '10vw'
     }
 `;

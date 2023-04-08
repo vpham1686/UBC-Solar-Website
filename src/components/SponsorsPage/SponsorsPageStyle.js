@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Link as LinkScroll } from 'react-scroll';
+import SponsorsPageImage from '../../assets/SponsorsPageImages/SponsorsImage.png';
 
 export const HomeContainer = styled.div`
     
@@ -10,6 +11,8 @@ export const HomeHeroContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
 `;
 
 export const HeroPhoto = styled.img`
@@ -31,8 +34,37 @@ export const NavBtn = styled.nav`
     color: #E5B13A;
     align-items: center;
 
-    @media screen and (max-width: 900px) {
-        
+    @media screen and (max-width: 1200px) {
+        top: calc(50%);
+    }
+
+    @media screen and (max-width: 990px) {
+        top: calc(40%);
+    }
+
+    @media screen and (max-width: 770px) {
+        top: calc(35%);
+    }
+    @media screen and (max-width: 650px) {
+        top: calc(30%);
+    }
+    @media screen and (max-width: 550px) {
+        top: calc(25%);
+    }
+    @media screen and (max-width: 450px) {
+        top: calc(23%);
+    }
+    @media screen and (max-width: 405px) {
+        top: calc(21%);
+    }
+    @media screen and (max-height: 710px) {
+        top: calc(26%);
+    }
+    @media screen and (max-height: 770px) {
+        top: calc(23%);
+    }
+    @media screen and (max-height: 720px) {
+        top: calc(26%);
     }
 `;
 
@@ -51,9 +83,20 @@ export const NavBtnLink1 = styled.nav`
     cursor: pointer;
     transition: all 1s ease-out;
     text-decoration: none;
+    margin-left: 5vh;
 
-    @media screen {
-        height: 60%;
+    @media screen and (max-width: 900px) {
+        font-size: calc(10px + 1.5vw);
+        padding: calc(8px + .5vw) calc(16px + 1vw);
+        border: calc(2px + .5vw) solid #E5B13A;
+        margin-left: 2vh; 
+    }
+    @media screen and (max-width: 450px) {
+        margin-left: 1vh;
+    }
+    @media screen and (max-width: 405px) {
+        padding: calc(6px + .5vw) calc(12px + 1vw);
+        margin-left: .5vh;
     }
 `;
 
@@ -72,6 +115,12 @@ export const NavBtnLink = styled.div`
     cursor: pointer;
     transition: all 1s ease-out;
     text-decoration: none;
+
+    @media screen and (max-width: 900px) {
+        font-size: calc(10px + 1.5vw);
+        padding: calc(8px + .5vw) calc(16px + 1vw);
+        border: calc(2px + .5vw) solid #E5B13A;
+    }
 `;
 
 export const HomeMottoContainer = styled.div`
@@ -162,43 +211,6 @@ export const MeetDescriptionContainer = styled.div`
     }
 `;
 
-export const HomeValuesContainer = styled.div`
-    margin: 50px 10px;
-    height: auto;
-    transition: 1s ease-in;
-    
-    @media screen and (max-width: 1000px) {
-        margin: 25px 10px;
-        height: auto;
-    }
-`;
-
-export const ValuesContainer = styled.div`
-    display: grid;
-    grid-template-areas: "a b c d";
-    height: auto;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, 23%);
-    justify-content: center;
-    @media screen and (max-width: 1000px) {
-        grid-gap: 10px;
-        grid-template-rows: repeat(1, auto);
-        grid-template-columns: 90%;
-        grid-template-areas: 
-        "a"
-        "b"
-        "c"
-        "d";
-    }
-`;
-
-export const LeadershipContainer = styled.div`
-    grid-area: d;
-    background: rgba(229, 177, 58, 0.95);
-    border-radius: 50px;
-    margin: 0 auto;
-`;
-
 export const Icon = styled.img`
     display: block;
     margin: 0 auto;
@@ -208,27 +220,6 @@ export const Icon = styled.img`
 
     transition: 1.5s;
     transition-timing-function: cubic-bezier(1,-0.12,.83,.67);
-`;
-
-export const SustainabilityContainer = styled.div`
-    grid-area: b;
-    background: rgba(229, 177, 58, 0.95);
-    border-radius: 50px;
-    margin: 0 auto;
-`;
-
-export const EducationContainer = styled.div`
-    grid-area: c;
-    background: rgba(229, 177, 58, 0.95);
-    border-radius: 50px;
-    margin: 0 auto;
-`;
-
-export const InnovationContainer = styled.div`
-    grid-area: a;
-    background: rgba(229, 177, 58, 0.95);
-    border-radius: 50px;
-    margin: 0 auto;
 `;
 
 export const HomeSponsorsContainer = styled.div`
@@ -250,8 +241,14 @@ export const DiamondSponsors = styled.img`
     justify-self: center;
     transition: 1s ease-in;
 
+    @media screen and (max-width: 1200px) {
+        zoom: .6;
+        padding-bottom: 3vh;
+    }
+
     @media screen and (max-width: 750px) {
-        max-width: 200px;
+        zoom: .4;
+        padding-bottom: 3vh;
     }
 `;
 
@@ -273,8 +270,18 @@ export const PlatinumSponsors = styled.img`
     padding-top: 1vh;
     padding-bottom: 1vh;
 
+    @media screen and (max-width: 1200px) {
+        zoom: .6;
+        padding-bottom: 3vh;
+    }
+
     @media screen and (max-width: 750px) {
-        max-width: 200px;
+        zoom: .4;
+        padding-bottom: 3vh;
+    }
+    @media screen and (max-width: 475px) {
+        zoom: .3;
+        padding-bottom: 2vh;
     }
 `;
 

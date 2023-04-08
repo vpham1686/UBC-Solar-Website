@@ -132,7 +132,7 @@ const SponsorsPage = () => {
                         <a href='https://donate.give.ubc.ca/page/80953/donate/1?transaction.dirgift=UBC+Solar%20G1921' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <NavBtnLink>Join the Race!</NavBtnLink>
                         </a>
-                        <a href='https://drive.google.com/file/d/1Kzla66Yd8Xiri90RZao0MjDM4nOS8T2K/view?usp=sharing' target="_blank" style={{ textDecoration: 'none', marginLeft: '5vh' }}>
+                        <a href='https://drive.google.com/file/d/1Kzla66Yd8Xiri90RZao0MjDM4nOS8T2K/view?usp=sharing' target="_blank" style={{ textDecoration: 'none' }}>
                             <NavBtnLink1>Sponsorship Package</NavBtnLink1>
                         </a>
                     </NavBtn>

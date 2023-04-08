@@ -2,15 +2,15 @@ import React from 'react';
 import { Squash as Hamburger } from 'hamburger-react'
 import Logo from '../../assets/NavigationBarImages/Logo.svg';
 import {
-    Nav, 
-    NavbarContainer,  
-    MobileIcon, 
+    Nav,
+    NavbarContainer,
+    MobileIcon,
     NavNav,
-    NavMenu, 
-    NavItem, 
+    NavMenu,
+    NavItem,
     NavLinks,
     NavBtn,
-    NavBtnLink,
+
 } from './NavigationBarStyle';
 
 const Navbar = ({ isOpen, toggle }) => {
@@ -27,7 +27,7 @@ const Navbar = ({ isOpen, toggle }) => {
                 <NavbarContainer>
 
                     <MobileIcon onClick={toggle}>
-                        <Hamburger color="#FFFFFF" rounded toggled={isOpen} toggle={toggle}/>
+                        <Hamburger color="#FFFFFF" rounded toggled={isOpen} toggle={toggle} />
                     </MobileIcon>
                     <NavNav className="stroke">
                         <NavMenu>
@@ -43,14 +43,12 @@ const Navbar = ({ isOpen, toggle }) => {
                             <NavItem>
                                 <NavLinks to='/team-roles'>About</NavLinks>
                             </NavItem>
+                            <NavBtn>
+                                <NavLinks to='/sponsorships' style={{textDecoration: 'none'}}>Sponsor Us</NavLinks>
+                            </NavBtn>
                         </NavMenu>
                     </NavNav>
 
-                    
-                    <NavBtn>
-                        <NavBtnLink to='/sponsorships' smooth={true} offset={-75}>Sponsor Us</NavBtnLink>
-                    </NavBtn> 
-                    
 
                 </NavbarContainer>
             </Nav>
