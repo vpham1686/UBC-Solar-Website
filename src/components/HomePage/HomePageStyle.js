@@ -231,3 +231,42 @@ export const InnovationContainer = styled.div`
     border-radius: 60px;
     margin: 0 auto;
 `;
+
+export const MapBulletContainer = styled.div`
+    vertical-align: middle; 
+    text-align: left;
+    margin: 5vh 1vh 5vh 20vh;
+    color: white;
+    padding-bottom: 5vh;
+
+    @media screen and (max-width: 900px) {
+        margin: 3vh 7vh 3vh 10vh;
+    }
+`;
+
+export const MapBullet = styled.div`
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+
+    @media screen and (max-width: 900px) {
+        margin: 3vh 1vh 3vh .3vh;
+        font-size: 5vw;
+    }
+`;
+
+export const MapTitle = styled.div`
+    vertical-align: middle;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: left;
+    margin: 8vh 10vh 5vh 10vh;
+    color: white; 
+    padding-top: 5vh;
+
+    @media screen and (max-width: 900px) {
+        margin: 8vh 1vh 5vh 5vh;
+        padding-top: 4vh;
+        font-size: 9vw;
+    }
+`;
