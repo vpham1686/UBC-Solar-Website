@@ -40,8 +40,6 @@ import {
 } from './HomePageStyle';
 
 import {
-NavBtn,
-NavBtnLink,
 NavBtnLink1
 } from '../SponsorsPage/SponsorsPageStyle'
 
