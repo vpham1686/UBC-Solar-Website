@@ -287,8 +287,9 @@ export const PlatinumSponsorContainer = styled.div`
     padding-bottom: 8vh;
 
     @media screen and (max-width: 750px) {
-        grid-template-columns: repeat(2, 40vw);
-        grid-template-rows: repeat(1, 15vh);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        row-gap: 2vh;
     }
 `;
 
