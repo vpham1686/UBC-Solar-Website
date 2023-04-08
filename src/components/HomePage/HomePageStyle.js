@@ -240,7 +240,7 @@ export const MapBulletContainer = styled.div`
     padding-bottom: 5vh;
 
     @media screen and (max-width: 900px) {
-        margin: 3vh 7vh 3vh 10vh;
+        margin: 3vh 7vh 3vh 9vh;
     }
 `;
 
