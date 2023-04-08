@@ -6,7 +6,7 @@ import ProjectPage from "./components/ProjectPage";
 import CompetitionPage from "./components/CompetitionPage";
 import TeamRolePage from "./components/TeamRolePage";
 import RecruitmentPage from "./components/JoinUsPage";
-import SponsorsPage from './components/SponsorsPage';
+import SponsorsPage from "./components/SponsorsPage";
 
 function App() {
 

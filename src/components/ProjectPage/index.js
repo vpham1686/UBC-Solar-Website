@@ -40,13 +40,11 @@ const ProjectPage = () => {
                     <ProjectTextName>Daybreak</ProjectTextName>
                     <ProjectTextYear>(2017 - 2022)</ProjectTextYear>
                     <p>
-                        Daybreak set out to build on the knowledge gained from Raven and learn from previous mistakes. Daybreak's design started in 2018, spearheaded by a starkly
-                        bright and dedicated group of students. Daybreak's design focused on being more efficient, more competitive, and is going to be the team's first car to
-                        officially race in competition. All aspects of Daybreak are an improvement over Raven, including a more efficient battery,
-                        aeroshell, and an improved manufacturing process. The team started to manufacture Daybreak in 2019, with eyes set firmly on
-                        the 2020 American Solar Challenge. Due to the global pandemic however, the team was not able to attend competition in 2020 or
-                        2021. With the return to in-person work in 2022, the team is back in full swing and is in the final stages of getting Daybreak
-                        race ready for the American Solar Challenge 2022!
+                    After years of hard work and dedication, the Daybreak solar car was a huge success in the Formula Sun Grand Prix 2022 competition. 
+                    The team, made up of bright and motivated students, set out to build upon the knowledge gained from their previous car, Raven, and learn from past mistakes. 
+                    The design of Daybreak, which began in 2018, focused on being more efficient, more competitive, and was the team's first car to officially race. 
+                    The team made improvements in all aspects of the car, including the battery, aeroshell, and manufacturing process. 
+                    Despite the challenges posed by the global pandemic, the team persevered and was finally able to bring Daybreak to competition in 2022, with outstanding results.
                     </p>
                 </ProjectTextContainer>
                 <ProjectImage image={RavenSpecs} backgroundImage={ProjectPageRaven} />
@@ -61,7 +59,7 @@ const ProjectPage = () => {
                         determination and hardwork they were successful in finishing the design and manufacturing of our solar car, Raven. With much
                         eagerness and excitement, the team took Raven to the Formula Sun Grand Prix in 2017, a competition where all the best solar
                         teams in North America competed for the most laps around the track. Despite their best efforts, an electrical issue prevented
-                        the team from showcasing Raven in all its glory in the competition. However, this did not detour or take away the valuable
+                        the team from showcasing Raven in all its glory in the competition. However, this did not deter or take away the valuable
                         learning experiences the team gained from the moment project Raven was started to the last day of the competition. Geared up
                         with these experiences, a new generation of the team arose, with new goals to build upon the foundation previous design teams
                         laid out, marking the beginning of Daybreak.
