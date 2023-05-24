@@ -24,7 +24,7 @@ import Chassis2 from '../../assets/TeamRoleImages/ChassisTeamLead2.png';
 import BatteryElec from '../../assets/TeamRoleImages/BatteryElecTeamLead.png';
 import BatteryMech1 from '../../assets/TeamRoleImages/BatteryMechTeamLead1.png';
 import BatteryMech2 from '../../assets/TeamRoleImages/BatteryMechTeamLead2.png';
-import LowVoltageSystems from '../../assets/TeamRoleImages/LowVoltageSystemsTeamLead.png';
+import LowVoltageSystems from '../../assets/TeamRoleImages/LowVoltageSystemsTeamLead2.png';
 import Aeroshell from '../../assets/TeamRoleImages/AeroshellTeamLead.png';
 import Aeroshell2 from '../../assets/TeamRoleImages/AeroshellTeamLead2.png';
 
@@ -599,16 +599,18 @@ const TeamRolePage = () => {
                                 <LeadImage src={LowVoltageSystems}></LeadImage>
                                 <LeadDescriptionContainer>
                                     <LeadDescription>
-                                        I am a second year engineering student specialising in computer engineering and have been a part of UBC Solar for about two years now.
-                                        Throughout my time here, the experience has been both rewarding and enjoyable as I learn and discover new things.
+                                    I'm a second year engineering physics student hoping to specialize in electrical engineering. I have been on the solar team for almost two years. 
+                                    The thing I have loved most about being on UBC Solar has been the positive learning environment that is fostered on the team. 
+                                    I have learned so much from my teammates and from the variety of projects that I have been a part of. 
+                                    I cannot wait to see what future projects hold in store for me!
                                         <br></br><br></br>
-                                        As the name implies, the low voltage systems team is responsible for the development and application of low voltage systems for our solar car.
-                                        Namely the driver interface, vehicle manoeuvring, lights, navigation, communication and data logging.
-                                        Our team primarily designs, assembles and tests boards, as well as the wiring of these modules.
+                                        The low voltage subteam is in charge of all systems in the car that operate at a low voltage (typically between 3.3 - 12V). 
+                                        Our projects usually center around driver interfaces and data acquisition (speed of the car, location via GPS etc…). 
+                                        You will see the low voltage team members working on boards such as the main control board, the dashboard, the steering wheel and the telemetry board.
                                     </LeadDescription>
                                 </LeadDescriptionContainer>
                                 <LeadInfoContainer>
-                                    <LeadName>Anthony Vu</LeadName>
+                                    <LeadName>Catherine Blouin</LeadName>
                                     <LeadPosition>Low Voltage Systems Team Lead</LeadPosition>
                                 </LeadInfoContainer>
                             </LeadProfileContainer>

@@ -81,7 +81,7 @@ const HomePage = () => {
 
                     {/* crowdfunding button */}
 
-                    <NavBtn>
+                    {/* <NavBtn>
                         <a href='https://crowdfundraising.ubc.ca/projects/race-for-the-sun/' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <NavBtnLink>Crowdfunding Campaign</NavBtnLink>
                         </a>
@@ -94,7 +94,7 @@ const HomePage = () => {
                         <a href='https://crowdfundraising.ubc.ca/projects/race-for-the-sun/' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <NavBtnLink>Brightside Crowdfunding!</NavBtnLink>
                         </a>
-                    </NavBtn>
+                    </NavBtn> */}
                 </HomeHeroContainer>
 
                 <HomeMottoContainer>
