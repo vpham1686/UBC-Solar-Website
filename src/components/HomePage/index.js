@@ -35,7 +35,10 @@ import {
     EducationContainer,
     InnovationContainer,
     Icon,
-    ValuesTitle
+    ValuesTitle,
+    MapBulletContainer,
+    MapBullet,
+    MapTitle
 
 } from './HomePageStyle';
 
@@ -160,14 +163,14 @@ const HomePage = () => {
 
                 
                 <MapContainer>
-                    <h1 style={{ verticalalign: 'middle', fontSize: '4vw', fontWeight: 'bold', textAlign: 'left', margin: '8vh 10vh 5vh 10vh', marginBottom: 'auto', color: 'white', paddingTop: '5vh' }}>2023 Objectives...</h1>
+                    <MapTitle>2023 Objectives...</MapTitle>
                     
-                    <ol style={{ verticalalign: 'middle', fontSize: '2vw', fontWeight: 'bold', textAlign: 'left', margin: '5vh 1vh 5vh 20vh', color: 'white', paddingBottom: '5vh' }}>
-                        <p>☀️ Finish Brightside design - Our newest car!</p>
-                        <p>☀️ Launch a successful crowdfunding campaign</p>
-                        <p>☀️ Start manufacturing by April 12</p>
-                        <p>☀️ Expand our network of industry and professional connections</p>
-                    </ol>
+                    <MapBulletContainer>
+                        <MapBullet>☀️ Finish Brightside design - Our newest car!</MapBullet>
+                        <MapBullet>☀️ Launch a successful crowdfunding campaign</MapBullet>
+                        <MapBullet>☀️ Start manufacturing by April 12</MapBullet>
+                        <MapBullet>☀️ Expand our network of industry and professional connections</MapBullet>
+                    </MapBulletContainer>
                     
                     
                 </MapContainer>
