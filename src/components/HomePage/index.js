@@ -82,22 +82,24 @@ const HomePage = () => {
                         src={HeroImage}>
                     </HeroPhoto>
 
-                    {/* crowdfunding button */}
+                    {/* recruitment button */}
 
                     {/* <NavBtn>
                         <a href='https://crowdfundraising.ubc.ca/projects/race-for-the-sun/' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <NavBtnLink>Crowdfunding Campaign</NavBtnLink>
-                        </a>
-                       
-                    </NavBtn>
+                        </a>                       
+                    </NavBtn> */}
+                    <ArrowLevitate to='meet' style={{color: '#ebc634', marginBottom: '20%'}}>
+                        <h1>We are Hiring!</h1>
+                    </ArrowLevitate>
                     <ArrowLevitate to='meet'>
                         <FaAngleDown size="80px" cursor="pointer" ></FaAngleDown>
                     </ArrowLevitate>
                     <NavBtn>
-                        <a href='https://crowdfundraising.ubc.ca/projects/race-for-the-sun/' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                            <NavBtnLink>Brightside Crowdfunding!</NavBtnLink>
+                        <a href='/recruitment' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                            <NavBtnLink>Open Positions</NavBtnLink>
                         </a>
-                    </NavBtn> */}
+                    </NavBtn>
                 </HomeHeroContainer>
 
                 <HomeMottoContainer>

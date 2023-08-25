@@ -88,3 +88,10 @@ export const RecruitmentFAQ = styled.h1`
     margin-top: auto;
     margin-bottom: auto;
     `;
+
+export const HorizontalLine = styled.hr`
+    width: "60%",
+    height: "4px",
+    backgroundColor: "#ebc634",
+    margin: "2px auto",
+`;

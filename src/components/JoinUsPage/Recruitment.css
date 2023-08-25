@@ -1,6 +1,7 @@
 .wrapper {
     display: grid;
-    height: calc(100vh - 110px);
+    /* height changed from 100vh to 30% because of extra section -revert when recruitment is over */
+    height: 30%; 
     width: 100vw;
     justify-content: center;
     align-items: center;
