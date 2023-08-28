@@ -405,14 +405,6 @@ const RecruitmentPage = () => {
 
       {/* Subteam FAQs */}
       <RecruitmentFAQ>Mechanical Positions</RecruitmentFAQ>
-      <hr
-          style={{
-            width: "60%",
-            height: "4px",
-            backgroundColor: "#ebc634",
-            margin: "2px auto",
-          }}
-        /> 
       <div className='wrapper'>
         <div className='accordion'>
           {mechanicalPositions.map((item, i) => (
@@ -434,14 +426,6 @@ const RecruitmentPage = () => {
 
       {/* Subteam FAQs */}
       <RecruitmentFAQ>Electrical Positions</RecruitmentFAQ>
-      <hr
-          style={{
-            width: "60%",
-            height: "4px",
-            backgroundColor: "#ebc634",
-            margin: "2px auto",
-          }}
-        /> 
       <div className='wrapper'>
         <div className='accordion'>
           {electricalPositions.map((item, i) => (
@@ -463,14 +447,6 @@ const RecruitmentPage = () => {
 
       {/* Subteam FAQs */}
       <RecruitmentFAQ>Business Team Positions</RecruitmentFAQ>
-      <hr
-          style={{
-            width: "60%",
-            height: "4px",
-            backgroundColor: "#ebc634",
-            margin: "2px auto",
-          }}
-        /> 
       <div className='wrapper'>
         <div className='accordion'>
           {businessPositions.map((item, i) => (
@@ -489,14 +465,6 @@ const RecruitmentPage = () => {
       </div>
 
       <RecruitmentFAQ>Recruitment FAQ</RecruitmentFAQ>
-      <hr
-          style={{
-            width: "60%",
-            height: "4px",
-            backgroundColor: "#ebc634",
-            margin: "2px auto",
-          }}
-        /> 
       <div className='wrapper'>
         <div className='accordion'>
           {data.map((item, i) => (

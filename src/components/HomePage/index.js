@@ -42,9 +42,10 @@ import {
 
 } from './HomePageStyle';
 
-import {
-NavBtnLink1
-} from '../SponsorsPage/SponsorsPageStyle'
+// import {
+// NavBtn,
+// NavLinks
+// } from '../NavigationBar/NavigationBarStyle'
 
 const HomePage = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -78,6 +79,7 @@ const HomePage = () => {
             
             <HomeContainer>
                 <HomeHeroContainer style={{ transform: `translateY(${offsetY * 0.39}px)` }}>
+                
                     <HeroPhoto
                         src={HeroImage}>
                     </HeroPhoto>
@@ -89,18 +91,18 @@ const HomePage = () => {
                             <NavBtnLink>Crowdfunding Campaign</NavBtnLink>
                         </a>                       
                     </NavBtn> */}
-                    <ArrowLevitate to='meet' style={{color: '#ebc634', marginBottom: '20%'}}>
-                        <h1>We are Hiring!</h1>
-                    </ArrowLevitate>
                     <ArrowLevitate to='meet'>
                         <FaAngleDown size="80px" cursor="pointer" ></FaAngleDown>
                     </ArrowLevitate>
+                    
                     <NavBtn>
-                        <a href='/recruitment' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                            <NavBtnLink>Open Positions</NavBtnLink>
+                        <a href='https://forms.gle/pLXxU2P4KSWpDhyD6' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                            <NavBtnLink>Apply Now</NavBtnLink>
                         </a>
                     </NavBtn>
                 </HomeHeroContainer>
+
+                
 
                 <HomeMottoContainer>
                     <MottoYellowContainer>

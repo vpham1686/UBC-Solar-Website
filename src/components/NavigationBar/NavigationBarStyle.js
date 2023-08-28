@@ -104,7 +104,7 @@ export const NavLinks = styled(LinkRouter)`
     text-decorartion: none;
     padding: 0 15px;
     height: 100%;
-    cursor: pointer;
+    cursor: pointer; 
 
     &.active {
         border-bottom: 3px solid #01bf71

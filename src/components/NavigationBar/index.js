@@ -1,5 +1,7 @@
 import React from 'react';
 import { Squash as Hamburger } from 'hamburger-react'
+import { ArrowLevitate } from '../HomePage/HomePageStyle';
+import { FaAngleDoubleUp } from 'react-icons/fa';
 import Logo from '../../assets/NavigationBarImages/Logo.svg';
 import {
     Nav,
@@ -38,8 +40,12 @@ const Navbar = ({ isOpen, toggle }) => {
                                 <NavLinks to='/competitions'>Competitions</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to='/recruitment'>Recruiting</NavLinks>
+                                <NavLinks className='recruit' style={{color: '#ebc634', fontSize: '1.5em'}}to='/recruitment'>Recruiting</NavLinks>
+                                {/* <ArrowLevitate to='recruit'>
+                                <FaAngleDoubleUp size="80px" cursor="pointer" style={{margin: 'auto', color: '#ebc634'}}></FaAngleDoubleUp>
+                                </ArrowLevitate> */}
                             </NavItem>
+                            
                             <NavItem>
                                 <NavLinks to='/team-roles'>About</NavLinks>
                             </NavItem>
