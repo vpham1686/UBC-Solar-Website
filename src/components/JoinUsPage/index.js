@@ -285,11 +285,21 @@ const RecruitmentPage = () => {
               font='15px'
               text='Positions Available'
             />
-            <RecruitmentContentHeaderText font='40px' text='Work with us' />
+            {/* <RecruitmentContentHeaderText font='40px' text='Work with us' />
             <RecruitmentContentParagraph>
               UBC Solar offers great opportunities for students of all
               backgrounds and specializations. Join our journey to push the
               limits of sustainable technology together.
+            </RecruitmentContentParagraph> */}
+
+            <RecruitmentContentHeaderText font='40px' text='Learn more' />
+            <RecruitmentContentParagraph>
+              Want to meet team members and leads, get more information about projects, 
+              and find out what it's like to work on UBC Solar? Join us on:
+              <ul>
+                <li>Imagine Day -<b>September 5th</b>, all day at the UBC Solar booth on Main Mall.</li>
+                <li>UBC Solar Info Session -<b>September 7th, 6PM</b> (Location TBD)</li>
+              </ul>
             </RecruitmentContentParagraph>
 
             <a
@@ -304,7 +314,7 @@ const RecruitmentPage = () => {
             </a>
 
             {/* Displaying only one timer */}
-            <div classname='warning'>
+            {/* <div classname='warning'>
               <div
                 className={
                   timerSecondsW === 0 &&
@@ -392,8 +402,8 @@ const RecruitmentPage = () => {
                   Applications have closed!
                 </p>
               </div>
-            </div>
-            <RecruitmentContentHeaderText font='20px' text='Applications open: Aug 28 - Sept 17 2023' />
+            </div> */}
+            <RecruitmentContentHeaderText font='0.8em' color='red' text='Applications open: 28 August - 17 September 2023, 11:59PM PST' />
 
           </RecruitmentContentChild>
         </RecruitmentContentContainer>

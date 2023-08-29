@@ -40,7 +40,7 @@ const Navbar = ({ isOpen, toggle }) => {
                                 <NavLinks to='/competitions'>Competitions</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks className='recruit' style={{color: '#ebc634', fontSize: '1.5em'}}to='/recruitment'>Recruiting</NavLinks>
+                                <NavLinks className='recruit' style={{color: '#ebc634', fontSize: '1.2em'}}to='/recruitment'>Recruiting</NavLinks>
                                 {/* <ArrowLevitate to='recruit'>
                                 <FaAngleDoubleUp size="80px" cursor="pointer" style={{margin: 'auto', color: '#ebc634'}}></FaAngleDoubleUp>
                                 </ArrowLevitate> */}

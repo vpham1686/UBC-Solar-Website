@@ -28,7 +28,7 @@ export const RecruitmentContentChild = styled.div`
 
 export const RecruitmentContentHeaderText = (props) => {
     return (
-        <h1 style={{ margin: '0', fontSize: props.font }}>
+        <h1 style={{ marginTop: '5px',color: props.color, fontSize: props.font }}>
             {props.text}
         </h1>
     );

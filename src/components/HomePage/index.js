@@ -15,6 +15,7 @@ import { NavBtn, NavBtnLink } from '../HomePage/HomePageStyle';
 import Footer from '../Footer';
 import {
     HomeContainer,
+    HomeText,
     HomeHeroContainer,
     HeroPhoto,
     ArrowLevitate,
@@ -85,14 +86,19 @@ const HomePage = () => {
                     </HeroPhoto>
 
                     {/* recruitment button */}
+                    
 
                     {/* <NavBtn>
                         <a href='https://crowdfundraising.ubc.ca/projects/race-for-the-sun/' target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
                             <NavBtnLink>Crowdfunding Campaign</NavBtnLink>
                         </a>                       
                     </NavBtn> */}
+                    
                     <ArrowLevitate to='meet'>
-                        <FaAngleDown size="80px" cursor="pointer" ></FaAngleDown>
+                        {/* <div style={{height: '15px'}}></div> */}
+                        {/* <h3><span style={{align: 'center'}}>We Are Recruiting!</span></h3> */}
+                        <h2><span style={{fontSize: '0.7em', marginTop: '20%'}}>Applications open: 28 August 2023 - 17 September 2023, 11:59PM PST</span></h2>
+                        {/* <FaAngleDown size="80px" cursor="pointer" ></FaAngleDown> */}
                     </ArrowLevitate>
                     
                     <NavBtn>
@@ -100,9 +106,8 @@ const HomePage = () => {
                             <NavBtnLink>Apply Now</NavBtnLink>
                         </a>
                     </NavBtn>
-                </HomeHeroContainer>
-
-                
+                    
+                </HomeHeroContainer>    
 
                 <HomeMottoContainer>
                     <MottoYellowContainer>

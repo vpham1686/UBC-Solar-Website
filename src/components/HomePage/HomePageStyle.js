@@ -5,10 +5,15 @@ import { Link as LinkScroll } from 'react-scroll';
 export const HomeContainer = styled.div`
 `;
 
+
+
 export const HomeHeroContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+`;
+
+export const HomeText = styled.h1`
 `;
 
 export const HeroPhoto = styled.img`
@@ -24,7 +29,7 @@ export const HeroPhoto = styled.img`
 
 export const ArrowLevitate = styled(LinkScroll)`
     position: absolute;
-    display: flex;    
+    display: flex;
 
     z-index: 5;
     color: #E5B13A;

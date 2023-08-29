@@ -29,6 +29,7 @@ import Omron from '../../assets/Sponsors/Omron.png';
 import MetalPros from '../../assets/Sponsors/MetalPros.png';
 import WestMountainRadio from '../../assets/Sponsors/WestMountainRadio.png';
 import Sunpower from '../../assets/Sponsors/Sunpower.png';
+import Texcan from '../../assets/Sponsors/Texcan.png';
 
 
 import CompositesResearchNetwork from '../../assets/Sponsors/CompositesResearchNetwork.png';
@@ -237,6 +238,8 @@ const SponsorsPage = () => {
                                         src={TCI} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <SupporterSponsors
                                         src={Phytools} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
+                                    <SupporterSponsors
+                                        src={Texcan} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                 </SupporterSponsorContainer>
                             }
                         </VisibilitySensor>
