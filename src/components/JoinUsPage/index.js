@@ -298,7 +298,7 @@ const RecruitmentPage = () => {
               and find out what it's like to work on UBC Solar? Join us on:
               <ul>
                 <li>Imagine Day -<b>September 5th</b>, all day at the UBC Solar booth on Main Mall.</li>
-                <li>UBC Solar Info Session -<b>September 7th, 6PM</b> (Location TBD)</li>
+                <li>UBC Solar Info Session -<b>September 7th, 6PM</b> Location: <b>CHBE 101</b></li>
               </ul>
             </RecruitmentContentParagraph>
 
