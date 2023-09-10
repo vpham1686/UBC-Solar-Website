@@ -28,7 +28,7 @@ import Fluor from '../../assets/Sponsors/Fluor.png';
 import Omron from '../../assets/Sponsors/Omron.png';
 import MetalPros from '../../assets/Sponsors/MetalPros.png';
 import WestMountainRadio from '../../assets/Sponsors/WestMountainRadio.png';
-import Sunpower from '../../assets/Sponsors/Sunpower.png';
+import Sunpower from '../../assets/Sponsors/sunpower-logo.jpg';
 import Texcan from '../../assets/Sponsors/Texcan.png';
 
 
@@ -202,11 +202,13 @@ const SponsorsPage = () => {
                                     <BronzeSponsors
                                         src={UBCPhysicsandAstronomy} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <BronzeSponsors
-                                        src={JLCPCB} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
+                                        src={StRegis} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <BronzeSponsors
                                         src={UBCMechanicalEngineering} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <BronzeSponsors
                                         src={Fluor} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
+                                    <BronzeSponsors
+                                        src={Sunpower} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <BronzeSponsors
                                         src={Omron} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <BronzeSponsors
@@ -214,9 +216,8 @@ const SponsorsPage = () => {
                                     <BronzeSponsors
                                         src={WestMountainRadio} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
                                     <BronzeSponsors
-                                        src={StRegis} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
-                                    <BronzeSponsors
-                                        src={Sunpower} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
+                                        src={JLCPCB} style={{ opacity: `${isVisible ? '1' : '0'}` }} />
+                                
                                 </BronzeSponsorContainer>
                             }
                         </VisibilitySensor>
